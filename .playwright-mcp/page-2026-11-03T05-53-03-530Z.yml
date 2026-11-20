@@ -1,0 +1,249 @@
+- generic [ref=f4e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - generic [ref=f4e14]:
+    - banner [ref=f4e15]:
+      - generic [ref=f4e16]:
+        - generic [ref=f4e22]:
+          - heading "RanchOps Pro" [level=1] [ref=f4e23]
+          - paragraph [ref=f4e24]: Super Admin Portal
+        - button [ref=f4e26]
+    - generic [ref=f4e27]:
+      - complementary [ref=f4e28]:
+        - navigation [ref=f4e30]:
+          - link "Dashboard" [ref=f4e32] [cursor=pointer]:
+            - /url: /dashboard
+          - generic [ref=f4e38]:
+            - heading "Ranch Management" [level=4] [ref=f4e39]
+            - link "Ranches" [ref=f4e40] [cursor=pointer]:
+              - /url: /ranches
+            - link "Ranch Admins" [ref=f4e45] [cursor=pointer]:
+              - /url: /admin-users
+          - generic [ref=f4e51]:
+            - heading "Guest Operations" [level=4] [ref=f4e52]
+            - link "Bookings" [ref=f4e53] [cursor=pointer]:
+              - /url: /bookings
+            - link "Guests" [ref=f4e56] [cursor=pointer]:
+              - /url: /guests
+            - link "Staff & Guides" [active] [ref=f4e62] [cursor=pointer]:
+              - /url: /staff
+          - generic [ref=f4e75]:
+            - heading "Record Keeping" [level=4] [ref=f4e76]
+            - link "Harvest Logs" [ref=f4e77] [cursor=pointer]:
+              - /url: /harvest
+            - link "Invoices" [ref=f4e81] [cursor=pointer]:
+              - /url: /invoices
+      - main [ref=f4e85]:
+        - generic [ref=f4e2316]:
+          - generic [ref=f4e2317]:
+            - generic [ref=f4e2318]:
+              - heading "Staff & Guides" [level=1] [ref=f4e2319]
+              - paragraph [ref=f4e2320]: View guides and staff across all ranches
+            - button "Add Guide" [ref=f4e2321]
+          - generic [ref=f4e2324]:
+            - textbox "Search by name, email, or phone number" [ref=f4e2329]:
+              - /placeholder: Search by name, email, or phone number...
+            - combobox [ref=f4e2330]:
+              - generic: All Ranches
+            - combobox [ref=f4e2333]:
+              - generic: All Status
+            - combobox [ref=f4e2336]:
+              - generic: All Levels
+          - generic [ref=f4e2339]:
+            - generic [ref=f4e2340]:
+              - heading "All Staff & Guides" [level=2] [ref=f4e2341]
+              - generic [ref=f4e2342]:
+                - button "Card view" [ref=f4e2343]
+                - button "Table view" [ref=f4e2344]
+            - table [ref=f4e2348]:
+              - rowgroup [ref=f4e2349]:
+                - row [ref=f4e2350]:
+                  - columnheader "Guide" [ref=f4e2351]
+                  - columnheader "Ranch" [ref=f4e2352]
+                  - columnheader "Experience" [ref=f4e2353]
+                  - columnheader "Active Bookings" [ref=f4e2354]
+                  - columnheader "Total Bookings" [ref=f4e2355]
+                  - columnheader "Status" [ref=f4e2356]
+                  - columnheader "Actions" [ref=f4e2357]
+              - rowgroup [ref=f4e2358]:
+                - row [ref=f4e2359] [cursor=pointer]:
+                  - cell "Experienced qa-auto-base-guide-x21@test.ranchops.com +15127740589" [ref=f4e2360]:
+                    - generic [ref=f4e2364]:
+                      - generic [ref=f4e2365]: Experienced
+                      - generic [ref=f4e2367]: qa-auto-base-guide-x21@test.ranchops.com
+                      - generic [ref=f4e2368]: "+15127740589"
+                  - cell "QA-AUTO-BASE Ranch A" [ref=f4e2369]
+                  - cell "6 years" [ref=f4e2370]
+                  - cell "0 active" [ref=f4e2372]
+                  - cell "0 total" [ref=f4e2374]
+                  - cell "Active" [ref=f4e2376]
+                  - cell [ref=f4e2377]:
+                    - button "More options" [ref=f4e2378]
+                - row [ref=f4e2379] [cursor=pointer]:
+                  - cell "AT alboo tt Expert alboo@gmail.com +14088456985" [ref=f4e2380]:
+                    - generic [ref=f4e2381]:
+                      - generic [ref=f4e2382]: AT
+                      - generic [ref=f4e2384]:
+                        - generic [ref=f4e2385]:
+                          - generic [ref=f4e2386]: alboo tt
+                          - generic [ref=f4e2387]: Expert
+                        - generic [ref=f4e2388]: alboo@gmail.com
+                        - generic [ref=f4e2389]: "+14088456985"
+                  - cell "koramnaga ranch" [ref=f4e2390]
+                  - cell "8 years" [ref=f4e2391]
+                  - cell "1 active" [ref=f4e2393]
+                  - cell "8 total" [ref=f4e2395]
+                  - cell "Active" [ref=f4e2397]
+                  - cell [ref=f4e2398]:
+                    - button "More options" [ref=f4e2399]
+                - row [ref=f4e2400] [cursor=pointer]:
+                  - cell "AP athul pp Experienced athul123@gmail.com +14088456984" [ref=f4e2401]:
+                    - generic [ref=f4e2402]:
+                      - generic [ref=f4e2403]: AP
+                      - generic [ref=f4e2405]:
+                        - generic [ref=f4e2406]:
+                          - generic [ref=f4e2407]: athul pp
+                          - generic [ref=f4e2408]: Experienced
+                        - generic [ref=f4e2409]: athul123@gmail.com
+                        - generic [ref=f4e2410]: "+14088456984"
+                  - cell "test ranch" [ref=f4e2411]
+                  - cell "4 years" [ref=f4e2412]
+                  - cell "3 active" [ref=f4e2414]
+                  - cell "7 total" [ref=f4e2416]
+                  - cell "Active" [ref=f4e2418]
+                  - cell [ref=f4e2419]:
+                    - button "More options" [ref=f4e2420]
+                - row [ref=f4e2421] [cursor=pointer]:
+                  - cell "CS Clay Sultemeier Experienced clays@texaspoolsandpatios.com +18304819705" [ref=f4e2422]:
+                    - generic [ref=f4e2423]:
+                      - generic [ref=f4e2424]: CS
+                      - generic [ref=f4e2426]:
+                        - generic [ref=f4e2427]:
+                          - generic [ref=f4e2428]: Clay Sultemeier
+                          - generic [ref=f4e2429]: Experienced
+                        - generic [ref=f4e2430]: clays@texaspoolsandpatios.com
+                        - generic [ref=f4e2431]: "+18304819705"
+                  - cell "QUATTRO DIAMANTE RANCH" [ref=f4e2432]
+                  - cell "7 years" [ref=f4e2433]
+                  - cell "0 active" [ref=f4e2435]
+                  - cell "2 total" [ref=f4e2437]
+                  - cell "Active" [ref=f4e2439]
+                  - cell [ref=f4e2440]:
+                    - button "More options" [ref=f4e2441]
+                - row [ref=f4e2442] [cursor=pointer]:
+                  - cell "DW Dave Wilson Experienced dwilson@marquiscsi.com +19792308502" [ref=f4e2443]:
+                    - generic [ref=f4e2444]:
+                      - generic [ref=f4e2445]: DW
+                      - generic [ref=f4e2447]:
+                        - generic [ref=f4e2448]:
+                          - generic [ref=f4e2449]: Dave Wilson
+                          - generic [ref=f4e2450]: Experienced
+                        - generic [ref=f4e2451]: dwilson@marquiscsi.com
+                        - generic [ref=f4e2452]: "+19792308502"
+                  - cell "QUATTRO DIAMANTE RANCH" [ref=f4e2453]
+                  - cell "3 years" [ref=f4e2454]
+                  - cell "0 active" [ref=f4e2456]
+                  - cell "4 total" [ref=f4e2458]
+                  - cell "Active" [ref=f4e2460]
+                  - cell [ref=f4e2461]:
+                    - button "More options" [ref=f4e2462]
+                - row [ref=f4e2463] [cursor=pointer]:
+                  - cell "GC GD CC Experienced sanmitha.shetty@codecraft.co.in +16799365389" [ref=f4e2464]:
+                    - generic [ref=f4e2465]:
+                      - generic [ref=f4e2466]: GC
+                      - generic [ref=f4e2468]:
+                        - generic [ref=f4e2469]:
+                          - generic [ref=f4e2470]: GD CC
+                          - generic [ref=f4e2471]: Experienced
+                        - generic [ref=f4e2472]: sanmitha.shetty@codecraft.co.in
+                        - generic [ref=f4e2473]: "+16799365389"
+                  - cell "test ranch" [ref=f4e2474]
+                  - cell "4 years" [ref=f4e2475]
+                  - cell "0 active" [ref=f4e2477]
+                  - cell "1 total" [ref=f4e2479]
+                  - cell "Active" [ref=f4e2481]
+                  - cell [ref=f4e2482]:
+                    - button "More options" [ref=f4e2483]
+                - row [ref=f4e2484] [cursor=pointer]:
+                  - cell "GH Gene Harris Experienced gcccharris@sbcglobal.net +19792357130" [ref=f4e2485]:
+                    - generic [ref=f4e2486]:
+                      - generic [ref=f4e2487]: GH
+                      - generic [ref=f4e2489]:
+                        - generic [ref=f4e2490]:
+                          - generic [ref=f4e2491]: Gene Harris
+                          - generic [ref=f4e2492]: Experienced
+                        - generic [ref=f4e2493]: gcccharris@sbcglobal.net
+                        - generic [ref=f4e2494]: "+19792357130"
+                  - cell "QUATTRO DIAMANTE RANCH" [ref=f4e2495]
+                  - cell "3 years" [ref=f4e2496]
+                  - cell "1 active" [ref=f4e2498]
+                  - cell "2 total" [ref=f4e2500]
+                  - cell "Active" [ref=f4e2502]
+                  - cell [ref=f4e2503]:
+                    - button "More options" [ref=f4e2504]
+                - row [ref=f4e2505] [cursor=pointer]:
+                  - cell "GH Gene Harris Experienced gharris69@sbcglobal.net +19798008000" [ref=f4e2506]:
+                    - generic [ref=f4e2507]:
+                      - generic [ref=f4e2508]: GH
+                      - generic [ref=f4e2510]:
+                        - generic [ref=f4e2511]:
+                          - generic [ref=f4e2512]: Gene Harris
+                          - generic [ref=f4e2513]: Experienced
+                        - generic [ref=f4e2514]: gharris69@sbcglobal.net
+                        - generic [ref=f4e2515]: "+19798008000"
+                  - cell "QUATTRO DIAMANTE RANCH" [ref=f4e2516]
+                  - cell "3 years" [ref=f4e2517]
+                  - cell "0 active" [ref=f4e2519]
+                  - cell "1 total" [ref=f4e2521]
+                  - cell "Inactive" [ref=f4e2523]
+                  - cell [ref=f4e2524]:
+                    - button "More options" [ref=f4e2525]
+                - row [ref=f4e2526] [cursor=pointer]:
+                  - cell "GL Grant Ledbetter Experienced grantledbetter@live.com +19793196914" [ref=f4e2527]:
+                    - generic [ref=f4e2528]:
+                      - generic [ref=f4e2529]: GL
+                      - generic [ref=f4e2531]:
+                        - generic [ref=f4e2532]:
+                          - generic [ref=f4e2533]: Grant Ledbetter
+                          - generic [ref=f4e2534]: Experienced
+                        - generic [ref=f4e2535]: grantledbetter@live.com
+                        - generic [ref=f4e2536]: "+19793196914"
+                  - cell "QUATTRO DIAMANTE RANCH" [ref=f4e2537]
+                  - cell "3 years" [ref=f4e2538]
+                  - cell "2 active" [ref=f4e2540]
+                  - cell "6 total" [ref=f4e2542]
+                  - cell "Active" [ref=f4e2544]
+                  - cell [ref=f4e2545]:
+                    - button "More options" [ref=f4e2546]
+                - row [ref=f4e2547] [cursor=pointer]:
+                  - cell "GC Guide Ch Experienced guidec01@gmail.com +17087644465" [ref=f4e2548]:
+                    - generic [ref=f4e2549]:
+                      - generic [ref=f4e2550]: GC
+                      - generic [ref=f4e2552]:
+                        - generic [ref=f4e2553]:
+                          - generic [ref=f4e2554]: Guide Ch
+                          - generic [ref=f4e2555]: Experienced
+                        - generic [ref=f4e2556]: guidec01@gmail.com
+                        - generic [ref=f4e2557]: "+17087644465"
+                  - cell "QUATTRO DIAMANTE RANCH" [ref=f4e2558]
+                  - cell "5 years" [ref=f4e2559]
+                  - cell "2 active" [ref=f4e2561]
+                  - cell "2 total" [ref=f4e2563]
+                  - cell "Active" [ref=f4e2565]
+                  - cell [ref=f4e2566]:
+                    - button "More options" [ref=f4e2567]
+          - generic [ref=f4e2570]:
+            - generic [ref=f4e2571]:
+              - generic [ref=f4e2572]: Showing 1 to 10 of 59 results
+              - generic [ref=f4e2573]:
+                - generic [ref=f4e2574]: per page
+                - combobox [ref=f4e2575]:
+                  - generic: "10"
+            - generic [ref=f4e2578]:
+              - button [disabled]
+              - button "1" [ref=f4e2580]
+              - button "2" [ref=f4e2582]
+              - button "3" [ref=f4e2584]
+              - button "6" [ref=f4e2592]
+              - button [ref=f4e2593]

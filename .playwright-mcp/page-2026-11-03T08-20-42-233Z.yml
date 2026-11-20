@@ -1,0 +1,113 @@
+- generic:
+  - generic:
+    - list
+    - region "Notifications alt+T"
+    - generic [aria-hidden]:
+      - banner:
+        - generic:
+          - generic:
+            - generic:
+              - heading [level=1]: QUATTRO DIAMANTE RANCH
+              - paragraph: Guide Portal
+          - generic:
+            - button [expanded]
+      - generic:
+        - complementary:
+          - generic:
+            - navigation:
+              - generic:
+                - link:
+                  - /url: /dashboard
+                  - text: Dashboard
+                - link:
+                  - /url: /bookings
+                  - text: Bookings
+                - link:
+                  - /url: /harvest
+                  - text: Harvest Logs
+        - main:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - heading [level=1]: Booking Management
+                  - paragraph: View your assigned bookings
+                - button: New Booking
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - textbox:
+                        - /placeholder: Search by booking ID, hunter, or guide...
+                    - combobox:
+                      - generic: All Status
+                    - combobox:
+                      - generic: All Types
+                    - button: From Date
+                    - button: To Date
+              - generic:
+                - generic:
+                  - heading [level=2]: All Bookings
+                - generic:
+                  - button
+                  - button
+              - generic:
+                - generic:
+                  - generic:
+                    - table:
+                      - rowgroup:
+                        - row:
+                          - columnheader: Booking Id
+                          - columnheader: Hunter
+                          - columnheader: Check-in
+                          - columnheader: Check-out
+                          - columnheader: Hunters
+                          - columnheader: Guests
+                          - columnheader: Guide
+                          - columnheader: Waivers
+                          - columnheader: Type
+                          - columnheader: Status
+                      - rowgroup:
+                        - row:
+                          - cell: BK-2026-1048
+                          - cell: "-"
+                          - cell: 09/26/2026
+                          - cell: 09/27/2026
+                          - cell: "0"
+                          - cell: "0"
+                          - cell: Guide Ch
+                          - cell: "-"
+                          - cell:
+                            - generic: Maintenance
+                          - cell:
+                            - generic: pending
+                        - row:
+                          - cell: BK-2026-1030
+                          - cell: "-"
+                          - cell: 12/01/2026
+                          - cell: 12/02/2026
+                          - cell: "0"
+                          - cell: "0"
+                          - cell: Guide Ch
+                          - cell: "-"
+                          - cell:
+                            - generic: Maintenance
+                          - cell:
+                            - generic: approved
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: Showing 1 to 2 of 2 results
+                      - generic:
+                        - generic: per page
+                        - combobox:
+                          - generic: "10"
+  - menu [active] [ref=f6e126]:
+    - generic [ref=f6e128]:
+      - paragraph [ref=f6e129]: Guide Ch
+      - paragraph [ref=f6e130]: GUIDE
+    - separator [ref=f6e131]
+    - menuitem "Change Password" [ref=f6e132]
+    - separator [ref=f6e137]
+    - menuitem "Log out" [ref=f6e138]

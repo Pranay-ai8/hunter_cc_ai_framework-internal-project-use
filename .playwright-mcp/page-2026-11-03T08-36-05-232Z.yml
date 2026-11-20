@@ -1,0 +1,94 @@
+- generic [ref=f11e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - generic [ref=f11e14]:
+    - banner [ref=f11e15]:
+      - generic [ref=f11e16]:
+        - generic [ref=f11e22]:
+          - heading "RanchOps Pro" [level=1] [ref=f11e23]
+          - paragraph [ref=f11e24]: Super Admin Portal
+        - button [ref=f11e26]
+    - generic [ref=f11e27]:
+      - complementary [ref=f11e28]:
+        - navigation [ref=f11e30]:
+          - link "Dashboard" [ref=f11e32] [cursor=pointer]:
+            - /url: /dashboard
+          - generic [ref=f11e38]:
+            - heading "Ranch Management" [level=4] [ref=f11e39]
+            - link "Ranches" [ref=f11e40] [cursor=pointer]:
+              - /url: /ranches
+            - link "Ranch Admins" [ref=f11e45] [cursor=pointer]:
+              - /url: /admin-users
+          - generic [ref=f11e51]:
+            - heading "Guest Operations" [level=4] [ref=f11e52]
+            - link "Bookings" [ref=f11e53] [cursor=pointer]:
+              - /url: /bookings
+            - link "Guests" [ref=f11e56] [cursor=pointer]:
+              - /url: /guests
+            - link "Staff & Guides" [ref=f11e62] [cursor=pointer]:
+              - /url: /staff
+          - generic [ref=f11e75]:
+            - heading "Record Keeping" [level=4] [ref=f11e76]
+            - link "Harvest Logs" [ref=f11e77] [cursor=pointer]:
+              - /url: /harvest
+            - link "Invoices" [ref=f11e81] [cursor=pointer]:
+              - /url: /invoices
+      - main [ref=f11e85]:
+        - generic [ref=f11e1543]:
+          - button "Back to Ranches" [ref=f11e1545]
+          - generic [ref=f11e1546]:
+            - heading "Create New Ranch" [level=1] [ref=f11e1547]
+            - paragraph [ref=f11e1548]: Follow the steps to set up a new ranch in the system
+          - generic [ref=f11e1551]:
+            - generic [ref=f11e1552]:
+              - generic [ref=f11e1553]: Step 2 of 5
+              - generic [ref=f11e1554]: 40% Complete
+            - progressbar [ref=f11e1555]
+            - generic [ref=f11e1557]:
+              - paragraph [ref=f11e1562]: Basic Information
+              - generic [ref=f11e1563]:
+                - generic [ref=f11e1564]: "2"
+                - paragraph [ref=f11e1567]: Ranch Details
+              - generic [ref=f11e1568]:
+                - generic [ref=f11e1569]: "3"
+                - paragraph [ref=f11e1572]: Rooms
+              - generic [ref=f11e1573]:
+                - generic [ref=f11e1574]: "4"
+                - paragraph [ref=f11e1577]: Initial Settings
+              - generic [ref=f11e1578]:
+                - generic [ref=f11e1579]: "5"
+                - paragraph [ref=f11e1582]: Review & Create
+          - generic [ref=f11e1583]:
+            - generic [ref=f11e1584]:
+              - heading "Ranch Details" [level=3] [ref=f11e2278]
+              - paragraph [ref=f11e1586]: Property information and features
+            - generic [ref=f11e2279]:
+              - generic [ref=f11e2280]:
+                - generic [ref=f11e2282]:
+                  - generic [ref=f11e2283]:
+                    - text: Property Size (acres)
+                    - generic [ref=f11e2284]: "*"
+                  - spinbutton "Property Size (acres) *" [ref=f11e2285]
+                - generic [ref=f11e2286]:
+                  - generic [ref=f11e2287]:
+                    - text: Ranch Description
+                    - generic [ref=f11e2288]: "*"
+                  - textbox "Ranch Description *" [ref=f11e2289]:
+                    - /placeholder: Describe your ranch, amenities, and unique features...
+                - generic [ref=f11e2290]:
+                  - text: Website URL
+                  - textbox "Website URL" [ref=f11e2291]:
+                    - /placeholder: Enter website URL
+              - generic [ref=f11e2293]:
+                - heading "Huntable Animals *" [level=3] [ref=f11e2294]
+                - button "Add new animal" [active] [ref=f11e2295]: Add Animal
+              - generic [ref=f11e2297]:
+                - heading "Stands" [level=3] [ref=f11e2298]
+                - button "Add new stand" [ref=f11e2299]: Add Stand
+              - generic [ref=f11e2301]:
+                - heading "Available Add-ons" [level=3] [ref=f11e2302]
+                - button "Add new add-on" [ref=f11e2303]: Add Add-on
+          - generic [ref=f11e1618]:
+            - button "Back" [ref=f11e2304]
+            - button "Next" [ref=f11e1619]

@@ -1,0 +1,49 @@
+- generic [ref=f7e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - generic [ref=f7e3]:
+    - banner [ref=f7e4]:
+      - generic [ref=f7e5]:
+        - generic [ref=f7e11]:
+          - heading "RanchOps Pro" [level=1] [ref=f7e12]
+          - paragraph [ref=f7e13]: Super Admin Portal
+        - button [ref=f7e15]
+    - generic [ref=f7e16]:
+      - complementary [ref=f7e17]:
+        - navigation [ref=f7e19]:
+          - link "Dashboard" [ref=f7e21] [cursor=pointer]:
+            - /url: /dashboard
+          - generic [ref=f7e27]:
+            - heading "Ranch Management" [level=4] [ref=f7e28]
+            - link "Ranches" [ref=f7e29] [cursor=pointer]:
+              - /url: /ranches
+            - link "Ranch Admins" [ref=f7e34] [cursor=pointer]:
+              - /url: /admin-users
+          - generic [ref=f7e40]:
+            - heading "Guest Operations" [level=4] [ref=f7e41]
+            - link "Bookings" [ref=f7e42] [cursor=pointer]:
+              - /url: /bookings
+            - link "Guests" [ref=f7e45] [cursor=pointer]:
+              - /url: /guests
+            - link "Staff & Guides" [ref=f7e51] [cursor=pointer]:
+              - /url: /staff
+          - generic [ref=f7e64]:
+            - heading "Record Keeping" [level=4] [ref=f7e65]
+            - link "Harvest Logs" [ref=f7e66] [cursor=pointer]:
+              - /url: /harvest
+            - link "Invoices" [ref=f7e70] [cursor=pointer]:
+              - /url: /invoices
+      - main [ref=f7e74]:
+        - generic [ref=f7e76]:
+          - generic [ref=f7e77]:
+            - generic [ref=f7e78]:
+              - heading "Ranch Management" [level=1] [ref=f7e79]
+              - paragraph [ref=f7e80]: Manage all ranches in the system
+            - button "Create new ranch" [ref=f7e81]: Create New Ranch
+          - textbox "Search ranches..." [ref=f7e90]
+          - generic [ref=f7e91]:
+            - heading "All Ranches" [level=2] [ref=f7e92]
+            - generic [ref=f7e93]:
+              - button "Switch to card view" [ref=f7e94]
+              - button "Switch to list view" [ref=f7e95]

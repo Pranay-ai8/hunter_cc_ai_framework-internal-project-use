@@ -1,0 +1,161 @@
+- generic:
+  - generic:
+    - list
+    - region "Notifications alt+T"
+    - generic [aria-hidden]:
+      - banner:
+        - generic:
+          - generic:
+            - generic:
+              - heading [level=1]: RanchOps Pro
+              - paragraph: Super Admin Portal
+          - generic:
+            - button
+      - generic:
+        - complementary:
+          - generic:
+            - navigation:
+              - generic:
+                - link:
+                  - /url: /dashboard
+                  - text: Dashboard
+              - generic:
+                - heading [level=4]: Ranch Management
+                - link:
+                  - /url: /ranches
+                  - text: Ranches
+                - link:
+                  - /url: /admin-users
+                  - text: Ranch Admins
+              - generic:
+                - heading [level=4]: Guest Operations
+                - link:
+                  - /url: /bookings
+                  - text: Bookings
+                - link:
+                  - /url: /guests
+                  - text: Guests
+                - link:
+                  - /url: /staff
+                  - text: Staff & Guides
+              - generic:
+                - heading [level=4]: Record Keeping
+                - link:
+                  - /url: /harvest
+                  - text: Harvest Logs
+                - link:
+                  - /url: /invoices
+                  - text: Invoices
+        - main:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - button: Back to Ranches
+                - generic:
+                  - heading [level=1]: Create New Ranch
+                  - paragraph: Follow the steps to set up a new ranch in the system
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: Step 2 of 5
+                        - generic: 40% Complete
+                      - progressbar
+                      - generic:
+                        - generic:
+                          - generic:
+                            - paragraph: Basic Information
+                        - generic:
+                          - generic: "2"
+                          - generic:
+                            - paragraph: Ranch Details
+                        - generic:
+                          - generic: "3"
+                          - generic:
+                            - paragraph: Rooms
+                        - generic:
+                          - generic: "4"
+                          - generic:
+                            - paragraph: Initial Settings
+                        - generic:
+                          - generic: "5"
+                          - generic:
+                            - paragraph: Review & Create
+                - generic:
+                  - generic:
+                    - heading [level=3]: Ranch Details
+                    - paragraph: Property information and features
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - text: Property Size (acres)
+                              - generic: "*"
+                            - spinbutton
+                        - generic:
+                          - generic:
+                            - text: Ranch Description
+                            - generic: "*"
+                          - textbox:
+                            - /placeholder: Describe your ranch, amenities, and unique features...
+                        - generic:
+                          - text: Website URL
+                          - textbox:
+                            - /placeholder: Enter website URL
+                      - generic:
+                        - generic:
+                          - heading [level=3]: Huntable Animals *
+                          - button [expanded]: Add Animal
+                      - generic:
+                        - generic:
+                          - heading [level=3]: Stands
+                          - button: Add Stand
+                      - generic:
+                        - generic:
+                          - heading [level=3]: Available Add-ons
+                          - button: Add Add-on
+                - generic:
+                  - generic:
+                    - generic:
+                      - button: Back
+                      - button: Next
+  - dialog [ref=f11e2306]:
+    - heading "Add Animal Type" [level=2] [ref=f11e2308]
+    - generic [ref=f11e2309]:
+      - generic [ref=f11e2310]:
+        - generic [ref=f11e2311]:
+          - text: Display Name
+          - generic [ref=f11e2312]: "*"
+        - textbox "Display Name *" [active] [ref=f11e2313]:
+          - /placeholder: Enter display name
+      - generic [ref=f11e2314]:
+        - generic [ref=f11e2315]:
+          - text: Animal Category
+          - generic [ref=f11e2316]: "*"
+        - generic [ref=f11e2318]:
+          - textbox "Enter animal category" [ref=f11e2319]
+          - button [ref=f11e2320]
+      - generic [ref=f11e2321]:
+        - generic [ref=f11e2322]: Species (optional)
+        - generic [ref=f11e2324]:
+          - textbox "Select or enter species" [ref=f11e2325]
+          - button [ref=f11e2326]
+      - generic [ref=f11e2327]:
+        - generic [ref=f11e2328]: Sex (optional)
+        - generic [ref=f11e2330]:
+          - textbox "Select sex" [ref=f11e2331]
+          - button [ref=f11e2332]
+      - generic [ref=f11e2333]:
+        - generic [ref=f11e2334]:
+          - text: Price
+          - generic [ref=f11e2335]: "*"
+        - generic [ref=f11e2336]:
+          - generic [ref=f11e2337]: $
+          - spinbutton "Enter price" [ref=f11e2338]
+      - generic [ref=f11e2339]:
+        - button "Cancel" [ref=f11e2340]
+        - button "Add Animal" [disabled]
+    - button "Close" [ref=f11e2341]

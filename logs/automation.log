@@ -1,0 +1,347 @@
+2026-10-16 10:40:05 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createDriver is executed
+2026-10-16 10:40:05 DEBUG com.cresanmanagement.eyeq.utils.PropertyReader - getPropValues is executed
+2026-10-16 10:40:05 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createLocalDriver is executed
+2026-10-16 10:40:05 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceID is executed
+2026-10-16 10:40:05 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceName is executed
+2026-10-16 10:40:06 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getPlatformVersion is executed
+2026-10-16 10:42:26 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createDriver is executed
+2026-10-16 10:42:26 DEBUG com.cresanmanagement.eyeq.utils.PropertyReader - getPropValues is executed
+2026-10-16 10:42:26 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createLocalDriver is executed
+2026-10-16 10:42:26 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceID is executed
+2026-10-16 10:42:26 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceName is executed
+2026-10-16 10:42:27 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getPlatformVersion is executed
+2026-10-16 10:44:50 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createDriver is executed
+2026-10-16 10:44:50 DEBUG com.cresanmanagement.eyeq.utils.PropertyReader - getPropValues is executed
+2026-10-16 10:44:50 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createLocalDriver is executed
+2026-10-16 10:44:50 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceID is executed
+2026-10-16 10:44:51 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceName is executed
+2026-10-16 10:44:51 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getPlatformVersion is executed
+2026-10-16 10:48:38 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createDriver is executed
+2026-10-16 10:48:38 DEBUG com.cresanmanagement.eyeq.utils.PropertyReader - getPropValues is executed
+2026-10-16 10:48:38 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createLocalDriver is executed
+2026-10-16 10:48:38 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceID is executed
+2026-10-16 10:48:38 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceName is executed
+2026-10-16 10:48:38 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getPlatformVersion is executed
+2026-10-16 10:49:22 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createDriver is executed
+2026-10-16 10:49:22 DEBUG com.cresanmanagement.eyeq.utils.PropertyReader - getPropValues is executed
+2026-10-16 10:49:22 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createLocalDriver is executed
+2026-10-16 10:49:22 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceID is executed
+2026-10-16 10:49:22 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceName is executed
+2026-10-16 10:49:23 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getPlatformVersion is executed
+2026-10-16 10:49:59 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createDriver is executed
+2026-10-16 10:49:59 DEBUG com.cresanmanagement.eyeq.utils.PropertyReader - getPropValues is executed
+2026-10-16 10:49:59 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createLocalDriver is executed
+2026-10-16 10:49:59 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceID is executed
+2026-10-16 10:50:00 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceName is executed
+2026-10-16 10:50:00 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getPlatformVersion is executed
+2026-10-16 10:51:21 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createDriver is executed
+2026-10-16 10:51:21 DEBUG com.cresanmanagement.eyeq.utils.PropertyReader - getPropValues is executed
+2026-10-16 10:51:21 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createLocalDriver is executed
+2026-10-16 10:51:21 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceID is executed
+2026-10-16 10:51:22 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceName is executed
+2026-10-16 10:51:22 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getPlatformVersion is executed
+2026-10-16 10:51:49 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createDriver is executed
+2026-10-16 10:51:49 DEBUG com.cresanmanagement.eyeq.utils.PropertyReader - getPropValues is executed
+2026-10-16 10:51:49 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createLocalDriver is executed
+2026-10-16 10:51:49 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceID is executed
+2026-10-16 10:51:49 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceName is executed
+2026-10-16 10:51:49 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getPlatformVersion is executed
+2026-10-16 10:52:29 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createDriver is executed
+2026-10-16 10:52:29 DEBUG com.cresanmanagement.eyeq.utils.PropertyReader - getPropValues is executed
+2026-10-16 10:52:29 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createLocalDriver is executed
+2026-10-16 10:52:29 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceID is executed
+2026-10-16 10:52:29 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceName is executed
+2026-10-16 10:52:30 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getPlatformVersion is executed
+2026-10-16 11:08:39 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createDriver is executed
+2026-10-16 11:08:39 DEBUG com.cresanmanagement.eyeq.utils.PropertyReader - getPropValues is executed
+2026-10-16 11:08:39 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createLocalDriver is executed
+2026-10-16 11:08:39 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceID is executed
+2026-10-16 11:08:39 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceName is executed
+2026-10-16 11:08:39 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getPlatformVersion is executed
+2026-10-16 11:09:29 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createDriver is executed
+2026-10-16 11:09:29 DEBUG com.cresanmanagement.eyeq.utils.PropertyReader - getPropValues is executed
+2026-10-16 11:09:29 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createLocalDriver is executed
+2026-10-16 11:09:29 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceID is executed
+2026-10-16 11:09:30 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceName is executed
+2026-10-16 11:09:30 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getPlatformVersion is executed
+2026-10-16 11:09:48 DEBUG com.cresanmanagement.eyeq.pageobjects.onboardingauthentication.OnboardingAuthenticationPage - switchEnvironmentToTest is executed
+2026-10-16 11:09:48 DEBUG com.cresanmanagement.eyeq.utils.Base - typeWithHeal is executed: Email Input (devmode trigger)
+2026-10-16 11:09:48 DEBUG com.cresanmanagement.eyeq.utils.Base - waitUntilElementIsVisible is executed
+2026-10-16 11:09:51 DEBUG com.cresanmanagement.eyeq.utils.Base - typeWithHeal is executed: Password Input (devmode trigger)
+2026-10-16 11:09:51 DEBUG com.cresanmanagement.eyeq.utils.Base - waitUntilElementIsVisible is executed
+2026-10-16 11:09:51 DEBUG com.cresanmanagement.eyeq.utils.Base - hideKeyboard is executed
+2026-10-16 11:09:52 DEBUG com.cresanmanagement.eyeq.utils.Base - clickWithHeal is executed: Login Button (devmode submit)
+2026-10-16 11:09:52 DEBUG com.cresanmanagement.eyeq.utils.Base - waitUntilElementIsClickable is executed
+2026-10-16 11:09:53 DEBUG com.cresanmanagement.eyeq.utils.Base - clickWithHeal is executed: Test Environment Radio Row
+2026-10-16 11:09:53 DEBUG com.cresanmanagement.eyeq.utils.Base - waitUntilElementIsClickable is executed
+2026-10-16 11:09:54 DEBUG com.cresanmanagement.eyeq.utils.Base - clickWithHeal is executed: Set Base URL Button
+2026-10-16 11:09:54 DEBUG com.cresanmanagement.eyeq.utils.Base - waitUntilElementIsClickable is executed
+2026-10-16 11:09:57 DEBUG com.cresanmanagement.eyeq.utils.Base - clickWithHeal is executed: Environment Switch Success OK Button
+2026-10-16 11:09:57 DEBUG com.cresanmanagement.eyeq.utils.Base - waitUntilElementIsClickable is executed
+2026-10-16 11:09:58 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - quitDriver is executed
+2026-10-16 11:10:08 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createDriver is executed
+2026-10-16 11:10:08 DEBUG com.cresanmanagement.eyeq.utils.PropertyReader - getPropValues is executed
+2026-10-16 11:10:08 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createLocalDriver is executed
+2026-10-16 11:10:08 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceID is executed
+2026-10-16 11:10:08 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceName is executed
+2026-10-16 11:10:08 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getPlatformVersion is executed
+2026-10-16 11:14:08 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createDriver is executed
+2026-10-16 11:14:08 DEBUG com.cresanmanagement.eyeq.utils.PropertyReader - getPropValues is executed
+2026-10-16 11:14:08 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createLocalDriver is executed
+2026-10-16 11:14:08 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceID is executed
+2026-10-16 11:14:08 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceName is executed
+2026-10-16 11:14:09 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getPlatformVersion is executed
+2026-10-16 11:14:44 DEBUG com.cresanmanagement.eyeq.pageobjects.onboardingauthentication.OnboardingAuthenticationPage - switchEnvironmentToTest is executed
+2026-10-16 11:14:44 DEBUG com.cresanmanagement.eyeq.utils.Base - typeWithHeal is executed: Email Input (devmode trigger)
+2026-10-16 11:14:44 DEBUG com.cresanmanagement.eyeq.utils.Base - waitUntilElementIsVisible is executed
+2026-10-16 11:14:48 DEBUG com.cresanmanagement.eyeq.utils.Base - typeWithHeal is executed: Password Input (devmode trigger)
+2026-10-16 11:14:48 DEBUG com.cresanmanagement.eyeq.utils.Base - waitUntilElementIsVisible is executed
+2026-10-16 11:14:50 DEBUG com.cresanmanagement.eyeq.utils.Base - hideKeyboard is executed
+2026-10-16 11:14:51 DEBUG com.cresanmanagement.eyeq.utils.Base - clickWithHeal is executed: Login Button (devmode submit)
+2026-10-16 11:14:51 DEBUG com.cresanmanagement.eyeq.utils.Base - waitUntilElementIsClickable is executed
+2026-10-16 11:14:52 DEBUG com.cresanmanagement.eyeq.utils.Base - clickWithHeal is executed: Test Environment Radio Row
+2026-10-16 11:14:52 DEBUG com.cresanmanagement.eyeq.utils.Base - waitUntilElementIsClickable is executed
+2026-10-16 11:14:53 DEBUG com.cresanmanagement.eyeq.utils.Base - clickWithHeal is executed: Set Base URL Button
+2026-10-16 11:14:53 DEBUG com.cresanmanagement.eyeq.utils.Base - waitUntilElementIsClickable is executed
+2026-10-16 11:14:56 DEBUG com.cresanmanagement.eyeq.utils.Base - clickWithHeal is executed: Environment Switch Success OK Button
+2026-10-16 11:14:56 DEBUG com.cresanmanagement.eyeq.utils.Base - waitUntilElementIsClickable is executed
+2026-10-16 11:14:59 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - quitDriver is executed
+2026-10-16 11:15:13 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createDriver is executed
+2026-10-16 11:15:13 DEBUG com.cresanmanagement.eyeq.utils.PropertyReader - getPropValues is executed
+2026-10-16 11:15:13 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createLocalDriver is executed
+2026-10-16 11:15:13 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceID is executed
+2026-10-16 11:15:13 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceName is executed
+2026-10-16 11:15:14 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getPlatformVersion is executed
+2026-10-16 11:21:58 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createDriver is executed
+2026-10-16 11:21:58 DEBUG com.cresanmanagement.eyeq.utils.PropertyReader - getPropValues is executed
+2026-10-16 11:21:58 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createLocalDriver is executed
+2026-10-16 11:21:58 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceID is executed
+2026-10-16 11:21:58 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceName is executed
+2026-10-16 11:21:59 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getPlatformVersion is executed
+2026-10-16 11:22:20 DEBUG com.cresanmanagement.eyeq.pageobjects.onboardingauthentication.OnboardingAuthenticationPage - switchEnvironmentToTest is executed
+2026-10-16 11:22:20 DEBUG com.cresanmanagement.eyeq.utils.Base - typeWithHeal is executed: Email Input (devmode trigger)
+2026-10-16 11:22:20 DEBUG com.cresanmanagement.eyeq.utils.Base - waitUntilElementIsVisible is executed
+2026-10-16 11:22:23 DEBUG com.cresanmanagement.eyeq.utils.Base - typeWithHeal is executed: Password Input (devmode trigger)
+2026-10-16 11:22:23 DEBUG com.cresanmanagement.eyeq.utils.Base - waitUntilElementIsVisible is executed
+2026-10-16 11:22:24 DEBUG com.cresanmanagement.eyeq.utils.Base - hideKeyboard is executed
+2026-10-16 11:22:24 DEBUG com.cresanmanagement.eyeq.utils.Base - clickWithHeal is executed: Login Button (devmode submit)
+2026-10-16 11:22:24 DEBUG com.cresanmanagement.eyeq.utils.Base - waitUntilElementIsClickable is executed
+2026-10-16 11:22:26 DEBUG com.cresanmanagement.eyeq.utils.Base - clickWithHeal is executed: Test Environment Radio Row
+2026-10-16 11:22:26 DEBUG com.cresanmanagement.eyeq.utils.Base - waitUntilElementIsClickable is executed
+2026-10-16 11:22:26 DEBUG com.cresanmanagement.eyeq.utils.Base - clickWithHeal is executed: Set Base URL Button
+2026-10-16 11:22:26 DEBUG com.cresanmanagement.eyeq.utils.Base - waitUntilElementIsClickable is executed
+2026-10-16 11:22:28 DEBUG com.cresanmanagement.eyeq.utils.Base - clickWithHeal is executed: Environment Switch Success OK Button
+2026-10-16 11:22:28 DEBUG com.cresanmanagement.eyeq.utils.Base - waitUntilElementIsClickable is executed
+2026-10-16 11:22:31 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - quitDriver is executed
+2026-10-16 11:22:43 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createDriver is executed
+2026-10-16 11:22:43 DEBUG com.cresanmanagement.eyeq.utils.PropertyReader - getPropValues is executed
+2026-10-16 11:22:43 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createLocalDriver is executed
+2026-10-16 11:22:43 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceID is executed
+2026-10-16 11:22:43 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceName is executed
+2026-10-16 11:22:43 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getPlatformVersion is executed
+2026-10-16 11:24:13 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createDriver is executed
+2026-10-16 11:24:13 DEBUG com.cresanmanagement.eyeq.utils.PropertyReader - getPropValues is executed
+2026-10-16 11:24:13 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createLocalDriver is executed
+2026-10-16 11:24:13 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceID is executed
+2026-10-16 11:24:14 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceName is executed
+2026-10-16 11:24:14 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getPlatformVersion is executed
+2026-10-16 11:24:34 DEBUG com.cresanmanagement.eyeq.pageobjects.onboardingauthentication.OnboardingAuthenticationPage - switchEnvironmentToTest is executed
+2026-10-16 11:24:34 DEBUG com.cresanmanagement.eyeq.utils.Base - typeWithHeal is executed: Email Input (devmode trigger)
+2026-10-16 11:24:34 DEBUG com.cresanmanagement.eyeq.utils.Base - waitUntilElementIsVisible is executed
+2026-10-16 11:24:36 DEBUG com.cresanmanagement.eyeq.utils.Base - typeWithHeal is executed: Password Input (devmode trigger)
+2026-10-16 11:24:36 DEBUG com.cresanmanagement.eyeq.utils.Base - waitUntilElementIsVisible is executed
+2026-10-16 11:24:37 DEBUG com.cresanmanagement.eyeq.utils.Base - hideKeyboard is executed
+2026-10-16 11:24:38 DEBUG com.cresanmanagement.eyeq.utils.Base - clickWithHeal is executed: Login Button (devmode submit)
+2026-10-16 11:24:38 DEBUG com.cresanmanagement.eyeq.utils.Base - waitUntilElementIsClickable is executed
+2026-10-16 11:24:39 DEBUG com.cresanmanagement.eyeq.utils.Base - clickWithHeal is executed: Test Environment Radio Row
+2026-10-16 11:24:39 DEBUG com.cresanmanagement.eyeq.utils.Base - waitUntilElementIsClickable is executed
+2026-10-16 11:24:40 DEBUG com.cresanmanagement.eyeq.utils.Base - clickWithHeal is executed: Set Base URL Button
+2026-10-16 11:24:40 DEBUG com.cresanmanagement.eyeq.utils.Base - waitUntilElementIsClickable is executed
+2026-10-16 11:24:43 DEBUG com.cresanmanagement.eyeq.utils.Base - clickWithHeal is executed: Environment Switch Success OK Button
+2026-10-16 11:24:43 DEBUG com.cresanmanagement.eyeq.utils.Base - waitUntilElementIsClickable is executed
+2026-10-16 11:24:44 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - quitDriver is executed
+2026-10-16 11:24:49 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createDriver is executed
+2026-10-16 11:24:49 DEBUG com.cresanmanagement.eyeq.utils.PropertyReader - getPropValues is executed
+2026-10-16 11:24:49 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createLocalDriver is executed
+2026-10-16 11:24:49 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceID is executed
+2026-10-16 11:24:49 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceName is executed
+2026-10-16 11:24:50 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getPlatformVersion is executed
+2026-10-16 11:26:29 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createDriver is executed
+2026-10-16 11:26:29 DEBUG com.cresanmanagement.eyeq.utils.PropertyReader - getPropValues is executed
+2026-10-16 11:26:29 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createLocalDriver is executed
+2026-10-16 11:26:29 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceID is executed
+2026-10-16 11:26:29 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceName is executed
+2026-10-16 11:26:30 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getPlatformVersion is executed
+2026-10-16 11:26:46 DEBUG com.cresanmanagement.eyeq.pageobjects.onboardingauthentication.OnboardingAuthenticationPage - switchEnvironmentToTest is executed
+2026-10-16 11:26:46 DEBUG com.cresanmanagement.eyeq.utils.Base - typeWithHeal is executed: Email Input (devmode trigger)
+2026-10-16 11:26:46 DEBUG com.cresanmanagement.eyeq.utils.Base - waitUntilElementIsVisible is executed
+2026-10-16 11:28:17 WARN  com.cresanmanagement.eyeq.utils.Base - Primary locator for 'Email Input (devmode trigger)' failed, attempting self-heal
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: (//android.widget.EditText)[1]})
+(tried for 90 seconds with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.cresanmanagement.eyeq.utils.Base.waitUntilElementIsVisible(Base.java:75)
+	at com.cresanmanagement.eyeq.utils.Base.typeWithHeal(Base.java:117)
+	at com.cresanmanagement.eyeq.pageobjects.onboardingauthentication.OnboardingAuthenticationPage.switchEnvironmentToTest(OnboardingAuthenticationPage.java:59)
+	at SwitchToTest.main(SwitchToTest.java:12)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: (//android.widget.EditText)[1]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:91)
+	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:89)
+	at io.appium.java_client.remote.AppiumWebElement$ByteBuddy$tYUzNVqN.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:365)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:351)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:348)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:210)
+	... 4 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@65bcf7c2
+(tried for 10 seconds with 500 milliseconds interval)
+	at io.appium.java_client.support.ui.FluentWait.timeoutException(FluentWait.java:255)
+	at io.appium.java_client.support.ui.FluentWait.until(FluentWait.java:211)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
+	... 11 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: (//android.widget.EditText)[1]})
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.50.0', revision: 'be845fb be845fb44341cd7a6e7b27ba02dc1bdcf69dc51c'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: driver.version: AppiumRemoteWebDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:76)
+	at io.appium.java_client.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:122)
+	at io.appium.java_client.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at io.appium.java_client.remote.AppiumRemoteWebDriver.findElement(AppiumRemoteWebDriver.java:261)
+	at io.appium.java_client.remote.AppiumRemoteWebDriver.findElement(AppiumRemoteWebDriver.java:257)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:60)
+	at io.appium.java_client.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:122)
+	at io.appium.java_client.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at io.appium.java_client.remote.AppiumRemoteWebDriver.findElement(AppiumRemoteWebDriver.java:261)
+	at io.appium.java_client.remote.AppiumRemoteWebDriver.findElement(AppiumRemoteWebDriver.java:257)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
+	at io.appium.java_client.support.ui.FluentWait.until(FluentWait.java:191)
+	... 13 more
+2026-10-16 11:28:17 WARN  com.cresanmanagement.eyeq.utils.SelfHealer - SelfHealer: no candidate scored >= 0.75 for hint 'Email Input (devmode trigger)' (best=0.0)
+2026-10-16 11:28:17 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - quitDriver is executed
+2026-10-16 11:28:21 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createDriver is executed
+2026-10-16 11:28:21 DEBUG com.cresanmanagement.eyeq.utils.PropertyReader - getPropValues is executed
+2026-10-16 11:28:21 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createLocalDriver is executed
+2026-10-16 11:28:21 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceID is executed
+2026-10-16 11:28:21 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceName is executed
+2026-10-16 11:28:22 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getPlatformVersion is executed
+2026-10-16 11:30:15 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createDriver is executed
+2026-10-16 11:30:16 DEBUG com.cresanmanagement.eyeq.utils.PropertyReader - getPropValues is executed
+2026-10-16 11:30:16 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createLocalDriver is executed
+2026-10-16 11:30:16 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceID is executed
+2026-10-16 11:30:16 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceName is executed
+2026-10-16 11:30:16 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getPlatformVersion is executed
+2026-10-16 11:30:55 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createDriver is executed
+2026-10-16 11:30:55 DEBUG com.cresanmanagement.eyeq.utils.PropertyReader - getPropValues is executed
+2026-10-16 11:30:55 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createLocalDriver is executed
+2026-10-16 11:30:55 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceID is executed
+2026-10-16 11:30:56 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceName is executed
+2026-10-16 11:30:56 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getPlatformVersion is executed
+2026-10-16 11:31:53 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createDriver is executed
+2026-10-16 11:31:53 DEBUG com.cresanmanagement.eyeq.utils.PropertyReader - getPropValues is executed
+2026-10-16 11:31:53 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createLocalDriver is executed
+2026-10-16 11:31:53 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceID is executed
+2026-10-16 11:31:53 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceName is executed
+2026-10-16 11:31:54 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getPlatformVersion is executed
+2026-10-16 11:32:32 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createDriver is executed
+2026-10-16 11:32:32 DEBUG com.cresanmanagement.eyeq.utils.PropertyReader - getPropValues is executed
+2026-10-16 11:32:32 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createLocalDriver is executed
+2026-10-16 11:32:32 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceID is executed
+2026-10-16 11:32:33 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceName is executed
+2026-10-16 11:32:33 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getPlatformVersion is executed
+2026-10-16 11:38:32 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createDriver is executed
+2026-10-16 11:38:32 DEBUG com.cresanmanagement.eyeq.utils.PropertyReader - getPropValues is executed
+2026-10-16 11:38:32 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createLocalDriver is executed
+2026-10-16 11:38:32 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceID is executed
+2026-10-16 11:38:32 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceName is executed
+2026-10-16 11:38:33 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getPlatformVersion is executed
+2026-10-16 11:39:10 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createDriver is executed
+2026-10-16 11:39:10 DEBUG com.cresanmanagement.eyeq.utils.PropertyReader - getPropValues is executed
+2026-10-16 11:39:10 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createLocalDriver is executed
+2026-10-16 11:39:10 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceID is executed
+2026-10-16 11:39:11 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceName is executed
+2026-10-16 11:39:11 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getPlatformVersion is executed
+2026-10-16 11:43:48 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createDriver is executed
+2026-10-16 11:43:48 DEBUG com.cresanmanagement.eyeq.utils.PropertyReader - getPropValues is executed
+2026-10-16 11:43:48 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createLocalDriver is executed
+2026-10-16 11:43:48 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceID is executed
+2026-10-16 11:43:49 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceName is executed
+2026-10-16 11:43:49 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getPlatformVersion is executed
+2026-10-16 11:44:06 DEBUG com.cresanmanagement.eyeq.pageobjects.onboardingauthentication.OnboardingAuthenticationPage - switchEnvironmentToTest is executed
+2026-10-16 11:44:06 DEBUG com.cresanmanagement.eyeq.utils.Base - typeWithHeal is executed: Email Input (devmode trigger)
+2026-10-16 11:44:06 DEBUG com.cresanmanagement.eyeq.utils.Base - waitUntilElementIsVisible is executed
+2026-10-16 11:44:08 DEBUG com.cresanmanagement.eyeq.utils.Base - typeWithHeal is executed: Password Input (devmode trigger)
+2026-10-16 11:44:08 DEBUG com.cresanmanagement.eyeq.utils.Base - waitUntilElementIsVisible is executed
+2026-10-16 11:44:09 DEBUG com.cresanmanagement.eyeq.utils.Base - hideKeyboard is executed
+2026-10-16 11:44:10 DEBUG com.cresanmanagement.eyeq.utils.Base - clickWithHeal is executed: Login Button (devmode submit)
+2026-10-16 11:44:10 DEBUG com.cresanmanagement.eyeq.utils.Base - waitUntilElementIsClickable is executed
+2026-10-16 11:44:11 DEBUG com.cresanmanagement.eyeq.utils.Base - clickWithHeal is executed: Test Environment Radio Row
+2026-10-16 11:44:11 DEBUG com.cresanmanagement.eyeq.utils.Base - waitUntilElementIsClickable is executed
+2026-10-16 11:44:13 DEBUG com.cresanmanagement.eyeq.utils.Base - clickWithHeal is executed: Set Base URL Button
+2026-10-16 11:44:13 DEBUG com.cresanmanagement.eyeq.utils.Base - waitUntilElementIsClickable is executed
+2026-10-16 11:44:16 DEBUG com.cresanmanagement.eyeq.utils.Base - clickWithHeal is executed: Environment Switch Success OK Button
+2026-10-16 11:44:16 DEBUG com.cresanmanagement.eyeq.utils.Base - waitUntilElementIsClickable is executed
+2026-10-16 11:44:17 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - quitDriver is executed
+2026-10-16 11:44:30 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createDriver is executed
+2026-10-16 11:44:30 DEBUG com.cresanmanagement.eyeq.utils.PropertyReader - getPropValues is executed
+2026-10-16 11:44:30 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - createLocalDriver is executed
+2026-10-16 11:44:30 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceID is executed
+2026-10-16 11:44:30 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getDeviceName is executed
+2026-10-16 11:44:31 DEBUG com.cresanmanagement.eyeq.utils.DeviceConfig - getPlatformVersion is executed
+2026-10-16 11:44:44 DEBUG com.cresanmanagement.eyeq.pageobjects.onboardingauthentication.OnboardingAuthenticationPage - setAirplaneMode is executed: true
+2026-10-16 11:44:44 DEBUG com.cresanmanagement.eyeq.utils.Base - toggleAirplaneMode is executed: true
+2026-10-16 11:44:45 DEBUG com.cresanmanagement.eyeq.pageobjects.onboardingauthentication.OnboardingAuthenticationPage - login is executed
+2026-10-16 11:44:45 DEBUG com.cresanmanagement.eyeq.utils.Base - typeWithHeal is executed: Email Input
+2026-10-16 11:44:45 DEBUG com.cresanmanagement.eyeq.utils.Base - waitUntilElementIsVisible is executed
+2026-10-16 11:46:24 WARN  com.cresanmanagement.eyeq.utils.Base - Primary locator for 'Email Input' failed, attempting self-heal
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Located by By.chained({By.xpath: (//android.widget.EditText)[1]})
+(tried for 90 seconds with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:234)
+	at com.cresanmanagement.eyeq.utils.Base.waitUntilElementIsVisible(Base.java:75)
+	at com.cresanmanagement.eyeq.utils.Base.typeWithHeal(Base.java:117)
+	at com.cresanmanagement.eyeq.pageobjects.onboardingauthentication.OnboardingAuthenticationPage.login(OnboardingAuthenticationPage.java:40)
+	at CheckOffline.main(CheckOffline.java:24)
+Caused by: org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: (//android.widget.EditText)[1]})
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:166)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.call(InterceptorOfASingleElement.java:91)
+	at io.appium.java_client.proxy.Interceptor.intercept(Interceptor.java:89)
+	at io.appium.java_client.remote.AppiumWebElement$ByteBuddy$m1y38D3e.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:365)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:351)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:348)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:210)
+	... 4 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@2679311f
+(tried for 10 seconds with 500 milliseconds interval)
+	at io.appium.java_client.support.ui.FluentWait.timeoutException(FluentWait.java:255)
+	at io.appium.java_client.support.ui.FluentWait.until(FluentWait.java:211)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:135)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:160)
+	... 11 more
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: (//android.widget.EditText)[1]})
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.50.0', revision: 'be845fb be845fb44341cd7a6e7b27ba02dc1bdcf69dc51c'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: driver.version: AppiumRemoteWebDriver
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:76)
+	at io.appium.java_client.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:122)
+	at io.appium.java_client.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at io.appium.java_client.remote.AppiumRemoteWebDriver.findElement(AppiumRemoteWebDriver.java:261)
+	at io.appium.java_client.remote.AppiumRemoteWebDriver.findElement(AppiumRemoteWebDriver.java:257)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:60)
+	at io.appium.java_client.remote.ElementLocation$ElementFinder$1.findElement(ElementLocation.java:122)
+	at io.appium.java_client.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at io.appium.java_client.remote.AppiumRemoteWebDriver.findElement(AppiumRemoteWebDriver.java:261)
+	at io.appium.java_client.remote.AppiumRemoteWebDriver.findElement(AppiumRemoteWebDriver.java:257)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$findElement$1(AppiumElementLocator.java:160)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:217)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:210)
+	at io.appium.java_client.support.ui.FluentWait.until(FluentWait.java:191)
+	... 13 more
+2026-10-16 11:46:24 WARN  com.cresanmanagement.eyeq.utils.SelfHealer - SelfHealer: no candidate scored >= 0.75 for hint 'Email Input' (best=0.0)
+2026-10-16 11:46:24 DEBUG com.cresanmanagement.eyeq.utils.InitiateDriver - quitDriver is executed

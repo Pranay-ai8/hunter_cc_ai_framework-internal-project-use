@@ -1,0 +1,28 @@
+Key|Env|username|password|bookingId|invoiceId|name|email|phone|address|city|state|zip|taxRate|discount|discountReason|searchQuery|message
+IVC039|STG|superadmin@buckhouse.com|AdminUser123!|BK-2026-1002|||||||||||||Invoice already exists for booking ID 4
+IVC040|STG|superadmin@buckhouse.com|AdminUser123!||||||||||||||
+IVC041|STG|superadmin@buckhouse.com|AdminUser123!||||hunterqdr||||||||||Please enter a valid email address
+IVC042|STG|superadmin@buckhouse.com|AdminUser123!||||||||||||||
+IVC043|STG|superadmin@buckhouse.com|AdminUser123!|||||||||abc,12|||||
+IVC044|STG|superadmin@buckhouse.com|AdminUser123!|||||+1 (555) 000-0002|||||||||
+IVC045|STG|superadmin@buckhouse.com|AdminUser123!||||||||||||||
+IVC046|STG|superadmin@buckhouse.com|AdminUser123!||INV-2026-1001||||||||||||Invoice PDF downloaded successfully.
+IVC047|STG|superadmin@buckhouse.com|AdminUser123!|||<script>alert('XSS')</script>|||||||||||
+IVC048|STG|superadmin@buckhouse.com|AdminUser123!|||||||||||||' OR '1'='1' --|
+IVC049|STG|superadmin@buckhouse.com|AdminUser123!||||||||||||||
+IVC050|STG|superadmin@buckhouse.com|AdminUser123!||||||||||||||
+IVC051|STG|superadmin@buckhouse.com|AdminUser123!||||||||||||||
+IVC052|STG|superadmin@buckhouse.com|AdminUser123!||||||||||||||
+IVC053|STG|superadmin@buckhouse.com|AdminUser123!||||||||||||||
+IVC054|STG|superadmin@buckhouse.com|AdminUser123!||||||||||||||Failed to create invoice. Please try again.
+IVC055|STG|superadmin@buckhouse.com|AdminUser123!||||||||||||||Failed to download file. Please check your connection.
+IVC056|STG|superadmin@buckhouse.com|AdminUser123!||||||||||||||
+IVC057|STG|superadmin@buckhouse.com|AdminUser123!||||||||||8.5,9.38||||
+IVC058|STG|superadmin@buckhouse.com|AdminUser123!|BK-2026-1001|||||||||||||
+IVC059|STG|superadmin@buckhouse.com|AdminUser123!|BK-2026-1001|INV-2026-1001||||||||||||
+IVC060|STG|superadmin@buckhouse.com|AdminUser123!||||||||||||||
+IVC061|STG|superadmin@buckhouse.com|AdminUser123!|||  Test Hunter  |||  1 Main St  ||||||||
+IVC062|STG|superadmin@buckhouse.com|AdminUser123!||||||||||||||
+IVC063|STG|superadmin@buckhouse.com|AdminUser123!||||||||||||||
+IVC064|STG|superadmin@buckhouse.com|AdminUser123!||||||||||||||
+IVC065|STG|superadmin@buckhouse.com|AdminUser123!||||||||||||||

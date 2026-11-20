@@ -1,0 +1,178 @@
+- generic [ref=f2e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - generic [ref=f2e3]:
+    - banner [ref=f2e4]:
+      - generic [ref=f2e5]:
+        - generic [ref=f2e11]:
+          - heading "RanchOps Pro" [level=1] [ref=f2e12]
+          - paragraph [ref=f2e13]: Super Admin Portal
+        - button [ref=f2e15]
+    - generic [ref=f2e16]:
+      - complementary [ref=f2e17]:
+        - navigation [ref=f2e19]:
+          - link "Dashboard" [ref=f2e21] [cursor=pointer]:
+            - /url: /dashboard
+          - generic [ref=f2e27]:
+            - heading "Ranch Management" [level=4] [ref=f2e28]
+            - link "Ranches" [ref=f2e29] [cursor=pointer]:
+              - /url: /ranches
+            - link "Ranch Admins" [ref=f2e34] [cursor=pointer]:
+              - /url: /admin-users
+          - generic [ref=f2e40]:
+            - heading "Guest Operations" [level=4] [ref=f2e41]
+            - link "Bookings" [ref=f2e42] [cursor=pointer]:
+              - /url: /bookings
+            - link "Guests" [ref=f2e45] [cursor=pointer]:
+              - /url: /guests
+            - link "Staff & Guides" [ref=f2e51] [cursor=pointer]:
+              - /url: /staff
+          - generic [ref=f2e64]:
+            - heading "Record Keeping" [level=4] [ref=f2e65]
+            - link "Harvest Logs" [ref=f2e66] [cursor=pointer]:
+              - /url: /harvest
+            - link "Invoices" [ref=f2e70] [cursor=pointer]:
+              - /url: /invoices
+      - main [ref=f2e74]:
+        - generic [ref=f2e76]:
+          - button "Back to Bookings" [ref=f2e78]
+          - heading "Create New Booking" [level=1] [ref=f2e80]
+          - generic [ref=f2e83]:
+            - paragraph [ref=f2e87]: Ranch & Dates
+            - paragraph [ref=f2e93]: Accommodation
+            - generic [ref=f2e96]:
+              - generic [ref=f2e97]: "3"
+              - paragraph [ref=f2e99]: Party Details
+            - generic [ref=f2e102]:
+              - generic [ref=f2e103]: "4"
+              - paragraph [ref=f2e105]: Assignment
+            - generic [ref=f2e108]:
+              - generic [ref=f2e109]: "5"
+              - paragraph [ref=f2e111]: Review
+          - generic [ref=f2e112]:
+            - generic [ref=f2e1277]:
+              - generic [ref=f2e1278]:
+                - heading "Add Hunters & Guests" [level=3] [ref=f2e1279]
+                - paragraph [ref=f2e1280]: Select hunters (required) and any additional guests
+              - generic [ref=f2e1281]:
+                - generic [ref=f2e1282]:
+                  - generic [ref=f2e1283]: "Add:"
+                  - radiogroup [ref=f2e1284]:
+                    - generic [ref=f2e1285]:
+                      - radio "Hunter" [checked] [ref=f2e1286]
+                      - radio [checked] [aria-hidden]
+                      - generic [ref=f2e1289] [cursor=pointer]: Hunter
+                    - generic [ref=f2e1290]:
+                      - radio "Non-Hunter Guest" [ref=f2e1291]
+                      - radio [aria-hidden]
+                      - generic [ref=f2e1292] [cursor=pointer]: Non-Hunter Guest
+                - generic [ref=f2e1293]:
+                  - generic [ref=f2e1294]:
+                    - text: Add Hunters
+                    - generic [ref=f2e1295]: "*"
+                  - textbox "Search hunters" [ref=f2e1300]
+                  - generic [ref=f2e1301]:
+                    - generic [ref=f2e1302]:
+                      - heading "Personal Information" [level=4] [ref=f2e1303]
+                      - generic [ref=f2e1304]:
+                        - generic [ref=f2e1305]:
+                          - generic [ref=f2e1306]:
+                            - text: Full Name
+                            - generic [ref=f2e1307]: "*"
+                          - textbox "Full Name *" [ref=f2e1308]:
+                            - /placeholder: Enter full name
+                        - generic [ref=f2e1309]:
+                          - generic [ref=f2e1310]:
+                            - text: Email Address
+                            - generic [ref=f2e1311]: "*"
+                          - textbox "Email Address *" [ref=f2e1312]:
+                            - /placeholder: Enter email address
+                        - generic [ref=f2e1313]:
+                          - text: Date of Birth
+                          - button "Pick a date" [ref=f2e1314]
+                        - generic [ref=f2e1315]:
+                          - text: Phone Number
+                          - generic [ref=f2e1317]:
+                            - combobox "Country selector" [ref=f2e1319] [cursor=pointer]
+                            - textbox [ref=f2e1322]: "+1"
+                        - generic [ref=f2e1323]:
+                          - generic [ref=f2e1324]:
+                            - checkbox "Allow SMS notifications (optional)" [ref=f2e1325]
+                            - checkbox [aria-hidden]
+                            - generic [ref=f2e1326] [cursor=pointer]: Allow SMS notifications (optional)
+                          - paragraph [ref=f2e1327]: SMS will only be sent when this box is checked.
+                    - generic [ref=f2e1329]:
+                      - generic [ref=f2e1330]:
+                        - heading "Minor Hunters" [level=4] [ref=f2e1331]
+                        - paragraph [ref=f2e1332]: Add minors under this hunter.
+                      - button "Add Minor Hunter" [ref=f2e1333]
+                    - generic [ref=f2e1334]:
+                      - heading "Hunting License Information" [level=4] [ref=f2e1335]
+                      - generic [ref=f2e1336]:
+                        - generic [ref=f2e1337]:
+                          - generic [ref=f2e1338]: Texas Hunter License Number
+                          - textbox "Texas Hunter License Number" [ref=f2e1339]:
+                            - /placeholder: Enter license number
+                        - generic [ref=f2e1340]:
+                          - text: License Expiration Date
+                          - button "Pick a date" [ref=f2e1341]
+                          - paragraph [ref=f2e1342]: License must be valid through your checkout date
+                    - generic [ref=f2e1343]:
+                      - heading "Address Information" [level=4] [ref=f2e1344]
+                      - generic [ref=f2e1345]:
+                        - generic [ref=f2e1346]:
+                          - generic [ref=f2e1347]:
+                            - text: Street Address
+                            - generic [ref=f2e1348]: "*"
+                          - textbox "Street Address *" [ref=f2e1349]:
+                            - /placeholder: Enter street address
+                        - generic [ref=f2e1350]:
+                          - generic [ref=f2e1351]:
+                            - generic [ref=f2e1352]:
+                              - text: City
+                              - generic [ref=f2e1353]: "*"
+                            - textbox "City *" [ref=f2e1354]:
+                              - /placeholder: Enter city
+                          - generic [ref=f2e1355]:
+                            - generic [ref=f2e1356]:
+                              - text: State
+                              - generic [ref=f2e1357]: "*"
+                            - textbox "State *" [ref=f2e1358]:
+                              - /placeholder: TX
+                          - generic [ref=f2e1359]:
+                            - generic [ref=f2e1360]:
+                              - text: ZIP Code
+                              - generic [ref=f2e1361]: "*"
+                            - textbox "ZIP Code *" [ref=f2e1362]:
+                              - /placeholder: Enter ZIP code
+                    - generic [ref=f2e1363]:
+                      - heading "Emergency Contact" [level=4] [ref=f2e1364]
+                      - generic [ref=f2e1365]:
+                        - generic [ref=f2e1366]:
+                          - text: Emergency Contact Name
+                          - textbox "Emergency Contact Name" [ref=f2e1367]:
+                            - /placeholder: Enter contact name
+                        - generic [ref=f2e1368]:
+                          - text: Emergency Contact Phone
+                          - generic [ref=f2e1370]:
+                            - combobox "Country selector" [ref=f2e1372] [cursor=pointer]
+                            - textbox [ref=f2e1375]: "+1"
+                        - generic [ref=f2e1376]:
+                          - text: Relationship
+                          - textbox "Relationship" [ref=f2e1377]:
+                            - /placeholder: Enter relationship
+                    - generic [ref=f2e1378]:
+                      - heading "Documents" [level=5] [ref=f2e1379]
+                      - generic [ref=f2e1380]:
+                        - generic [ref=f2e1381]:
+                          - text: Document Type
+                          - textbox "e.g., ID Proof, License" [ref=f2e1382]
+                        - generic [ref=f2e1383]:
+                          - text: File
+                          - button "Click or drag to add" [ref=f2e1384] [cursor=pointer]
+                      - paragraph [ref=f2e1389]: PDF or image files, max 10MB each. Files are added as soon as you select them; enter a type first, otherwise "Document" is used.
+                    - button "Add Hunter" [ref=f2e1390]
+            - generic [ref=f2e146]:
+              - button "Back" [ref=f2e1251]
+              - button "Next" [active] [ref=f2e147]

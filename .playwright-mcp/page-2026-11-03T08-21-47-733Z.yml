@@ -1,0 +1,253 @@
+- generic:
+  - generic:
+    - list
+    - region "Notifications alt+T"
+    - generic [aria-hidden]:
+      - banner:
+        - generic:
+          - generic:
+            - generic:
+              - heading [level=1]: RanchOps Pro
+              - paragraph: Super Admin Portal
+          - generic:
+            - button
+      - generic:
+        - complementary:
+          - generic:
+            - navigation:
+              - generic:
+                - link:
+                  - /url: /dashboard
+                  - text: Dashboard
+              - generic:
+                - heading [level=4]: Ranch Management
+                - link:
+                  - /url: /ranches
+                  - text: Ranches
+                - link:
+                  - /url: /admin-users
+                  - text: Ranch Admins
+              - generic:
+                - heading [level=4]: Guest Operations
+                - link:
+                  - /url: /bookings
+                  - text: Bookings
+                - link:
+                  - /url: /guests
+                  - text: Guests
+                - link:
+                  - /url: /staff
+                  - text: Staff & Guides
+              - generic:
+                - heading [level=4]: Record Keeping
+                - link:
+                  - /url: /harvest
+                  - text: Harvest Logs
+                - link:
+                  - /url: /invoices
+                  - text: Invoices
+        - main:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - heading [level=1]: Ranch Admin Management
+                  - paragraph: Manage ranch administrators
+                - button [expanded]: Create New Admin
+              - generic:
+                - generic:
+                  - generic:
+                    - textbox:
+                      - /placeholder: Search by name, email, or ranch...
+              - generic:
+                - generic:
+                  - heading [level=2]: All Ranch Admins
+                - generic:
+                  - button
+                  - button
+              - generic:
+                - generic:
+                  - generic:
+                    - table:
+                      - rowgroup:
+                        - row:
+                          - columnheader: Admin
+                          - columnheader: Email
+                          - columnheader: Assigned Ranch
+                          - columnheader: Created
+                          - columnheader: Actions
+                      - rowgroup:
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: T
+                              - generic: testauto
+                          - cell: testauto10@yopmail.com
+                          - cell: Kannur Ranch
+                          - cell: 11/03/2026
+                          - cell:
+                            - generic:
+                              - button: Edit
+                              - button
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: QRE
+                              - generic: QA-AUTO-BASE RA Edit
+                          - cell: qa-auto-base-ra-edit@test.ranchops.com
+                          - cell: QA-AUTO-BASE Ranch A
+                          - cell: 10/30/2026
+                          - cell:
+                            - generic:
+                              - button: Edit
+                              - button
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: QRA
+                              - generic: QA-AUTO-mvt6e2g80k Ranch Admin
+                          - cell: qa-auto-mvt6e2g80k@test.ranchops.com
+                          - cell: QA-AUTO-BASE Ranch A
+                          - cell: 10/29/2026
+                          - cell:
+                            - generic:
+                              - button: Edit
+                              - button
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: QRA
+                              - generic: QA-AUTO-mvt6e2g802 Ranch Admin
+                          - cell: qa-auto-mvt6e2g802@test.ranchops.com
+                          - cell: QA-AUTO-BASE Ranch A
+                          - cell: 10/29/2026
+                          - cell:
+                            - generic:
+                              - button: Edit
+                              - button
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: QRO
+                              - generic: QA-AUTO-BASE RA One
+                          - cell: qa-auto-base-ra-one@test.ranchops.com
+                          - cell: QA-AUTO-BASE Ranch A
+                          - cell: 10/28/2026
+                          - cell:
+                            - generic:
+                              - button: Edit
+                              - button
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: T
+                              - generic: test
+                          - cell: testauto12@gmail.com
+                          - cell: test ranch 01
+                          - cell: 10/27/2026
+                          - cell:
+                            - generic:
+                              - button: Edit
+                              - button
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: MU1
+                              - generic: Mike Updated 1790062184105
+                          - cell: jose.maria.1790062009683@ranch.com
+                          - cell: QUATTRO DIAMANTE RANCH
+                          - cell: 09/22/2026
+                          - cell:
+                            - generic:
+                              - button: Edit
+                              - button
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: S1
+                              - generic: SearchTarget 1790061981924
+                          - cell: jose.maria.1790061981924@ranch.com
+                          - cell: QUATTRO DIAMANTE RANCH
+                          - cell: 09/22/2026
+                          - cell:
+                            - generic:
+                              - button: Edit
+                              - button
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: JD1
+                              - generic: John Doe 1790061934958
+                          - cell: jose.maria.1790061934958@ranch.com
+                          - cell: QUATTRO DIAMANTE RANCH
+                          - cell: 09/22/2026
+                          - cell:
+                            - generic:
+                              - button: Edit
+                              - button
+                        - row:
+                          - cell:
+                            - generic:
+                              - generic: MU1
+                              - generic: Mike Updated 1790055606228
+                          - cell: jose.maria.1790055416600@ranch.com
+                          - cell: QUATTRO DIAMANTE RANCH
+                          - cell: 09/22/2026
+                          - cell:
+                            - generic:
+                              - button: Edit
+                              - button
+              - generic:
+                - generic:
+                  - generic:
+                    - generic: Showing 1 to 10 of 54 results
+                    - generic:
+                      - generic: per page
+                      - combobox:
+                        - generic: "10"
+                  - generic:
+                    - button [disabled]
+                    - generic:
+                      - button: "1"
+                    - generic:
+                      - button: "2"
+                    - generic:
+                      - button: "3"
+                    - generic:
+                      - button: "6"
+                    - button
+  - dialog [ref=f9e1569]:
+    - heading "Create Ranch Admin" [level=2] [ref=f9e1571]
+    - generic [ref=f9e1572]:
+      - generic [ref=f9e1573]:
+        - generic [ref=f9e1574]:
+          - generic [ref=f9e1575]:
+            - text: Full Name
+            - generic [ref=f9e1576]: "*"
+          - textbox "Full Name *" [active] [ref=f9e1577]:
+            - /placeholder: Enter full name
+        - generic [ref=f9e1578]:
+          - generic [ref=f9e1579]:
+            - text: Email Address
+            - generic [ref=f9e1580]: "*"
+          - textbox "Email Address *" [ref=f9e1581]:
+            - /placeholder: Enter email address
+      - generic [ref=f9e1582]:
+        - generic [ref=f9e1583]:
+          - text: Password
+          - generic [ref=f9e1584]: "*"
+        - generic [ref=f9e1585]:
+          - textbox "Password *" [ref=f9e1586]:
+            - /placeholder: Enter password (min. 8 characters)
+          - button "Show password" [ref=f9e1587]
+      - generic [ref=f9e1591]:
+        - generic [ref=f9e1592]:
+          - text: Assign to Ranch
+          - generic [ref=f9e1593]: "*"
+        - combobox [ref=f9e1594]:
+          - generic: Select a ranch
+        - combobox [aria-hidden] [ref=f9e1597]
+      - generic [ref=f9e1598]:
+        - button "Cancel" [ref=f9e1599]
+        - button "Create Admin" [ref=f9e1600]
+    - button "Close" [ref=f9e1601]

@@ -1,0 +1,171 @@
+- generic [ref=f4e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - generic [ref=f4e44]:
+    - banner [ref=f4e45]:
+      - generic [ref=f4e46]:
+        - generic [ref=f4e52]:
+          - heading "QUATTRO DIAMANTE RANCH" [level=1] [ref=f4e53]
+          - paragraph [ref=f4e54]: Guide Portal
+        - button [ref=f4e56]
+    - generic [ref=f4e57]:
+      - complementary [ref=f4e58]:
+        - navigation [ref=f4e60]:
+          - generic [ref=f4e61]:
+            - link "Dashboard" [active] [ref=f4e62] [cursor=pointer]:
+              - /url: /dashboard
+            - link "Bookings" [ref=f4e68] [cursor=pointer]:
+              - /url: /bookings
+            - link "Harvest Logs" [ref=f4e71] [cursor=pointer]:
+              - /url: /harvest
+      - main [ref=f4e75]:
+        - generic [ref=f4e156]:
+          - generic [ref=f4e157]:
+            - generic [ref=f4e158]:
+              - heading "Dashboard" [level=1] [ref=f4e159]
+              - paragraph [ref=f4e160]: Booking calendar view
+            - button "New Booking" [ref=f4e162]
+          - generic [ref=f4e164]:
+            - heading "Booking Calendar" [level=3] [ref=f4e167]
+            - generic [ref=f4e170]:
+              - generic [ref=f4e171]:
+                - generic [ref=f4e172]:
+                  - button "today" [disabled] [ref=f4e173]
+                  - generic [ref=f4e174]:
+                    - button "Previous month" [ref=f4e175] [cursor=pointer]:
+                      - img [ref=f4e176]: 
+                    - button "Next month" [ref=f4e177] [cursor=pointer]:
+                      - img [ref=f4e178]: 
+                - heading "November 2026" [level=2] [ref=f4e180]
+                - generic [ref=f4e182]:
+                  - button "Month" [pressed] [ref=f4e183] [cursor=pointer]
+                  - button "Week" [ref=f4e184] [cursor=pointer]
+                  - button "Day" [ref=f4e185] [cursor=pointer]
+                  - button "Agenda" [ref=f4e186] [cursor=pointer]
+              - generic "November 2026" [ref=f4e187]:
+                - grid [ref=f4e189]:
+                  - rowgroup [ref=f4e190]:
+                    - row [ref=f4e194]:
+                      - columnheader "Sunday" [ref=f4e195]:
+                        - generic "Sunday" [ref=f4e197]: Sun
+                      - columnheader "Monday" [ref=f4e198]:
+                        - generic "Monday" [ref=f4e200]: Mon
+                      - columnheader "Tuesday" [ref=f4e201]:
+                        - generic "Tuesday" [ref=f4e203]: Tue
+                      - columnheader "Wednesday" [ref=f4e204]:
+                        - generic "Wednesday" [ref=f4e206]: Wed
+                      - columnheader "Thursday" [ref=f4e207]:
+                        - generic "Thursday" [ref=f4e209]: Thu
+                      - columnheader "Friday" [ref=f4e210]:
+                        - generic "Friday" [ref=f4e212]: Fri
+                      - columnheader "Saturday" [ref=f4e213]:
+                        - generic "Saturday" [ref=f4e215]: Sat
+                  - rowgroup [ref=f4e216]:
+                    - generic [ref=f4e219]:
+                      - row [ref=f4e221]:
+                        - gridcell "November 1, 2026" [ref=f4e222]:
+                          - generic [ref=f4e223]:
+                            - generic "November 1, 2026" [ref=f4e225]: "1"
+                            - generic [ref=f4e226]: Occupied
+                        - gridcell "November 2, 2026" [ref=f4e232]:
+                          - generic "November 2, 2026" [ref=f4e235]: "2"
+                        - gridcell "November 3, 2026" [ref=f4e237]:
+                          - generic "November 3, 2026" [ref=f4e240]: "3"
+                        - gridcell "November 4, 2026" [ref=f4e242]:
+                          - generic "November 4, 2026" [ref=f4e245]: "4"
+                        - gridcell "November 5, 2026" [ref=f4e247]:
+                          - generic "November 5, 2026" [ref=f4e250]: "5"
+                        - gridcell "November 6, 2026" [ref=f4e252]:
+                          - generic "November 6, 2026" [ref=f4e255]: "6"
+                        - gridcell "November 7, 2026" [ref=f4e257]:
+                          - generic "November 7, 2026" [ref=f4e260]: "7"
+                      - row [ref=f4e262]:
+                        - gridcell "November 8, 2026" [ref=f4e263]:
+                          - generic "November 8, 2026" [ref=f4e266]: "8"
+                        - gridcell "November 9, 2026" [ref=f4e268]:
+                          - generic "November 9, 2026" [ref=f4e271]: "9"
+                        - gridcell "November 10, 2026" [ref=f4e273]:
+                          - generic [ref=f4e274]:
+                            - generic "November 10, 2026" [ref=f4e276]: "10"
+                            - generic [ref=f4e277]: Occupied
+                        - gridcell "November 11, 2026" [ref=f4e283]:
+                          - generic "November 11, 2026" [ref=f4e286]: "11"
+                        - gridcell "November 12, 2026" [ref=f4e288]:
+                          - generic "November 12, 2026" [ref=f4e291]: "12"
+                        - gridcell "November 13, 2026" [ref=f4e293]:
+                          - generic "November 13, 2026" [ref=f4e296]: "13"
+                        - gridcell "November 14, 2026" [ref=f4e298]:
+                          - generic "November 14, 2026" [ref=f4e301]: "14"
+                      - row [ref=f4e303]:
+                        - gridcell "November 15, 2026" [ref=f4e304]:
+                          - generic [ref=f4e305]:
+                            - generic "November 15, 2026" [ref=f4e307]: "15"
+                            - generic [ref=f4e308]: Occupied
+                        - gridcell "November 16, 2026" [ref=f4e314]:
+                          - generic "November 16, 2026" [ref=f4e317]: "16"
+                        - gridcell "November 17, 2026" [ref=f4e319]:
+                          - generic "November 17, 2026" [ref=f4e322]: "17"
+                        - gridcell "November 18, 2026" [ref=f4e324]:
+                          - generic "November 18, 2026" [ref=f4e327]: "18"
+                        - gridcell "November 19, 2026" [ref=f4e329]:
+                          - generic "November 19, 2026" [ref=f4e332]: "19"
+                        - gridcell "November 20, 2026" [ref=f4e334]:
+                          - generic "November 20, 2026" [ref=f4e337]: "20"
+                        - gridcell "November 21, 2026" [ref=f4e339]:
+                          - generic "November 21, 2026" [ref=f4e342]: "21"
+                      - row [ref=f4e344]:
+                        - gridcell "November 22, 2026" [ref=f4e345]:
+                          - generic "November 22, 2026" [ref=f4e348]: "22"
+                        - gridcell "November 23, 2026" [ref=f4e350]:
+                          - generic "November 23, 2026" [ref=f4e353]: "23"
+                        - gridcell "November 24, 2026" [ref=f4e355]:
+                          - generic "November 24, 2026" [ref=f4e358]: "24"
+                        - gridcell "November 25, 2026" [ref=f4e360]:
+                          - generic "November 25, 2026" [ref=f4e363]: "25"
+                        - gridcell "November 26, 2026" [ref=f4e365]:
+                          - generic "November 26, 2026" [ref=f4e368]: "26"
+                        - gridcell "November 27, 2026" [ref=f4e370]:
+                          - generic "November 27, 2026" [ref=f4e373]: "27"
+                        - gridcell "November 28, 2026" [ref=f4e375]:
+                          - generic "November 28, 2026" [ref=f4e378]: "28"
+                      - row [ref=f4e380]:
+                        - gridcell "November 29, 2026" [ref=f4e381]:
+                          - generic "November 29, 2026" [ref=f4e384]: "29"
+                        - gridcell "November 30, 2026" [ref=f4e386]:
+                          - generic [ref=f4e387]:
+                            - generic "November 30, 2026" [ref=f4e389]: "30"
+                            - generic [ref=f4e390]: Occupied
+                        - gridcell "December 1, 2026" [ref=f4e396]:
+                          - generic [ref=f4e397]:
+                            - generic "December 1, 2026" [ref=f4e399]: "1"
+                            - generic [ref=f4e400]: Guide Ch (Guide)
+                        - gridcell "December 2, 2026" [ref=f4e406]:
+                          - generic "December 2, 2026" [ref=f4e409]: "2"
+                        - gridcell "December 3, 2026" [ref=f4e411]:
+                          - generic "December 3, 2026" [ref=f4e414]: "3"
+                        - gridcell "December 4, 2026" [ref=f4e416]:
+                          - generic "December 4, 2026" [ref=f4e419]: "4"
+                        - gridcell "December 5, 2026" [ref=f4e421]:
+                          - generic "December 5, 2026" [ref=f4e424]: "5"
+                      - row [ref=f4e426]:
+                        - gridcell "December 6, 2026" [ref=f4e427]:
+                          - generic "December 6, 2026" [ref=f4e430]: "6"
+                        - gridcell "December 7, 2026" [ref=f4e432]:
+                          - generic "December 7, 2026" [ref=f4e435]: "7"
+                        - gridcell "December 8, 2026" [ref=f4e437]:
+                          - generic "December 8, 2026" [ref=f4e440]: "8"
+                        - gridcell "December 9, 2026" [ref=f4e442]:
+                          - generic "December 9, 2026" [ref=f4e445]: "9"
+                        - gridcell "December 10, 2026" [ref=f4e447]:
+                          - generic "December 10, 2026" [ref=f4e450]: "10"
+                        - gridcell "December 11, 2026" [ref=f4e452]:
+                          - generic "December 11, 2026" [ref=f4e455]: "11"
+                        - gridcell "December 12, 2026" [ref=f4e457]:
+                          - generic "December 12, 2026" [ref=f4e460]: "12"
+            - generic [ref=f4e462]:
+              - generic [ref=f4e463]: Booking type
+              - generic [ref=f4e464]:
+                - generic [ref=f4e465]: Hunting
+                - generic [ref=f4e468]: Recreational
+                - generic [ref=f4e471]: Maintenance

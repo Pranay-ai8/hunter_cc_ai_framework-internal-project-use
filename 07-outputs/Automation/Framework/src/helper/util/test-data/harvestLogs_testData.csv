@@ -1,0 +1,69 @@
+Key|Env|username|password|ranch|hunter|animal|sex|age|category|allocatedTags|searchQuery|fromDate|toDate|message
+TC_HL_001|STG|superadmin@buckhouse.com|Admin@123!|||||||||||
+TC_HL_002|STG|superadmin@buckhouse.com|Admin@123!|||||||||||
+TC_HL_003|STG|superadmin@buckhouse.com|Admin@123!|||||||||||
+TC_HL_004|STG|superadmin@buckhouse.com|Admin@123!|Quattro Diamante Ranch||||||||||
+TC_HL_005|STG|superadmin@buckhouse.com|Admin@123!|||||||||08/01/2026|08/31/2026|
+TC_HL_006|STG|superadmin@buckhouse.com|Admin@123!|||||||||08/20/2026|08/10/2026|
+TC_HL_007|STG|superadmin@buckhouse.com|Admin@123!||||||||Whitetail|||
+TC_HL_008|STG|superadmin@buckhouse.com|Admin@123!||||||||' OR '1'='1|||
+TC_HL_009|STG|superadmin@buckhouse.com|Admin@123!|||||||||||
+TC_HL_010|STG|superadmin@buckhouse.com|Admin@123!||||||||xyz999|||
+TC_HL_011|STG|superadmin@buckhouse.com|Admin@123!||||||Deer|||||
+TC_HL_012|STG|superadmin@buckhouse.com|Admin@123!|||||||||||
+TC_HL_013|STG|superadmin@buckhouse.com|Admin@123!|Quattro Diamante Ranch|||Female||Turkey|13||||
+TC_HL_014|STG|superadmin@buckhouse.com|Admin@123!|||||||||||
+TC_HL_015|STG|superadmin@buckhouse.com|Admin@123!|||||||0,-5,1||||
+TC_HL_016|STG|superadmin@buckhouse.com|Admin@123!|||||||||||
+TC_HL_017|STG|superadmin@buckhouse.com|Admin@123!|Quattro Diamante Ranch|||Male||Deer|||||
+TC_HL_018|STG|superadmin@buckhouse.com|Admin@123!|||||||20||||
+TC_HL_019|STG|superadmin@buckhouse.com|Admin@123!|Quattro Diamante Ranch||||||||||
+TC_HL_020|STG|superadmin@buckhouse.com|Admin@123!|||||||||||
+TC_HL_021|STG|superadmin@buckhouse.com|Admin@123!|||||||||||
+TC_HL_022|STG|superadmin@buckhouse.com|Admin@123!|||||||||||
+TC_HL_023|STG|superadmin@buckhouse.com|Admin@123!
+TC_HL_024|STG|superadmin@buckhouse.com|Admin@123!|||||||||||
+TC_HL_025|STG|superadmin@buckhouse.com|Admin@123!||Test Hunter|||||||||
+TC_HL_026|STG|superadmin@buckhouse.com|Admin@123!|||||-5,0,8||||||
+TC_HL_027|STG|superadmin@buckhouse.com|Admin@123!|||||||||||
+TC_HL_028|STG|superadmin@buckhouse.com|Admin@123!|Quattro Diamante Ranch|Test Hunter|deer|Male|||||||
+TC_HL_029|STG|superadmin@buckhouse.com|Admin@123!|||||||||||
+TC_HL_030|STG|superadmin@buckhouse.com|Admin@123!|||||||||||
+GTC_HL_001|STG|superadmin@buckhouse.com|Admin@123!|||||||||||
+GTC_HL_002|STG|superadmin@buckhouse.com|Admin@123!|||||||||||
+GTC_HL_003|STG|superadmin@buckhouse.com|Admin@123!|||||||||||
+GTC_HL_009|STG|superadmin@buckhouse.com|Admin@123!|||||||||||
+GTC_HL_010|STG|superadmin@buckhouse.com|Admin@123!|||||||||||
+GTC_HL_011|STG|superadmin@buckhouse.com|Admin@123!|||||||||||
+GTC_HL_014|STG|superadmin@buckhouse.com|Admin@123!|||||||||||
+GTC_HL_015|STG|superadmin@buckhouse.com|Admin@123!|||||||||||
+GTC_HL_016|STG|superadmin@buckhouse.com|Admin@123!|||||||||||
+GTC_HL_017|STG|superadmin@buckhouse.com|Admin@123!|||||||||||
+GTC_HL_018|STG|superadmin@buckhouse.com|Admin@123!|||||||||||
+GTC_HL_019|STG|superadmin@buckhouse.com|Admin@123!|||||||||||
+
+
+
+
+
+
+TC_HL_GTC_002|STG|superadmin@buckhouse.com|AdminUser123!|||||-5,0,1,999999||||||
+TC_HL_GTC_003|STG|superadmin@buckhouse.com|AdminUser123!|||||||||||harvest_photo.jpg
+TC_HL_GTC_004|STG|superadmin@buckhouse.com|AdminUser123!|||||||||||script.exe,archive.zip
+TC_HL_GTC_FU_003|STG|superadmin@buckhouse.com|AdminUser123!|||||||||||10.0MB.jpg,10.1MB.jpg
+TC_HL_GTC_005|STG|superadmin@buckhouse.com|AdminUser123!|||||||||||
+TC_HL_GTC_006|STG|superadmin@buckhouse.com|AdminUser123!|||||||||||
+TC_HL_GTC_NET_001|STG|superadmin@buckhouse.com|AdminUser123!|||||||||||
+TC_HL_GTC_007|STG|superadmin@buckhouse.com|AdminUser123!|||||||||||
+TC_HL_GTC_008|STG|superadmin@buckhouse.com|AdminUser123!|||||||||||
+TC_HL_GTC_009|STG|superadmin@buckhouse.com|AdminUser123!|||||||||||
+TC_HL_GTC_010|STG|superadmin@buckhouse.com|AdminUser123!|||||||||||
+TC_HL_GTC_011|STG|superadmin@buckhouse.com|AdminUser123!|||||||||||
+TC_HL_GTC_012|STG|superadmin@buckhouse.com|AdminUser123!|||||||||||
+TC_HL_GTC_013|STG|guest@buckhouse.com|Guest123!|||||||||||
+TC_HL_GTC_014|STG|superadmin@buckhouse.com|AdminUser123!|||||||||||
+TC_HL_GTC_015|STG|superadmin@buckhouse.com|AdminUser123!|Quattro Diamante Ranch|Test Hunter|deer|Male|8||||||
+TC_HL_GTC_016|STG|superadmin@buckhouse.com|AdminUser123!|||||||||||
+TC_HL_GTC_017|STG|superadmin@buckhouse.com|AdminUser123!|||||||||||
+TC_HL_GTC_018|STG|superadmin@buckhouse.com|AdminUser123!|||||||||||
+TC_HL_GTC_019|STG|superadmin@buckhouse.com|AdminUser123!|||||||1||||

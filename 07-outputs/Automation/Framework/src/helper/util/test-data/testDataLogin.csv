@@ -1,0 +1,54 @@
+Key | Env | username | password
+TC001 | STG | superadmin@buckhouse.com | Admin@123!
+TC002 | STG | superadmin@buckhouse.com | Admin@123!
+TC003 | STG | unregistered@example.com | ValidPassword123!
+TC004 | STG | valid@example.com | WrongPassword!
+TC005 | STG |  | 
+TC006 | STG |  | ValidPassword123!
+TC007 | STG | valid@example.com | 
+TC008a | STG | test.name@domain.com | Admin@123!
+TC008b | STG | test+tag@domain.co.uk | Admin@123!
+TC009a | STG | test@ | Admin@123!
+TC009b | STG | @domain.com | Admin@123!
+TC009c | STG | test.com | Admin@123!
+TC010 | STG | superadmin@buckhouse.com | Admin@123!
+TC011 | STG | superadmin@buckhouse.com | Admin@123!
+TC012 | STG |  | AnyText123
+TC013 | STG |  | SecretPassword
+TC014 | STG |  | SecretPassword
+TC015 | STG | superadmin@buckhouse.com | Admin@123!
+TC016 | STG | superadmin@buckhouse.com | Admin@123!
+TC017 | STG | superadmin@buckhouse.com | Admin@123!
+TC018 | STG |  | 
+TC019 | STG |  | 
+TC020 | STG |  | 
+TC021 | STG |  | 
+TC022 | STG | superadmin@buckhouse.com | 
+TC023 | STG |  | Admin@123!
+TC026 | STG |  | 
+TC027 | STG |  | 
+TC032 | STG | superadmin@buckhouse.com | Admin@123!
+TC033 | STG | superadmin@buckhouse.com | WrongPassword
+TC034 | STG | superadmin@buckhouse.com | Admin@123!
+TC035 | STG |  | 
+TC036 | STG |  | 
+TC037 | STG |  | 
+TC038 | STG |  | 
+TC039 | STG | superadmin@buckhouse.com | Admin@123!
+TC040 | STG | deactivated@example.com | ValidPassword123!
+TC041 | STG |  | 
+TC042 | STG |  | 
+TC043 | STG | test@ | 
+TC044 | STG | superadmin@buckhouse.com | 
+TC045 | STG | unregistered@example.com | 
+TC046 | STG | superadmin@buckhouse.com | 
+TC047 | STG | superadmin@buckhouse.com | 
+TC048 | STG | superadmin@buckhouse.com | 
+TC049 | STG |  | 
+TC050 | STG |  | 
+TC051 | STG | superadmin@buckhouse.com | admin@123!
+TC052 | STG | superadmin@buckhouse.com | Admin@123!
+TC053 | STG | superadmin@buckhouse.com | 
+TC056 | STG | superadmin@buckhouse.com | Admin@123!
+TC057 | STG |  | 
+TC058 | STG | superadmin@buckhouse.com | Admin@123!

@@ -1,0 +1,174 @@
+- generic [ref=f4e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - generic [ref=f4e14]:
+    - banner [ref=f4e15]:
+      - generic [ref=f4e16]:
+        - generic [ref=f4e22]:
+          - heading "RanchOps Pro" [level=1] [ref=f4e23]
+          - paragraph [ref=f4e24]: Super Admin Portal
+        - button [ref=f4e26]
+    - generic [ref=f4e27]:
+      - complementary [ref=f4e28]:
+        - navigation [ref=f4e30]:
+          - link "Dashboard" [ref=f4e32] [cursor=pointer]:
+            - /url: /dashboard
+          - generic [ref=f4e38]:
+            - heading "Ranch Management" [level=4] [ref=f4e39]
+            - link "Ranches" [active] [ref=f4e40] [cursor=pointer]:
+              - /url: /ranches
+            - link "Ranch Admins" [ref=f4e45] [cursor=pointer]:
+              - /url: /admin-users
+          - generic [ref=f4e51]:
+            - heading "Guest Operations" [level=4] [ref=f4e52]
+            - link "Bookings" [ref=f4e53] [cursor=pointer]:
+              - /url: /bookings
+            - link "Guests" [ref=f4e56] [cursor=pointer]:
+              - /url: /guests
+            - link "Staff & Guides" [ref=f4e62] [cursor=pointer]:
+              - /url: /staff
+          - generic [ref=f4e75]:
+            - heading "Record Keeping" [level=4] [ref=f4e76]
+            - link "Harvest Logs" [ref=f4e77] [cursor=pointer]:
+              - /url: /harvest
+            - link "Invoices" [ref=f4e81] [cursor=pointer]:
+              - /url: /invoices
+      - main [ref=f4e85]:
+        - generic [ref=f4e1382]:
+          - generic [ref=f4e1383]:
+            - generic [ref=f4e1384]:
+              - heading "Ranch Management" [level=1] [ref=f4e1385]
+              - paragraph [ref=f4e1386]: Manage all ranches in the system
+            - button "Create new ranch" [ref=f4e1387]: Create New Ranch
+          - textbox "Search ranches..." [ref=f4e1396]
+          - generic [ref=f4e1397]:
+            - heading "All Ranches" [level=2] [ref=f4e1398]
+            - generic [ref=f4e1399]:
+              - button "Switch to card view" [ref=f4e1400]
+              - button "Switch to list view" [ref=f4e1401]
+          - table [ref=f4e1405]:
+            - rowgroup [ref=f4e1406]:
+              - row [ref=f4e1407]:
+                - columnheader "Ranch Name" [ref=f4e1408]
+                - columnheader "Location" [ref=f4e1409]
+                - columnheader "Admin" [ref=f4e1410]
+                - columnheader "Rooms" [ref=f4e1411]
+                - columnheader "Capacity" [ref=f4e1412]
+                - columnheader "Created" [ref=f4e1413]
+                - columnheader "Actions" [ref=f4e1414]
+            - rowgroup [ref=f4e1415]:
+              - row [ref=f4e1416] [cursor=pointer]:
+                - cell "Highland Creek Ranch" [ref=f4e1417]
+                - cell "9271 Highland Creek Road, Thermopolis, WY 82443" [ref=f4e1418]
+                - cell [ref=f4e1419]:
+                  - paragraph [ref=f4e1420]: No admin
+                - cell "1" [ref=f4e1421]
+                - cell "2 beds" [ref=f4e1422]
+                - cell "09/08/2026" [ref=f4e1423]
+                - cell [ref=f4e1424]:
+                  - button "Edit" [ref=f4e1425]
+              - row [ref=f4e1426] [cursor=pointer]:
+                - cell "Kannur Ranch" [ref=f4e1427]
+                - cell "krishnappa garden tavarakare,bangalore" [ref=f4e1428]
+                - cell [ref=f4e1429]:
+                  - paragraph [ref=f4e1430]: No admin
+                - cell "1" [ref=f4e1431]
+                - cell "3 beds" [ref=f4e1432]
+                - cell "07/09/2026" [ref=f4e1433]
+                - cell [ref=f4e1434]:
+                  - button "Edit" [ref=f4e1435]
+              - row [ref=f4e1436] [cursor=pointer]:
+                - cell "koramnaga ranch" [ref=f4e1437]
+                - cell "Bangalore" [ref=f4e1438]
+                - cell [ref=f4e1439]:
+                  - paragraph [ref=f4e1440]: prasanna padi
+                - cell "3" [ref=f4e1441]
+                - cell "14 beds" [ref=f4e1442]
+                - cell "07/09/2026" [ref=f4e1443]
+                - cell [ref=f4e1444]:
+                  - button "Edit" [ref=f4e1445]
+              - row [ref=f4e1446] [cursor=pointer]:
+                - cell "Meadow Ridge Ranch" [ref=f4e1447]
+                - cell "629 Meadow Ridge Lane, Cody, WY 82414" [ref=f4e1448]
+                - cell [ref=f4e1449]:
+                  - paragraph [ref=f4e1450]: No admin
+                - cell "1" [ref=f4e1451]
+                - cell "2 beds" [ref=f4e1452]
+                - cell "09/08/2026" [ref=f4e1453]
+                - cell [ref=f4e1454]:
+                  - button "Edit" [ref=f4e1455]
+              - row [ref=f4e1456] [cursor=pointer]:
+                - cell "Moonlight Valley Ranch" [ref=f4e1457]
+                - cell "6813 Moonlight Road, Sheridan, WY 82801" [ref=f4e1458]
+                - cell [ref=f4e1459]:
+                  - paragraph [ref=f4e1460]: No admin
+                - cell "1" [ref=f4e1461]
+                - cell "2 beds" [ref=f4e1462]
+                - cell "09/08/2026" [ref=f4e1463]
+                - cell [ref=f4e1464]:
+                  - button "Edit" [ref=f4e1465]
+              - row [ref=f4e1466] [cursor=pointer]:
+                - cell "Pine Creek Ranch" [ref=f4e1467]
+                - cell "1847 Pine Creek Road, Laramie, WY 82070" [ref=f4e1468]
+                - cell [ref=f4e1469]:
+                  - paragraph [ref=f4e1470]: No admin
+                - cell "2" [ref=f4e1471]
+                - cell "7 beds" [ref=f4e1472]
+                - cell "07/08/2026" [ref=f4e1473]
+                - cell [ref=f4e1474]:
+                  - button "Edit" [ref=f4e1475]
+              - row [ref=f4e1476] [cursor=pointer]:
+                - cell "Powderhorn Ranch" [ref=f4e1477]
+                - cell "123 King Rd" [ref=f4e1478]
+                - cell [ref=f4e1479]:
+                  - paragraph [ref=f4e1480]: No admin
+                - cell "1" [ref=f4e1481]
+                - cell "2 beds" [ref=f4e1482]
+                - cell "09/08/2026" [ref=f4e1483]
+                - cell [ref=f4e1484]:
+                  - button "Edit" [ref=f4e1485]
+              - row [ref=f4e1486] [cursor=pointer]:
+                - cell "Powderhorn Ranch 1788823670256" [ref=f4e1487]
+                - cell "55 Powderhorn Road, Douglas, WY" [ref=f4e1488]
+                - cell [ref=f4e1489]:
+                  - paragraph [ref=f4e1490]: No admin
+                - cell "1" [ref=f4e1491]
+                - cell "2 beds" [ref=f4e1492]
+                - cell "09/08/2026" [ref=f4e1493]
+                - cell [ref=f4e1494]:
+                  - button "Edit" [ref=f4e1495]
+              - row [ref=f4e1496] [cursor=pointer]:
+                - cell "QA-AUTO-BASE Ranch A" [ref=f4e1497]
+                - cell "100 QA-AUTO Rd, Austin, TX 78701" [ref=f4e1498]
+                - cell [ref=f4e1499]:
+                  - paragraph [ref=f4e1500]: QA-AUTO-BASE RA Edit, QA-AUTO-BASE RA One, QA-AUTO-mvt6e2g802 Ranch Admin, QA-AUTO-mvt6e2g80k Ranch Admin
+                - cell "5" [ref=f4e1501]
+                - cell "19 beds" [ref=f4e1502]
+                - cell "10/28/2026" [ref=f4e1503]
+                - cell [ref=f4e1504]:
+                  - button "Edit" [ref=f4e1505]
+              - row [ref=f4e1506] [cursor=pointer]:
+                - cell "QA-AUTO-BASE Ranch B" [ref=f4e1507]
+                - cell "100 QA-AUTO Rd, Austin, TX 78701" [ref=f4e1508]
+                - cell [ref=f4e1509]:
+                  - paragraph [ref=f4e1510]: No admin
+                - cell "5" [ref=f4e1511]
+                - cell "19 beds" [ref=f4e1512]
+                - cell "10/28/2026" [ref=f4e1513]
+                - cell [ref=f4e1514]:
+                  - button "Edit" [ref=f4e1515]
+          - generic [ref=f4e1518]:
+            - generic [ref=f4e1519]:
+              - generic [ref=f4e1520]: Showing 1 to 10 of 96 results
+              - generic [ref=f4e1521]:
+                - generic [ref=f4e1522]: per page
+                - combobox [ref=f4e1523]:
+                  - generic: "10"
+            - generic [ref=f4e1526]:
+              - button [disabled]
+              - button "1" [ref=f4e1528]
+              - button "2" [ref=f4e1530]
+              - button "3" [ref=f4e1532]
+              - button "10" [ref=f4e1540]
+              - button [ref=f4e1541]

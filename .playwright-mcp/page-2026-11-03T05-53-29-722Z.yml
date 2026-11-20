@@ -1,0 +1,131 @@
+- generic [ref=f4e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - generic [ref=f4e14]:
+    - banner [ref=f4e15]:
+      - generic [ref=f4e16]:
+        - generic [ref=f4e22]:
+          - heading "RanchOps Pro" [level=1] [ref=f4e23]
+          - paragraph [ref=f4e24]: Super Admin Portal
+        - button [ref=f4e26]
+    - generic [ref=f4e27]:
+      - complementary [ref=f4e28]:
+        - navigation [ref=f4e30]:
+          - link "Dashboard" [ref=f4e32] [cursor=pointer]:
+            - /url: /dashboard
+          - generic [ref=f4e38]:
+            - heading "Ranch Management" [level=4] [ref=f4e39]
+            - link "Ranches" [ref=f4e40] [cursor=pointer]:
+              - /url: /ranches
+            - link "Ranch Admins" [ref=f4e45] [cursor=pointer]:
+              - /url: /admin-users
+          - generic [ref=f4e51]:
+            - heading "Guest Operations" [level=4] [ref=f4e52]
+            - link "Bookings" [ref=f4e53] [cursor=pointer]:
+              - /url: /bookings
+            - link "Guests" [ref=f4e56] [cursor=pointer]:
+              - /url: /guests
+            - link "Staff & Guides" [ref=f4e62] [cursor=pointer]:
+              - /url: /staff
+          - generic [ref=f4e75]:
+            - heading "Record Keeping" [level=4] [ref=f4e76]
+            - link "Harvest Logs" [ref=f4e77] [cursor=pointer]:
+              - /url: /harvest
+            - link "Invoices" [active] [ref=f4e81] [cursor=pointer]:
+              - /url: /invoices
+      - main [ref=f4e85]:
+        - generic [ref=f4e86]:
+          - generic [ref=f4e2785]:
+            - generic [ref=f4e2786]:
+              - generic [ref=f4e2787]:
+                - heading "Invoice Management" [level=1] [ref=f4e2788]
+                - paragraph [ref=f4e2789]: View and manage booking invoices
+              - button "Generate new invoice" [ref=f4e2790]: Generate new Invoice
+            - textbox "Search by invoice number or customer name" [ref=f4e2798]:
+              - /placeholder: Search by invoice number or customer name...
+            - generic [ref=f4e2799]:
+              - heading "All Invoices" [level=2] [ref=f4e2800]
+              - generic [ref=f4e2801]:
+                - button "Switch to card view" [ref=f4e2802]
+                - button "Switch to list view" [ref=f4e2803]
+            - table [ref=f4e2807]:
+              - rowgroup [ref=f4e2808]:
+                - row [ref=f4e2809]:
+                  - columnheader "Customer" [ref=f4e2810]
+                  - columnheader "Invoice" [ref=f4e2811]
+                  - columnheader "Booking" [ref=f4e2812]
+                  - columnheader "Date" [ref=f4e2813]
+                  - columnheader "Lodging" [ref=f4e2814]
+                  - columnheader "Harvest" [ref=f4e2815]
+                  - columnheader "Add-ons" [ref=f4e2816]
+                  - columnheader "Tax" [ref=f4e2817]
+                  - columnheader "Total" [ref=f4e2818]
+                  - columnheader "Actions" [ref=f4e2819]
+              - rowgroup [ref=f4e2820]:
+                - row [ref=f4e2821]:
+                  - cell "testharvest" [ref=f4e2822]
+                  - cell "INV-2026-1005" [ref=f4e2823]
+                  - cell "BK-2026-1021" [ref=f4e2824]
+                  - cell "Oct 27, 2026" [ref=f4e2825]
+                  - cell "$300.00" [ref=f4e2826]
+                  - cell "-" [ref=f4e2827]
+                  - cell "$50.00" [ref=f4e2828]
+                  - cell "$29.75" [ref=f4e2829]
+                  - cell "$379.75" [ref=f4e2830]
+                  - cell [ref=f4e2831]:
+                    - button "More options" [ref=f4e2832]
+                - row [ref=f4e2833]:
+                  - cell "José-María O'Connor" [ref=f4e2834]
+                  - cell "INV-2026-1007" [ref=f4e2835]
+                  - cell "BK-2026-1009" [ref=f4e2836]
+                  - cell "Sep 22, 2026" [ref=f4e2837]
+                  - cell "$1200.00" [ref=f4e2838]
+                  - cell "-" [ref=f4e2839]
+                  - cell "-" [ref=f4e2840]
+                  - cell "$102.00" [ref=f4e2841]
+                  - cell "$1,302.00" [ref=f4e2842]
+                  - cell [ref=f4e2843]:
+                    - button "More options" [ref=f4e2844]
+                - row [ref=f4e2845]:
+                  - cell "erheity" [ref=f4e2846]
+                  - cell "INV-2026-1026" [ref=f4e2847]
+                  - cell "BK-2026-1006" [ref=f4e2848]
+                  - cell "Sep 22, 2026" [ref=f4e2849]
+                  - cell "$300.00" [ref=f4e2850]
+                  - cell "-" [ref=f4e2851]
+                  - cell "-" [ref=f4e2852]
+                  - cell "$25.50" [ref=f4e2853]
+                  - cell "$325.50" [ref=f4e2854]
+                  - cell [ref=f4e2855]:
+                    - button "More options" [ref=f4e2856]
+                - row [ref=f4e2857]:
+                  - cell "test0000" [ref=f4e2858]
+                  - cell "INV-2026-1003" [ref=f4e2859]
+                  - cell "BK-2026-1015" [ref=f4e2860]
+                  - cell "Sep 8, 2026" [ref=f4e2861]
+                  - cell "$360.00" [ref=f4e2862]
+                  - cell "-" [ref=f4e2863]
+                  - cell "-" [ref=f4e2864]
+                  - cell "$30.60" [ref=f4e2865]
+                  - cell "$390.60" [ref=f4e2866]
+                  - cell [ref=f4e2867]:
+                    - button "More options" [ref=f4e2868]
+                - row [ref=f4e2869]:
+                  - cell "test9" [ref=f4e2870]
+                  - cell "INV-2026-1002" [ref=f4e2871]
+                  - cell "BK-2026-1002" [ref=f4e2872]
+                  - cell "Sep 8, 2026" [ref=f4e2873]
+                  - cell "$150.00" [ref=f4e2874]
+                  - cell "$6800.00" [ref=f4e2875]
+                  - cell "-" [ref=f4e2876]
+                  - cell "$590.75" [ref=f4e2877]
+                  - cell "$7,540.75" [ref=f4e2878]
+                  - cell [ref=f4e2879]:
+                    - button "More options" [ref=f4e2880]
+          - generic [ref=f4e2884]:
+            - generic [ref=f4e2885]: Showing 1 to 5 of 5 results
+            - generic [ref=f4e2886]:
+              - generic [ref=f4e2887]: per page
+              - combobox [ref=f4e2888]:
+                - generic: "10"

@@ -1,0 +1,204 @@
+- generic:
+  - generic:
+    - list
+    - region "Notifications alt+T"
+    - generic [aria-hidden]:
+      - banner:
+        - generic:
+          - generic:
+            - generic:
+              - heading [level=1]: RanchOps Pro
+              - paragraph: Super Admin Portal
+          - generic:
+            - button
+      - generic:
+        - complementary:
+          - generic:
+            - navigation:
+              - generic:
+                - link:
+                  - /url: /dashboard
+                  - text: Dashboard
+              - generic:
+                - heading [level=4]: Ranch Management
+                - link:
+                  - /url: /ranches
+                  - text: Ranches
+                - link:
+                  - /url: /admin-users
+                  - text: Ranch Admins
+              - generic:
+                - heading [level=4]: Guest Operations
+                - link:
+                  - /url: /bookings
+                  - text: Bookings
+                - link:
+                  - /url: /guests
+                  - text: Guests
+                - link:
+                  - /url: /staff
+                  - text: Staff & Guides
+              - generic:
+                - heading [level=4]: Record Keeping
+                - link:
+                  - /url: /harvest
+                  - text: Harvest Logs
+                - link:
+                  - /url: /invoices
+                  - text: Invoices
+        - main:
+          - generic:
+            - generic:
+              - generic:
+                - button: Back to Bookings
+              - generic:
+                - heading [level=1]: Create New Booking
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: "1"
+                      - generic:
+                        - paragraph: Ranch & Dates
+                    - generic:
+                      - generic: "2"
+                      - generic:
+                        - paragraph: Accommodation
+                    - generic:
+                      - generic: "3"
+                      - generic:
+                        - paragraph: Party Details
+                    - generic:
+                      - generic: "4"
+                      - generic:
+                        - paragraph: Assignment
+                    - generic:
+                      - generic: "5"
+                      - generic:
+                        - paragraph: Review
+              - generic:
+                - generic:
+                  - generic:
+                    - heading [level=3]: Select Ranch & Dates
+                    - paragraph: Choose ranch and dates
+                  - generic:
+                    - generic:
+                      - generic:
+                        - text: Booking Type
+                        - generic: "*"
+                      - generic:
+                        - button:
+                          - generic: Hunting
+                          - generic: Guided hunting trip with licensed hunters
+                        - button:
+                          - generic: Recreational
+                          - generic: Non-hunting outdoor experience
+                        - button:
+                          - generic: Maintenance
+                          - generic: Property maintenance or staff work
+                    - generic:
+                      - generic:
+                        - text: Select Ranch
+                        - generic: "*"
+                      - combobox [expanded]:
+                        - generic: Choose ranch...
+                      - combobox [aria-hidden]
+                - generic:
+                  - button: Next
+  - listbox [ref=f2e148]:
+    - option "Highland Creek Ranch" [active] [ref=f2e149]
+    - option "Kannur Ranch" [ref=f2e158]
+    - option "koramnaga ranch" [ref=f2e167]
+    - option "Meadow Ridge Ranch" [ref=f2e176]
+    - option "Moonlight Valley Ranch" [ref=f2e185]
+    - option "Pine Creek Ranch" [ref=f2e194]
+    - option "Powderhorn Ranch" [ref=f2e203]
+    - option "Powderhorn Ranch 1788823670256" [ref=f2e212]
+    - option "QA-AUTO-BASE Ranch A" [ref=f2e221]
+    - option "QA-AUTO-BASE Ranch B" [ref=f2e230]
+    - option "QA-AUTO-BASE Ranch C" [ref=f2e239]
+    - option "QA Automation Seed Ranch" [ref=f2e248]
+    - option "QA-AUTO-mvrl1wu4hk Ranch Dash" [ref=f2e257]
+    - option "QA-AUTO-mvrl2u0qdj Edit Ranch" [ref=f2e266]
+    - option "QA-AUTO-mvrla5i6n1 Edit Ranch" [ref=f2e275]
+    - option "QA-AUTO-mvrlaknc4k Edit Ranch" [ref=f2e284]
+    - option "QA-AUTO-mvrlffxwro Edit Ranch" [ref=f2e293]
+    - option "QA-AUTO-mvrlgmr0g3 Ranch Dash" [ref=f2e302]
+    - option "QA-AUTO-mvrljxzkon Edit Ranch" [ref=f2e311]
+    - option "QA-AUTO-mvrnlsmd4u Edit Ranch" [ref=f2e320]
+    - option "QA-AUTO-mvrnp05u3l Edit Ranch" [ref=f2e329]
+    - option "QA-AUTO-mvrnr70gi1 Edit Ranch" [ref=f2e338]
+    - option "QA-AUTO-mvrnrlb7ud Edit Ranch" [ref=f2e347]
+    - option "QA-AUTO-mvrnw7mk Ranch A" [ref=f2e356]
+    - option "QA-AUTO-mvrnz8tyh6 Edit Ranch" [ref=f2e365]
+    - option "QA-AUTO-mvrnznrw9v Edit Ranch v2" [ref=f2e374]
+    - option "QA-AUTO-mvro1qlt Ranch A" [ref=f2e383]
+    - option "QA-AUTO-mvro6h5b3v Edit Ranch" [ref=f2e392]
+    - option "QA-AUTO-mvro6v3dtk Edit Ranch v2" [ref=f2e401]
+    - option "QA-AUTO-mvro7yrt Ranch A" [ref=f2e410]
+    - option "QA-AUTO-mvro7yrt Ranch B" [ref=f2e419]
+    - option "QA-AUTO-mvroaqhv Ranch A" [ref=f2e428]
+    - option "QA-AUTO-mvroaqhv Ranch B" [ref=f2e437]
+    - option "QA-AUTO-mvroaqhv Ranch C" [ref=f2e446]
+    - option "QA-AUTO-mvrpbdhsnf Ranch Dash" [ref=f2e455]
+    - option "QA-AUTO-mvrpux40mb New Ranch" [ref=f2e464]
+    - option "QA-AUTO-mvrq4tedb3 Edit Ranch" [ref=f2e473]
+    - option "QA-AUTO-mvrq5fatqq Edit Ranch" [ref=f2e482]
+    - option "QA-AUTO-mvrq5vi9k0 Edit Ranch" [ref=f2e491]
+    - option "QA-AUTO-mvrq6bm6fp Edit Ranch" [ref=f2e500]
+    - option "QA-AUTO-mvrq7cd4st Edit Ranch" [ref=f2e509]
+    - option "QA-AUTO-mvruscw8 Ranch A" [ref=f2e518]
+    - option "QA-AUTO-mvruscw8 Ranch B" [ref=f2e527]
+    - option "QA-AUTO-mvruu79ixs Smoke Ranch" [ref=f2e536]
+    - option "QA-AUTO-mvrv1rv2y6 Edit Ranch" [ref=f2e545]
+    - option "QA-AUTO-mvrv260tpr Edit Ranch v2" [ref=f2e554]
+    - option "QA-AUTO-mvrvtwpm Ranch A" [ref=f2e563]
+    - option "QA-AUTO-mvrvu33w Ranch A" [ref=f2e572]
+    - option "QA-AUTO-mvrvwbbue4 Smoke Ranch" [ref=f2e581]
+    - option "QA-AUTO-mvrw223wvw Edit Ranch" [ref=f2e590]
+    - option "QA-AUTO-mvrw2tclwh Edit Ranch v2" [ref=f2e599]
+    - option "QA-AUTO-mvrw4a3v7e Edit Ranch" [ref=f2e608]
+    - option "QA-AUTO-mvrw53q7km Edit Ranch v2" [ref=f2e617]
+    - option "QA-AUTO-mvrx5smp0k Edit Ranch" [ref=f2e626]
+    - option "QA-AUTO-mvrx5smp0l Edit Ranch v2" [ref=f2e635]
+    - option "QA-AUTO-mvrxbyqf03 Smoke Ranch" [ref=f2e644]
+    - option "QA-AUTO-mvrxbyqf0k Edit Ranch" [ref=f2e653]
+    - option "QA-AUTO-mvrxbyqf0l Edit Ranch v2" [ref=f2e662]
+    - option "QA-AUTO-mvry92a703 Smoke Ranch" [ref=f2e671]
+    - option "QA-AUTO-mvry92a70k Edit Ranch" [ref=f2e680]
+    - option "QA-AUTO-mvry92a70l Edit Ranch v2" [ref=f2e689]
+    - option "QA-AUTO-mvt4x2xl03 Smoke Ranch" [ref=f2e698]
+    - option "QA-AUTO-mvt4x2xl0l Edit Ranch" [ref=f2e707]
+    - option "QA-AUTO-mvt4x2xl0m Edit Ranch v2" [ref=f2e716]
+    - option "QA-AUTO-mvt6e2g803 Smoke Ranch" [ref=f2e725]
+    - option "QA-AUTO-mvt6e2g80l Edit Ranch" [ref=f2e734]
+    - option "QA-AUTO-mvt6e2g80m Edit Ranch v2" [ref=f2e743]
+    - option "QA-AUTO-mvtfyswe03 Smoke Ranch" [ref=f2e752]
+    - option "QA-AUTO-mvtfyswe0l Edit Ranch" [ref=f2e761]
+    - option "QA-AUTO-mvtfyswe0m Edit Ranch v2" [ref=f2e770]
+    - option "QA-AUTO-mvukisu103 Smoke Ranch" [ref=f2e779]
+    - option "QA-AUTO-mvukisu10l Edit Ranch" [ref=f2e788]
+    - option "QA-AUTO-mvukisu10m Edit Ranch v2" [ref=f2e797]
+    - option "QA-AUTO-mvumgt050x Ranch Dash" [ref=f2e806]
+    - option "QA-AUTO-mvumgt051c New Ranch" [ref=f2e815]
+    - option "QA-AUTO-mvumgt051i Edit Ranch" [ref=f2e824]
+    - option "QA-AUTO-mvumgt051j Edit Ranch" [ref=f2e833]
+    - option "QA-AUTO-mvumgt051k Edit Ranch" [ref=f2e842]
+    - option "QA-AUTO-mvumgt051o Settings Ranch" [ref=f2e851]
+    - option "QA-AUTO-mvumgt051v Edit Ranch" [ref=f2e860]
+    - option "QA-AUTO-mvumgt051w Edit Ranch" [ref=f2e869]
+    - option "QA-AUTO-mvumgt051x One Room Ranch" [ref=f2e878]
+    - option "QA-AUTO-mvumgt0523 Edit Ranch" [ref=f2e887]
+    - option "QA-AUTO-mvumgt052l Edit Ranch v2" [ref=f2e896]
+    - option "QA-AUTO-mvumgt052n Edit Ranch" [ref=f2e905]
+    - option "QA-AUTO-mvumgt0534 Edit Ranch" [ref=f2e914]
+    - option "QA-AUTO-mvyucznp01 DocuSeal Ranch" [ref=f2e923]
+    - option "QA-AUTO-mvyufr0k1q Ranch Dash" [ref=f2e932]
+    - option "QA-AUTO-mvyufr0k2l New Ranch" [ref=f2e941]
+    - option "QA Ranch Alpha" [ref=f2e950]
+    - option "QA Ranch E2E" [ref=f2e959]
+    - option "QUATTRO DIAMANTE RANCH" [ref=f2e968]
+    - option "Rocky Mountain Ranch" [ref=f2e977]
+    - option "Sagebrush Hills Ranch" [ref=f2e986]
+    - option "test ranch" [ref=f2e995]
+    - option "test ranch 01" [ref=f2e1004]

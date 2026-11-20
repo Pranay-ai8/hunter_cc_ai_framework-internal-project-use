@@ -1,0 +1,84 @@
+- generic [ref=f4e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - generic [ref=f4e44]:
+    - banner [ref=f4e45]:
+      - generic [ref=f4e46]:
+        - generic [ref=f4e52]:
+          - heading "QUATTRO DIAMANTE RANCH" [level=1] [ref=f4e53]
+          - paragraph [ref=f4e54]: Guide Portal
+        - button [ref=f4e56]
+    - generic [ref=f4e57]:
+      - complementary [ref=f4e58]:
+        - navigation [ref=f4e60]:
+          - generic [ref=f4e61]:
+            - link "Dashboard" [ref=f4e62] [cursor=pointer]:
+              - /url: /dashboard
+            - link "Bookings" [active] [ref=f4e68] [cursor=pointer]:
+              - /url: /bookings
+            - link "Harvest Logs" [ref=f4e71] [cursor=pointer]:
+              - /url: /harvest
+      - main [ref=f4e75]:
+        - generic [ref=f4e520]:
+          - generic [ref=f4e521]:
+            - generic [ref=f4e522]:
+              - heading "Booking Management" [level=1] [ref=f4e523]
+              - paragraph [ref=f4e524]: View your assigned bookings
+            - button "New Booking" [ref=f4e525]
+          - generic [ref=f4e528]:
+            - textbox "Search by booking ID, hunter, or guide" [ref=f4e533]:
+              - /placeholder: Search by booking ID, hunter, or guide...
+            - combobox [ref=f4e534]:
+              - generic: All Status
+            - combobox [ref=f4e537]:
+              - generic: All Types
+            - button "From Date" [ref=f4e540]
+            - button "To Date" [ref=f4e541]
+          - generic [ref=f4e542]:
+            - heading "All Bookings" [level=2] [ref=f4e544]
+            - generic [ref=f4e545]:
+              - button "Card view" [ref=f4e546]
+              - button "Table view" [ref=f4e547]
+          - table [ref=f4e551]:
+            - rowgroup [ref=f4e552]:
+              - row [ref=f4e553]:
+                - columnheader "Booking Id" [ref=f4e554]
+                - columnheader "Hunter" [ref=f4e555]
+                - columnheader "Check-in" [ref=f4e556]
+                - columnheader "Check-out" [ref=f4e557]
+                - columnheader "Hunters" [ref=f4e558]
+                - columnheader "Guests" [ref=f4e559]
+                - columnheader "Guide" [ref=f4e560]
+                - columnheader "Waivers" [ref=f4e561]
+                - columnheader "Type" [ref=f4e562]
+                - columnheader "Status" [ref=f4e563]
+            - rowgroup [ref=f4e564]:
+              - row [ref=f4e565] [cursor=pointer]:
+                - cell "BK-2026-1048" [ref=f4e566]
+                - cell "-" [ref=f4e567]
+                - cell "09/26/2026" [ref=f4e568]
+                - cell "09/27/2026" [ref=f4e569]
+                - cell "0" [ref=f4e570]
+                - cell "0" [ref=f4e571]
+                - cell "Guide Ch" [ref=f4e572]
+                - cell "-" [ref=f4e573]
+                - cell "Maintenance" [ref=f4e574]
+                - cell "pending" [ref=f4e576]
+              - row [ref=f4e577] [cursor=pointer]:
+                - cell "BK-2026-1030" [ref=f4e578]
+                - cell "-" [ref=f4e579]
+                - cell "12/01/2026" [ref=f4e580]
+                - cell "12/02/2026" [ref=f4e581]
+                - cell "0" [ref=f4e582]
+                - cell "0" [ref=f4e583]
+                - cell "Guide Ch" [ref=f4e584]
+                - cell "-" [ref=f4e585]
+                - cell "Maintenance" [ref=f4e586]
+                - cell "approved" [ref=f4e588]
+          - generic [ref=f4e592]:
+            - generic [ref=f4e593]: Showing 1 to 2 of 2 results
+            - generic [ref=f4e594]:
+              - generic [ref=f4e595]: per page
+              - combobox [ref=f4e596]:
+                - generic: "10"

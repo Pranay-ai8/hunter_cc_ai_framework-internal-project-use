@@ -1,0 +1,982 @@
+- generic:
+  - generic:
+    - list
+    - region "Notifications alt+T"
+    - generic [aria-hidden]:
+      - banner:
+        - generic:
+          - generic:
+            - generic:
+              - heading [level=1]: RanchOps Pro
+              - paragraph: Super Admin Portal
+          - generic:
+            - button [expanded]
+      - generic:
+        - complementary:
+          - generic:
+            - navigation:
+              - generic:
+                - link:
+                  - /url: /dashboard
+                  - text: Dashboard
+              - generic:
+                - heading [level=4]: Ranch Management
+                - link:
+                  - /url: /ranches
+                  - text: Ranches
+                - link:
+                  - /url: /admin-users
+                  - text: Ranch Admins
+              - generic:
+                - heading [level=4]: Guest Operations
+                - link:
+                  - /url: /bookings
+                  - text: Bookings
+                - link:
+                  - /url: /guests
+                  - text: Guests
+                - link:
+                  - /url: /staff
+                  - text: Staff & Guides
+              - generic:
+                - heading [level=4]: Record Keeping
+                - link:
+                  - /url: /harvest
+                  - text: Harvest Logs
+                - link:
+                  - /url: /invoices
+                  - text: Invoices
+        - main:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - heading [level=1]: Dashboard
+                  - paragraph: Complete ranch management overview
+                - generic:
+                  - button: New Booking
+              - generic:
+                - generic:
+                  - generic:
+                    - heading [level=3]: Total Ranches
+                  - generic:
+                    - generic: "96"
+                    - paragraph: Active
+                - generic:
+                  - generic:
+                    - heading [level=3]: Active Bookings
+                  - generic:
+                    - generic: "59"
+                    - paragraph: 32 pending
+                - generic:
+                  - generic:
+                    - heading [level=3]: Ranch Admins
+                  - generic:
+                    - generic: "52"
+                    - paragraph: Managing
+                - generic:
+                  - generic:
+                    - heading [level=3]: Total Guides
+                  - generic:
+                    - generic: "58"
+                    - paragraph: Active guides
+                - generic:
+                  - generic:
+                    - heading [level=3]: This Month Revenue
+                  - generic:
+                    - generic: $0
+                    - paragraph: No revenue
+                - generic:
+                  - generic:
+                    - heading [level=3]: Pending Waivers
+                  - generic:
+                    - generic: "102"
+                    - paragraph: Needs attention
+              - generic:
+                - generic:
+                  - heading [level=3]: Tag Allocations
+                - generic:
+                  - region:
+                    - generic:
+                      - generic:
+                        - group:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: QUATTRO DIAMANTE RANCH
+                                - generic: 2026-2027 Season
+                                - generic:
+                                  - text: Deer
+                                  - generic: / General
+                              - generic: 5 left
+                            - generic:
+                              - progressbar
+                              - generic:
+                                - generic: 0 used
+                                - generic: 5 allocated
+                        - group:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: QUATTRO DIAMANTE RANCH
+                                - generic: 2026-2027 Season
+                                - generic:
+                                  - text: Deer
+                                  - generic: / Mule Deer
+                              - generic: 10 left
+                            - generic:
+                              - progressbar
+                              - generic:
+                                - generic: 0 used
+                                - generic: 10 allocated
+                        - group:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: QUATTRO DIAMANTE RANCH
+                                - generic: 2026-2027 Season
+                                - generic:
+                                  - text: Turkey
+                                  - generic: / General
+                              - generic: 1 left
+                            - generic:
+                              - progressbar
+                              - generic:
+                                - generic: 0 used
+                                - generic: 1 allocated
+                        - group:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Pine Creek Ranch
+                                - generic: 2026-2027 Season
+                                - generic:
+                                  - text: Turkey
+                                  - generic: / General
+                              - generic: 13 left
+                            - generic:
+                              - progressbar
+                              - generic:
+                                - generic: 0 used
+                                - generic: 13 allocated
+                        - group:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Pine Creek Ranch
+                                - generic: 2026-2027 Season
+                                - generic:
+                                  - text: Turkey
+                                  - generic: / General
+                              - generic: 1 left
+                            - generic:
+                              - progressbar
+                              - generic:
+                                - generic: 0 used
+                                - generic: 1 allocated
+                        - group:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Pine Creek Ranch
+                                - generic: 2026-2027 Season
+                                - generic:
+                                  - text: Deer
+                                  - generic: / Mule Deer
+                              - generic: 3 left
+                            - generic:
+                              - progressbar
+                              - generic:
+                                - generic: 0 used
+                                - generic: 3 allocated
+                        - group:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: koramnaga ranch
+                                - generic: 2026-2027 Season
+                                - generic:
+                                  - text: Turkey
+                                  - generic: / General
+                              - generic: 1 left
+                            - generic:
+                              - progressbar
+                              - generic:
+                                - generic: 0 used
+                                - generic: 1 allocated
+                        - group:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: koramnaga ranch
+                                - generic: 2026-2027 Season
+                                - generic:
+                                  - text: Turkey
+                                  - generic: / General
+                              - generic: 13 left
+                            - generic:
+                              - progressbar
+                              - generic:
+                                - generic: 0 used
+                                - generic: 13 allocated
+                        - group:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: koramnaga ranch
+                                - generic: 2026-2027 Season
+                                - generic:
+                                  - text: Bucks
+                                  - generic: / Whitetail Deer
+                              - generic: 7 left
+                            - generic:
+                              - progressbar
+                              - generic:
+                                - generic: 1 used
+                                - generic: 8 allocated
+                        - group:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Kannur Ranch
+                                - generic: 2026-2027 Season
+                                - generic:
+                                  - text: Turkey
+                                  - generic: / General
+                              - generic: 13 left
+                            - generic:
+                              - progressbar
+                              - generic:
+                                - generic: 0 used
+                                - generic: 13 allocated
+                        - group:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Kannur Ranch
+                                - generic: 2026-2027 Season
+                                - generic:
+                                  - text: Turkey
+                                  - generic: / General
+                              - generic: 1 left
+                            - generic:
+                              - progressbar
+                              - generic:
+                                - generic: 0 used
+                                - generic: 1 allocated
+                        - group:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Kannur Ranch
+                                - generic: 2026-2027 Season
+                                - generic:
+                                  - text: Bucks
+                                  - generic: / Whitetail Deer
+                              - generic: 0 left
+                            - generic:
+                              - progressbar
+                              - generic:
+                                - generic: 2 used
+                                - generic: 2 allocated
+                        - group:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: test ranch 01
+                                - generic: 2026-2027 Season
+                                - generic:
+                                  - text: Bucks
+                                  - generic: / Whitetail Deer
+                              - generic: 3 left
+                            - generic:
+                              - progressbar
+                              - generic:
+                                - generic: 2 used
+                                - generic: 5 allocated
+                        - group:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: test ranch 01
+                                - generic: 2026-2027 Season
+                                - generic:
+                                  - text: Turkey
+                                  - generic: / General
+                              - generic: 1 left
+                            - generic:
+                              - progressbar
+                              - generic:
+                                - generic: 0 used
+                                - generic: 1 allocated
+                        - group:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: test ranch 01
+                                - generic: 2026-2027 Season
+                                - generic:
+                                  - text: Turkey
+                                  - generic: / General
+                              - generic: 0 left
+                            - generic:
+                              - progressbar
+                              - generic:
+                                - generic: 1 used
+                                - generic: 1 allocated
+                        - group:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Rocky Mountain Ranch
+                                - generic: 2026-2027 Season
+                                - generic:
+                                  - text: Turkey
+                                  - generic: / General
+                              - generic: 1 left
+                            - generic:
+                              - progressbar
+                              - generic:
+                                - generic: 0 used
+                                - generic: 1 allocated
+                        - group:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Rocky Mountain Ranch
+                                - generic: 2026-2027 Season
+                                - generic:
+                                  - text: Turkey
+                                  - generic: / General
+                              - generic: 1 left
+                            - generic:
+                              - progressbar
+                              - generic:
+                                - generic: 0 used
+                                - generic: 1 allocated
+                        - group:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Meadow Ridge Ranch
+                                - generic: 2026-2027 Season
+                                - generic:
+                                  - text: Turkey
+                                  - generic: / General
+                              - generic: 1 left
+                            - generic:
+                              - progressbar
+                              - generic:
+                                - generic: 0 used
+                                - generic: 1 allocated
+                        - group:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Meadow Ridge Ranch
+                                - generic: 2026-2027 Season
+                                - generic:
+                                  - text: Turkey
+                                  - generic: / General
+                              - generic: 1 left
+                            - generic:
+                              - progressbar
+                              - generic:
+                                - generic: 0 used
+                                - generic: 1 allocated
+                        - group:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Sagebrush Hills Ranch
+                                - generic: 2026-2027 Season
+                                - generic:
+                                  - text: Turkey
+                                  - generic: / General
+                              - generic: 17 left
+                            - generic:
+                              - progressbar
+                              - generic:
+                                - generic: 0 used
+                                - generic: 17 allocated
+                        - group:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Sagebrush Hills Ranch
+                                - generic: 2026-2027 Season
+                                - generic:
+                                  - text: Turkey
+                                  - generic: / General
+                              - generic: 1 left
+                            - generic:
+                              - progressbar
+                              - generic:
+                                - generic: 0 used
+                                - generic: 1 allocated
+                        - group:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Highland Creek Ranch
+                                - generic: 2026-2027 Season
+                                - generic:
+                                  - text: Turkey
+                                  - generic: / General
+                              - generic: 0 left
+                            - generic:
+                              - progressbar
+                              - generic:
+                                - generic: 1 used
+                                - generic: 1 allocated
+                        - group:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Highland Creek Ranch
+                                - generic: 2026-2027 Season
+                                - generic:
+                                  - text: Turkey
+                                  - generic: / General
+                              - generic: 13 left
+                            - generic:
+                              - progressbar
+                              - generic:
+                                - generic: 0 used
+                                - generic: 13 allocated
+                        - group:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Highland Creek Ranch
+                                - generic: 2026-2027 Season
+                                - generic:
+                                  - text: Deer
+                                  - generic: / General
+                              - generic: 5 left
+                            - generic:
+                              - progressbar
+                              - generic:
+                                - generic: 0 used
+                                - generic: 5 allocated
+                        - group:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Powderhorn Ranch 1788823670256
+                                - generic: 2026-2027 Season
+                                - generic:
+                                  - text: Turkey
+                                  - generic: / General
+                              - generic: 1 left
+                            - generic:
+                              - progressbar
+                              - generic:
+                                - generic: 0 used
+                                - generic: 1 allocated
+                        - group:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Powderhorn Ranch 1788823670256
+                                - generic: 2026-2027 Season
+                                - generic:
+                                  - text: Turkey
+                                  - generic: / General
+                              - generic: 1 left
+                            - generic:
+                              - progressbar
+                              - generic:
+                                - generic: 0 used
+                                - generic: 1 allocated
+                        - group:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Moonlight Valley Ranch
+                                - generic: 2026-2027 Season
+                                - generic:
+                                  - text: Turkey
+                                  - generic: / General
+                              - generic: 1 left
+                            - generic:
+                              - progressbar
+                              - generic:
+                                - generic: 0 used
+                                - generic: 1 allocated
+                        - group:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Moonlight Valley Ranch
+                                - generic: 2026-2027 Season
+                                - generic:
+                                  - text: Turkey
+                                  - generic: / General
+                              - generic: 17 left
+                            - generic:
+                              - progressbar
+                              - generic:
+                                - generic: 0 used
+                                - generic: 17 allocated
+                        - group:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Powderhorn Ranch
+                                - generic: 2026-2027 Season
+                                - generic:
+                                  - text: Turkey
+                                  - generic: / General
+                              - generic: 1 left
+                            - generic:
+                              - progressbar
+                              - generic:
+                                - generic: 0 used
+                                - generic: 1 allocated
+                        - group:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Powderhorn Ranch
+                                - generic: 2026-2027 Season
+                                - generic:
+                                  - text: Turkey
+                                  - generic: / General
+                              - generic: 13 left
+                            - generic:
+                              - progressbar
+                              - generic:
+                                - generic: 0 used
+                                - generic: 13 allocated
+                        - group:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: QA-AUTO-BASE Ranch A
+                                - generic: 2026-2027 Season
+                                - generic:
+                                  - text: Deer
+                                  - generic: / General
+                              - generic: 8 left
+                            - generic:
+                              - progressbar
+                              - generic:
+                                - generic: 2 used
+                                - generic: 10 allocated
+                    - button [disabled]:
+                      - generic: Previous slide
+                    - button:
+                      - generic: Next slide
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - heading [level=3]: Booking Calendar
+                      - combobox:
+                        - generic: All Ranches
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button [disabled]: today
+                            - generic:
+                              - button:
+                                - img: 
+                              - button:
+                                - img: 
+                          - generic:
+                            - heading [level=2]: November 2026
+                          - generic:
+                            - generic:
+                              - button [pressed]: Month
+                              - button: Week
+                              - button: Day
+                              - button: Agenda
+                        - generic:
+                          - generic:
+                            - grid:
+                              - rowgroup:
+                                - generic:
+                                  - generic:
+                                    - row:
+                                      - columnheader:
+                                        - generic: Sun
+                                      - columnheader:
+                                        - generic: Mon
+                                      - columnheader:
+                                        - generic: Tue
+                                      - columnheader:
+                                        - generic: Wed
+                                      - columnheader:
+                                        - generic: Thu
+                                      - columnheader:
+                                        - generic: Fri
+                                      - columnheader:
+                                        - generic: Sat
+                              - rowgroup:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - row:
+                                        - gridcell:
+                                          - generic:
+                                            - generic: "1"
+                                            - generic:
+                                              - generic: Turnover Day 1 - QA-AUTO-BASE Ranch A
+                                              - generic: Turnover Day 1 - QA-AUTO-mvruscw8 Ranch A
+                                              - generic: Turnover Day 1 - QA-AUTO-mvrvtwpm Ranch A
+                                        - gridcell:
+                                          - generic: "2"
+                                        - gridcell:
+                                          - generic: "3"
+                                        - gridcell:
+                                          - generic: "4"
+                                        - gridcell:
+                                          - generic: "5"
+                                        - gridcell:
+                                          - generic: "6"
+                                        - gridcell:
+                                          - generic:
+                                            - generic: "7"
+                                            - generic:
+                                              - generic: QA-AUTO-mvrvu408uy Hunter QA One
+                                              - generic: QA-AUTO-mvrvucp54m Hunter QA One
+                                              - generic: QA-AUTO-mvrxbyqf01 Hunter QA One
+                                              - generic: QA-AUTO-mvry92a701 Hunter QA One
+                                      - row:
+                                        - gridcell:
+                                          - generic:
+                                            - generic: "8"
+                                            - generic:
+                                              - generic: QA-AUTO-mvrvu408uy Hunter QA One
+                                              - generic: QA-AUTO-mvrvucp54m Hunter QA One
+                                              - generic: QA-AUTO-mvrxbyqf01 Hunter QA One
+                                              - generic: QA-AUTO-mvry92a701 Hunter QA One
+                                              - generic: QA-AUTO-mvt4x2xl01 Hunter QA One
+                                              - generic: QA-AUTO-mvt6e2g801 Hunter QA One
+                                              - generic: QA-AUTO-mvtfyswe01 Hunter QA One
+                                        - gridcell:
+                                          - generic:
+                                            - generic: "9"
+                                            - generic:
+                                              - generic: QA-AUTO-mvuij19s01 Hunter QA One
+                                              - generic: QA-AUTO-mvukisu101 Hunter QA One
+                                              - generic: QA-AUTO-mvumgt0501 Hunter QA One
+                                        - gridcell:
+                                          - generic:
+                                            - generic: "10"
+                                            - generic:
+                                              - generic: Turnover Day 1 - QA-AUTO-BASE Ranch A
+                                              - generic: Turnover Day 1 - QA-AUTO-BASE Ranch A
+                                              - generic: Turnover Day 1 - QA-AUTO-mvrvtwpm Ranch A
+                                              - generic: Turnover Day 1 - QA-AUTO-mvrvu33w Ranch A
+                                        - gridcell:
+                                          - generic:
+                                            - generic: "11"
+                                            - generic:
+                                              - generic: Turnover Day 1 - QA-AUTO-BASE Ranch A
+                                              - generic: Turnover Day 1 - QA-AUTO-BASE Ranch A
+                                              - generic: Turnover Day 1 - QA-AUTO-BASE Ranch A
+                                        - gridcell:
+                                          - generic:
+                                            - generic: "12"
+                                            - generic:
+                                              - generic: Turnover Day 1 - QA-AUTO-BASE Ranch A
+                                              - generic: Turnover Day 1 - QA-AUTO-BASE Ranch A
+                                              - generic: Turnover Day 1 - QA-AUTO-BASE Ranch A
+                                        - gridcell:
+                                          - generic: "13"
+                                        - gridcell:
+                                          - generic: "14"
+                                      - row:
+                                        - gridcell:
+                                          - generic: "15"
+                                        - gridcell:
+                                          - generic: "16"
+                                        - gridcell:
+                                          - generic:
+                                            - generic: "17"
+                                            - generic:
+                                              - generic: QA-AUTO-BASE Hold20 Hunter
+                                              - generic: QA-AUTO-mvrvtwpm Hold20 Hunter
+                                        - gridcell:
+                                          - generic:
+                                            - generic: "18"
+                                            - generic:
+                                              - generic: QA-AUTO-mvt4x2xl0z Occupied Hunter
+                                              - generic: QA-AUTO-mvt67jz50z Occupied Hunter
+                                              - generic: QA-AUTO-mvt6e2g80z Occupied Hunter
+                                              - generic: QA-AUTO-mvtfyswe0z Occupied Hunter
+                                        - gridcell:
+                                          - generic:
+                                            - generic: "19"
+                                            - generic: QA-AUTO-mvukisu10z Occupied Hunter
+                                        - gridcell:
+                                          - generic: "20"
+                                        - gridcell:
+                                          - generic:
+                                            - generic: "21"
+                                            - generic:
+                                              - generic: Turnover Day 1 - QA-AUTO-BASE Ranch A
+                                              - generic: Turnover Day 1 - QA-AUTO-mvrvtwpm Ranch A
+                                              - generic: Turnover Day 1 - test ranch 01
+                                              - generic: Turnover Day 1 - test ranch 01
+                                              - generic: Turnover Day 1 - test ranch 01
+                                              - generic: Turnover Day 1 - test ranch 01
+                                      - row:
+                                        - gridcell:
+                                          - generic:
+                                            - generic: "22"
+                                            - generic: Turnover Day 1 - test ranch 01
+                                        - gridcell:
+                                          - generic:
+                                            - generic: "23"
+                                            - generic:
+                                              - generic: QA-AUTO-mvruzanncg Wade Hollis
+                                              - generic: QA-AUTO-mvrw0k8sa0 Wade Hollis
+                                              - generic: QA-AUTO-mvrw1jobl8 Wade Hollis
+                                              - generic: QA-AUTO-mvrxbyqf0e Wade Hollis
+                                              - generic: QA-AUTO-mvry92a70e Wade Hollis
+                                        - gridcell:
+                                          - generic:
+                                            - generic: "24"
+                                            - generic:
+                                              - generic: QA-AUTO-mvt4x2xl0f Wade Hollis
+                                              - generic: QA-AUTO-mvt6e2g80f Wade Hollis
+                                              - generic: QA-AUTO-mvtfyswe0f Wade Hollis
+                                        - gridcell:
+                                          - generic:
+                                            - generic: "25"
+                                            - generic:
+                                              - generic: QA-AUTO-mvukisu10f Wade Hollis
+                                              - generic: QA-AUTO-mvumgt052k Wade Hollis
+                                        - gridcell:
+                                          - generic:
+                                            - generic: "26"
+                                            - generic:
+                                              - generic: Turnover Day 1 - QA-AUTO-BASE Ranch A
+                                              - generic: Turnover Day 1 - QA-AUTO-BASE Ranch A
+                                              - generic: Turnover Day 1 - QA-AUTO-mvruscw8 Ranch A
+                                              - generic: Turnover Day 1 - QA-AUTO-mvrvtwpm Ranch A
+                                              - generic: Turnover Day 1 - QA-AUTO-mvrvu33w Ranch A
+                                        - gridcell:
+                                          - generic:
+                                            - generic: "27"
+                                            - generic:
+                                              - generic: Turnover Day 1 - QA-AUTO-BASE Ranch A
+                                              - generic: Turnover Day 1 - QA-AUTO-BASE Ranch A
+                                              - generic: Turnover Day 1 - QA-AUTO-BASE Ranch A
+                                        - gridcell:
+                                          - generic:
+                                            - generic: "28"
+                                            - generic:
+                                              - generic: Turnover Day 1 - QA-AUTO-BASE Ranch A
+                                              - generic: Turnover Day 1 - QA-AUTO-BASE Ranch A
+                                      - row:
+                                        - gridcell:
+                                          - generic:
+                                            - generic: "29"
+                                            - generic: QA-AUTO-mvumgt050c Hunter QA One
+                                        - gridcell:
+                                          - generic: "30"
+                                        - gridcell:
+                                          - generic:
+                                            - generic: "1"
+                                            - generic: Turnover Day 1 - QA-AUTO-BASE Ranch A
+                                        - gridcell:
+                                          - generic:
+                                            - generic: "2"
+                                            - generic: QA-AUTO-mvyufr0k0g Hunter QA One
+                                        - gridcell:
+                                          - generic: "3"
+                                        - gridcell:
+                                          - generic:
+                                            - generic: "4"
+                                            - generic: Turnover Day 1 - QA-AUTO-BASE Ranch A
+                                        - gridcell:
+                                          - generic: "5"
+                                      - row:
+                                        - gridcell:
+                                          - generic: "6"
+                                        - gridcell:
+                                          - generic:
+                                            - generic: "7"
+                                            - generic:
+                                              - generic: QA-AUTO-BASE Hunter One
+                                              - generic: QA-AUTO-BASE Hunter Two
+                                        - gridcell:
+                                          - generic: "8"
+                                        - gridcell:
+                                          - generic: "9"
+                                        - gridcell:
+                                          - generic:
+                                            - generic: "10"
+                                            - generic:
+                                              - generic: Turnover Day 1 - QA-AUTO-BASE Ranch A
+                                              - generic: Turnover Day 1 - QA-AUTO-BASE Ranch B
+                                        - gridcell:
+                                          - generic: "11"
+                                        - gridcell:
+                                          - generic:
+                                            - generic: "12"
+                                            - generic: QA-AUTO-BASE Hunter Two
+                  - generic:
+                    - generic: Booking type
+                    - generic:
+                      - generic: Hunting
+                      - generic: Recreational
+                      - generic: Maintenance
+              - generic:
+                - generic:
+                  - generic:
+                    - heading [level=3]: Recent Bookings
+                    - generic:
+                      - generic:
+                        - button
+                        - button
+                      - button: View All
+                - generic:
+                  - generic:
+                    - table:
+                      - rowgroup:
+                        - row:
+                          - columnheader: Guest Name
+                          - columnheader: Ranch
+                          - columnheader: Dates
+                          - columnheader: Guide
+                          - columnheader: Hunters
+                          - columnheader: Guests
+                          - columnheader: Type
+                          - columnheader: Status
+                      - rowgroup:
+                        - row:
+                          - cell: QA-AUTO-mvyufr0k1t Dale Fox
+                          - cell: QA-AUTO-BASE Ranch B
+                          - cell: 01/25/2027 - 01/27/2027
+                          - cell:
+                            - generic: "-"
+                          - cell: "1"
+                          - cell: "0"
+                          - cell:
+                            - generic: Hunting
+                          - cell:
+                            - generic: pending
+                        - row:
+                          - cell: QA-AUTO-mvyufr0k1t Dale Fox
+                          - cell: QA-AUTO-BASE Ranch A
+                          - cell: 01/25/2027 - 01/27/2027
+                          - cell:
+                            - generic: "-"
+                          - cell: "1"
+                          - cell: "0"
+                          - cell:
+                            - generic: Hunting
+                          - cell:
+                            - generic: pending
+                        - row:
+                          - cell: QA-AUTO-mvyufr0k1r Recent Hunter
+                          - cell: QA-AUTO-BASE Ranch A
+                          - cell: 01/05/2027 - 01/07/2027
+                          - cell:
+                            - generic: "-"
+                          - cell: "1"
+                          - cell: "0"
+                          - cell:
+                            - generic: Hunting
+                          - cell:
+                            - generic: pending
+                        - row:
+                          - cell: QA-AUTO-mvyufr0k1j Hunter QA One
+                          - cell: QA-AUTO-BASE Ranch A
+                          - cell: 05/25/2027 - 05/27/2027
+                          - cell:
+                            - generic: "-"
+                          - cell: "1"
+                          - cell: "0"
+                          - cell:
+                            - generic: Hunting
+                          - cell:
+                            - generic: pending
+                        - row:
+                          - cell: QA-AUTO-mvyufr0k1f Hunter QA One
+                          - cell: QA-AUTO-BASE Ranch C
+                          - cell: 05/26/2027 - 05/28/2027
+                          - cell:
+                            - generic: "-"
+                          - cell: "1"
+                          - cell: "0"
+                          - cell:
+                            - generic: Hunting
+                          - cell:
+                            - generic: pending
+                        - row:
+                          - cell: QA-AUTO-BASE B083 Hunter
+                          - cell: QA-AUTO-BASE Ranch A
+                          - cell: 04/21/2027 - 04/23/2027
+                          - cell:
+                            - generic: "-"
+                          - cell: "1"
+                          - cell: "0"
+                          - cell:
+                            - generic: Hunting
+                          - cell:
+                            - generic: pending
+              - generic:
+                - generic:
+                  - generic:
+                    - heading [level=3]: Active Ranches
+                    - generic:
+                      - generic:
+                        - button
+                        - button
+                      - button: View All
+                - generic:
+                  - generic:
+                    - table:
+                      - rowgroup:
+                        - row:
+                          - columnheader: Ranch Name
+                          - columnheader: Location
+                          - columnheader: Admin
+                          - columnheader: Bookings
+                      - rowgroup:
+                        - row:
+                          - cell: test ranch 01
+                          - cell: 1st cross road,krishnappa garden tavarakare,bangalore
+                          - cell: test
+                          - cell: "5"
+                        - row:
+                          - cell: test ranch
+                          - cell: hs
+                          - cell: No Admin
+                          - cell: "0"
+                        - row:
+                          - cell: Sagebrush Hills Ranch
+                          - cell: 4057 Sagebrush Trail, Rock Springs, WY 82901
+                          - cell: No Admin
+                          - cell: "0"
+                        - row:
+                          - cell: Rocky Mountain Ranch
+                          - cell: 4218 BirdrTrail, Sheridan, WY 82801
+                          - cell: No Admin
+                          - cell: "0"
+                        - row:
+                          - cell: QUATTRO DIAMANTE RANCH
+                          - cell: Texas ,USA
+                          - cell: Chethan, Grant Ledbetter, Layne Heble, Mike HUY, John Doe 1790006323200, SearchTarget 1789975703947, SearchTarget 1790006360619, John Doe 1789983244450, John Doe 1790061934958, SearchTarget 1790021930736, John Doe 1790055307841, Mike Updated 1790055606228, Jony Doe, John Doe 1789714814764, Updated User 1789722294112, Mike Updated 1789973583785, SearchTarget 1789714851957, John Doe 1789724652750, Mike Updated 1790006530226, John Doe 1790021883750, SearchTarget 1789724695921, Mike Updated 1789714958300, John Doe 1789719908367, SearchTarget 1789719951246, Mike Updated 1789720085863, Updated User 1789720869455, Updated User 1789720885535, Dupe User, Updated User 1789721276580, Updated User 1789721295545, Updated User 1789721544343, Updated User 1789722283762, Mike Updated 1789968558855, Mike Updated 1789724860380, John Doe 1789965324880, SearchTarget 1789965383700, SearchTarget 1790061981924, John Doe 1789972416063, Mike Updated 1789965538977, John Doe 1789968355967, SearchTarget 1789968399971, Mike Updated 1790022098353, SearchTarget 1790055388288, SearchTarget 1789972461744, Mike Updated 1790062184105, Mike Updated 1789972612846
+                          - cell: "0"
+                        - row:
+                          - cell: QA Ranch E2E
+                          - cell: 500 Full Data Rd, Austin TX 78701
+                          - cell: No Admin
+                          - cell: "0"
+  - menu [active] [ref=f5e1382]:
+    - generic [ref=f5e1384]:
+      - paragraph [ref=f5e1385]: Super Admin
+      - paragraph [ref=f5e1386]: Super Admin
+    - separator [ref=f5e1387]
+    - menuitem "Change Password" [ref=f5e1388]
+    - separator [ref=f5e1393]
+    - menuitem "Log out" [ref=f5e1394]

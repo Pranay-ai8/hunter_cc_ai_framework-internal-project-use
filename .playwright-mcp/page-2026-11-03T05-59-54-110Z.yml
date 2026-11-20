@@ -1,0 +1,38 @@
+- generic [ref=f3e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - generic [ref=f3e3]:
+    - banner [ref=f3e4]:
+      - generic [ref=f3e5]:
+        - generic [ref=f3e11]:
+          - heading "RanchOps Pro" [level=1] [ref=f3e12]
+          - paragraph [ref=f3e13]: Super Admin Portal
+        - button [ref=f3e15]
+    - generic [ref=f3e16]:
+      - complementary [ref=f3e17]:
+        - navigation [ref=f3e19]:
+          - link "Dashboard" [ref=f3e21] [cursor=pointer]:
+            - /url: /dashboard
+          - generic [ref=f3e27]:
+            - heading "Ranch Management" [level=4] [ref=f3e28]
+            - link "Ranches" [ref=f3e29] [cursor=pointer]:
+              - /url: /ranches
+            - link "Ranch Admins" [ref=f3e34] [cursor=pointer]:
+              - /url: /admin-users
+          - generic [ref=f3e40]:
+            - heading "Guest Operations" [level=4] [ref=f3e41]
+            - link "Bookings" [ref=f3e42] [cursor=pointer]:
+              - /url: /bookings
+            - link "Guests" [ref=f3e45] [cursor=pointer]:
+              - /url: /guests
+            - link "Staff & Guides" [ref=f3e51] [cursor=pointer]:
+              - /url: /staff
+          - generic [ref=f3e64]:
+            - heading "Record Keeping" [level=4] [ref=f3e65]
+            - link "Harvest Logs" [ref=f3e66] [cursor=pointer]:
+              - /url: /harvest
+            - link "Invoices" [ref=f3e70] [cursor=pointer]:
+              - /url: /invoices
+      - main [ref=f3e74]:
+        - generic [ref=f3e75]: Loading ranches...

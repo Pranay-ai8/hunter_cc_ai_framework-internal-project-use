@@ -1,0 +1,101 @@
+Key | Env | searchString | ranchName | ranchAddress | ranchCounty | ranchPhone | ranchEmail | animalDisplayName | animalCategory | animalSpecies | animalSex | animalPrice | invalidPhone | standName | addonName | addonDescription | addonPrice | invalidPrice | newRoomName | newRoomBeds | turnoverDays | harvestFreq | timeZone | invalidWaiverDays | invalidEmail | invalidPropertySize
+RTC001 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC002 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC003 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC004 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC005 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC006 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC007 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC008 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC009 | STG | koramnaga ranch |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC010 | STG | koramnaga |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC011 | STG | koramnaga ranch |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC012 | STG | bangalore |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC013 | STG | xyz123abc |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC014 | STG | King |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC015 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC016 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC017 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | Deluxe Room | 2 |  |  |  |  |  | 
+RTC018 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | Deluxe Room | 2 |  |  |  |  |  | 
+RTC019 | STG |  | koramnaga ranch |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC020 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC021 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | Deluxe Room | 2 |  |  |  |  |  | 
+RTC022 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | Deluxe Room | 2 |  |  |  |  |  | 
+RTC023 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC024 | STG |  |  |  |  |  |  |  |  |  |  |  | +1 (127) 857-0876 |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC025 | STG |  | koramnaga ranch | 1st cross road,krishnappa garden tavarakare,bangalore | Karnataka | +14088745985 | koramangala@gmail.com |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC026 | STG |  | koramnaga ranch | 1st cross road,krishnappa garden tavarakare,bangalore | Karnataka | +14088745985 | koramangala@gmail.com |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC027 | STG |  | koramnaga ranch | 1st cross road,krishnappa garden tavarakare,bangalore | Karnataka | +14088745985 | koramangala@gmail.com |  | Turkey |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC028 | STG |  | koramnaga ranch | 1st cross road,krishnappa garden tavarakare,bangalore | Karnataka | +14088745985 | koramangala@gmail.com | WT BUCK up to 130" | Deer | Whitetail Deer | Male | 150 |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC029 | STG |  | koramnaga ranch | 1st cross road,krishnappa garden tavarakare,bangalore | Karnataka | +14088745985 | koramangala@gmail.com |  |  |  |  |  |  | Blind 1 |  |  |  |  |  |  |  |  |  |  |  | 
+RTC030 | STG |  | koramnaga ranch | 1st cross road,krishnappa garden tavarakare,bangalore | Karnataka | +14088745985 | koramangala@gmail.com |  |  |  |  |  |  |  | Deer | Deer hunting add-on | 1000 |  |  |  |  |  |  |  |  | 
+RTC031 | STG |  | koramnaga ranch | 1st cross road,krishnappa garden tavarakare,bangalore | Karnataka | +14088745985 | koramangala@gmail.com |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC032 | STG |  | koramnaga ranch | 1st cross road,krishnappa garden tavarakare,bangalore | Karnataka | +14088745985 | koramangala@gmail.com |  |  |  |  |  |  |  |  |  |  |  | green | 4 | 1 |  |  |  |  |  |  |  | 
+RTC033 | STG |  | koramnaga ranch | 1st cross road,krishnappa garden tavarakare,bangalore | Karnataka | +14088745985 | koramangala@gmail.com |  |  |  |  |  |  |  |  |  |  |  | green | 4 | 1 | 1 | 365 | monthly | America/Chicago |  |  |  | 
+RTC034 | STG |  | koramnaga ranch | 1st cross road,krishnappa garden tavarakare,bangalore | Karnataka | +14088745985 | koramangala@gmail.com |  |  |  |  |  |  |  |  |  |  |  | green | 4 | 1 | 1 | 365 | monthly | America/Chicago |  |  |  | 
+RTC035 | STG |  | koramnaga ranch | 1st cross road,krishnappa garden tavarakare,bangalore | Karnataka | +14088745985 | koramangala@gmail.com |  |  |  |  |  |  |  |  |  |  |  | green | 4 | 1 | 1 | 365 | monthly | America/Chicago |  |  |  | 
+RTC036 | STG | koramnaga ranch | koramnaga ranch | 1st cross road,krishnappa garden tavarakare,bangalore | Karnataka | +14088745985 | koramangala@gmail.com |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC037 | STG | koramnaga ranch | koramnaga ranch | 1st cross road,krishnappa garden tavarakare,bangalore | Karnataka | +14088745985 | koramangala@gmail.com |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC038 | STG | koramnaga ranch | koramnaga ranch | 1st cross road,krishnappa garden tavarakare,bangalore | Karnataka | +14088745985 | koramangala@gmail.com |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC039 | STG | koramnaga ranch | koramnaga ranch | 1st cross road,krishnappa garden tavarakare,bangalore | Karnataka | +14088745985 | koramangala@gmail.com |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | king@gmail, king@ |  | test,test@,test@domain | 
+RTC040 | STG | koramnaga ranch | koramnaga ranch | 1st cross road,krishnappa garden tavarakare,bangalore | Karnataka | +14088745985 | koramangala@gmail.com |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | -50, eighty |  | -10,0
+RTC041 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC042 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | -100 |  |  |  |  |  |  |  | 
+RTC043 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC044 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | -100 |  |  |  |  |  |  |  | 
+RTC045 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | Suite 101 | 2 |  |  |  |  |  | 
+RTC046 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC047 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1 Day | Monthly | America/Chicago |  |  | 
+RTC048 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | -10, 0.5 |  | 
+RTC049 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC050 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC051 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC052 | STG |  | koramnaga ranch |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC054 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 150.999 |  |  |  |  |  |  |  | 
+RTC055 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC056 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC058 | STG |  | koramnaga ranch |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC059 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC060 | STG |  |  |  |  |  | king@gmail |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC061 | STG |  |  |  |  |  |  |  |  |  |  |  | abc123 |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC062 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC063 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC064 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | -50 |  |  |  |  |  |  |  | 
+RTC066 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC067 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | -100 |  |  |  |  |  |  |  | 
+RTC068 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC069 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC070 | STG |  | koramnaga ranch |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC072 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | -50 |  |  |  |  |  |  |  | 
+RTC073 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | Suite 101 | 2 |  |  |  |  |  | 
+RTC074 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC075 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC076 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1 Day |  | America/Chicago |  |  | 
+RTC077 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | -10 |  | 
+RTC078 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC079 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC080 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC083 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC084 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC086 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC091 | STG |  |  |  |  |  | info..ranch@domain.com |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC093 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 12.5 |  |  |  |  |  |  |  | 
+RTC094 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | -200 |  |  |  |  |  |  |  | 
+RTC095 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC096 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC097 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC099 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC102 | STG |  | koramnaga ranch |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC053 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC057 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC065 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC071 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC081 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC082 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC085 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC087 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC088 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC089 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC092 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC100 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 
+RTC101 | STG |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 

@@ -1,0 +1,16 @@
+- generic [ref=f1e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - main [ref=f1e28]:
+    - generic [ref=f1e29]:
+      - generic [ref=f1e30]:
+        - heading "Forgot Password?" [level=3] [ref=f1e35]
+        - paragraph [ref=f1e36]: Enter your email address and we'll send you a code to reset your password
+      - generic [ref=f1e38]:
+        - generic [ref=f1e39]:
+          - text: Email Address
+          - textbox "Email Address" [ref=f1e40]:
+            - /placeholder: your.email@example.com
+        - button "Send Reset Code" [ref=f1e41]
+        - button "Back to Login" [ref=f1e42]

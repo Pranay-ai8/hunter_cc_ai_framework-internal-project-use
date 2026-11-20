@@ -1,0 +1,196 @@
+- generic [ref=f4e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - generic [ref=f4e14]:
+    - banner [ref=f4e15]:
+      - generic [ref=f4e16]:
+        - generic [ref=f4e22]:
+          - heading "RanchOps Pro" [level=1] [ref=f4e23]
+          - paragraph [ref=f4e24]: Super Admin Portal
+        - button [ref=f4e26]
+    - generic [ref=f4e27]:
+      - complementary [ref=f4e28]:
+        - navigation [ref=f4e30]:
+          - link "Dashboard" [ref=f4e32] [cursor=pointer]:
+            - /url: /dashboard
+          - generic [ref=f4e38]:
+            - heading "Ranch Management" [level=4] [ref=f4e39]
+            - link "Ranches" [ref=f4e40] [cursor=pointer]:
+              - /url: /ranches
+            - link "Ranch Admins" [ref=f4e45] [cursor=pointer]:
+              - /url: /admin-users
+          - generic [ref=f4e51]:
+            - heading "Guest Operations" [level=4] [ref=f4e52]
+            - link "Bookings" [ref=f4e53] [cursor=pointer]:
+              - /url: /bookings
+            - link "Guests" [active] [ref=f4e56] [cursor=pointer]:
+              - /url: /guests
+            - link "Staff & Guides" [ref=f4e62] [cursor=pointer]:
+              - /url: /staff
+          - generic [ref=f4e75]:
+            - heading "Record Keeping" [level=4] [ref=f4e76]
+            - link "Harvest Logs" [ref=f4e77] [cursor=pointer]:
+              - /url: /harvest
+            - link "Invoices" [ref=f4e81] [cursor=pointer]:
+              - /url: /invoices
+      - main [ref=f4e85]:
+        - generic [ref=f4e2034]:
+          - generic [ref=f4e2035]:
+            - heading "Guest Directory" [level=1] [ref=f4e2036]
+            - paragraph [ref=f4e2037]: Manage hunters and guests across all ranches
+          - generic [ref=f4e2040]:
+            - textbox "Search name, email, ranch" [ref=f4e2045]
+            - combobox [ref=f4e2046]:
+              - generic: All Types
+            - combobox [ref=f4e2049]:
+              - generic: All Ranches
+          - generic [ref=f4e2052]:
+            - generic [ref=f4e2053]:
+              - generic [ref=f4e2054]:
+                - heading "Guests" [level=2] [ref=f4e2055]
+                - generic [ref=f4e2056]: "201"
+              - generic [ref=f4e2057]:
+                - button "Card view" [ref=f4e2058]
+                - button "Table view" [ref=f4e2059]
+            - table [ref=f4e2063]:
+              - rowgroup [ref=f4e2064]:
+                - row [ref=f4e2065]:
+                  - columnheader "Guest" [ref=f4e2066]
+                  - columnheader "Ranch" [ref=f4e2067]
+                  - columnheader "Type" [ref=f4e2068]
+                  - columnheader "License" [ref=f4e2069]
+                  - columnheader "Waiver Status" [ref=f4e2070]
+                  - columnheader "Actions" [ref=f4e2071]
+              - rowgroup [ref=f4e2072]:
+                - row [ref=f4e2073] [cursor=pointer]:
+                  - cell "QA-AUTO-mvyufr0k1t Dale Fox qa-auto-mvyufr0k1t-dale.fox@test.ranchops.com" [ref=f4e2074]:
+                    - generic [ref=f4e2075]:
+                      - generic [ref=f4e2076]: QA-AUTO-mvyufr0k1t Dale Fox
+                      - generic [ref=f4e2077]: qa-auto-mvyufr0k1t-dale.fox@test.ranchops.com
+                  - cell "QA-AUTO-BASE Ranch B" [ref=f4e2078]
+                  - cell "Hunter" [ref=f4e2079]
+                  - cell [ref=f4e2085]
+                  - cell "Pending" [ref=f4e2086]
+                  - cell [ref=f4e2092]:
+                    - button "Edit" [ref=f4e2093]
+                - row [ref=f4e2094] [cursor=pointer]:
+                  - cell "QA-AUTO-mvyufr0k1t Dale Fox qa-auto-mvyufr0k1t-dale.fox@test.ranchops.com" [ref=f4e2095]:
+                    - generic [ref=f4e2096]:
+                      - generic [ref=f4e2097]: QA-AUTO-mvyufr0k1t Dale Fox
+                      - generic [ref=f4e2098]: qa-auto-mvyufr0k1t-dale.fox@test.ranchops.com
+                  - cell "QA-AUTO-BASE Ranch A" [ref=f4e2099]
+                  - cell "Hunter" [ref=f4e2100]
+                  - cell [ref=f4e2106]
+                  - cell "Pending" [ref=f4e2107]
+                  - cell [ref=f4e2113]:
+                    - button "Edit" [ref=f4e2114]
+                - row [ref=f4e2115] [cursor=pointer]:
+                  - cell "QA-AUTO-mvyufr0k1r Recent Hunter qa-auto-mvyufr0k1r-hunter@test.ranchops.com" [ref=f4e2116]:
+                    - generic [ref=f4e2117]:
+                      - generic [ref=f4e2118]: QA-AUTO-mvyufr0k1r Recent Hunter
+                      - generic [ref=f4e2119]: qa-auto-mvyufr0k1r-hunter@test.ranchops.com
+                  - cell "QA-AUTO-BASE Ranch A" [ref=f4e2120]
+                  - cell "Hunter" [ref=f4e2121]
+                  - cell [ref=f4e2127]
+                  - cell "Pending" [ref=f4e2128]
+                  - cell [ref=f4e2134]:
+                    - button "Edit" [ref=f4e2135]
+                - row [ref=f4e2136] [cursor=pointer]:
+                  - cell "QA-AUTO-mvyufr0k1j Hunter QA One qa-auto-mvyufr0k1j-hunter1.qa@test.ranchops.com +15125550101" [ref=f4e2137]:
+                    - generic [ref=f4e2138]:
+                      - generic [ref=f4e2139]: QA-AUTO-mvyufr0k1j Hunter QA One
+                      - generic [ref=f4e2140]: qa-auto-mvyufr0k1j-hunter1.qa@test.ranchops.com
+                      - generic [ref=f4e2141]: "+15125550101"
+                  - cell "QA-AUTO-BASE Ranch A" [ref=f4e2142]
+                  - cell "Hunter" [ref=f4e2143]
+                  - cell [ref=f4e2149]
+                  - cell "Pending" [ref=f4e2150]
+                  - cell [ref=f4e2156]:
+                    - button "Edit" [ref=f4e2157]
+                - row [ref=f4e2158] [cursor=pointer]:
+                  - cell "QA-AUTO-mvyufr0k1f Hunter QA One qa-auto-mvyufr0k1f-hunter1.qa@test.ranchops.com +15125550101" [ref=f4e2159]:
+                    - generic [ref=f4e2160]:
+                      - generic [ref=f4e2161]: QA-AUTO-mvyufr0k1f Hunter QA One
+                      - generic [ref=f4e2162]: qa-auto-mvyufr0k1f-hunter1.qa@test.ranchops.com
+                      - generic [ref=f4e2163]: "+15125550101"
+                  - cell "QA-AUTO-BASE Ranch C" [ref=f4e2164]
+                  - cell "Hunter" [ref=f4e2165]
+                  - cell [ref=f4e2171]
+                  - cell "Pending" [ref=f4e2172]
+                  - cell [ref=f4e2178]:
+                    - button "Edit" [ref=f4e2179]
+                - row [ref=f4e2180] [cursor=pointer]:
+                  - cell "QA-AUTO-mvyufr0k0z Hunter QA One qa-auto-mvyufr0k0z-hunter1.qa@test.ranchops.com +15125550101" [ref=f4e2181]:
+                    - generic [ref=f4e2182]:
+                      - generic [ref=f4e2183]: QA-AUTO-mvyufr0k0z Hunter QA One
+                      - generic [ref=f4e2184]: qa-auto-mvyufr0k0z-hunter1.qa@test.ranchops.com
+                      - generic [ref=f4e2185]: "+15125550101"
+                  - cell "QA-AUTO-BASE Ranch A" [ref=f4e2186]
+                  - cell "Hunter" [ref=f4e2187]
+                  - cell [ref=f4e2193]
+                  - cell "Pending" [ref=f4e2194]
+                  - cell [ref=f4e2200]:
+                    - button "Edit" [ref=f4e2201]
+                - row [ref=f4e2202] [cursor=pointer]:
+                  - cell "QA-AUTO-mvyufr0k0s Hunter QA One qa-auto-mvyufr0k0s-hunter1.qa@test.ranchops.com +15125550101" [ref=f4e2203]:
+                    - generic [ref=f4e2204]:
+                      - generic [ref=f4e2205]: QA-AUTO-mvyufr0k0s Hunter QA One
+                      - generic [ref=f4e2206]: qa-auto-mvyufr0k0s-hunter1.qa@test.ranchops.com
+                      - generic [ref=f4e2207]: "+15125550101"
+                  - cell "QA-AUTO-BASE Ranch A" [ref=f4e2208]
+                  - cell "Hunter" [ref=f4e2209]
+                  - cell [ref=f4e2215]
+                  - cell "Pending" [ref=f4e2216]
+                  - cell [ref=f4e2222]:
+                    - button "Edit" [ref=f4e2223]
+                - row [ref=f4e2224] [cursor=pointer]:
+                  - cell "QA-AUTO-mvyufr0k0r Hunter QA One qa-auto-mvyufr0k0r-hunter1.qa@test.ranchops.com +15125550101" [ref=f4e2225]:
+                    - generic [ref=f4e2226]:
+                      - generic [ref=f4e2227]: QA-AUTO-mvyufr0k0r Hunter QA One
+                      - generic [ref=f4e2228]: qa-auto-mvyufr0k0r-hunter1.qa@test.ranchops.com
+                      - generic [ref=f4e2229]: "+15125550101"
+                  - cell "QA-AUTO-BASE Ranch A" [ref=f4e2230]
+                  - cell "Hunter" [ref=f4e2231]
+                  - cell [ref=f4e2237]
+                  - cell "Pending" [ref=f4e2238]
+                  - cell [ref=f4e2244]:
+                    - button "Edit" [ref=f4e2245]
+                - row [ref=f4e2246] [cursor=pointer]:
+                  - cell "QA-AUTO-mvyufr0k0g Hunter QA One qa-auto-mvyufr0k0g-hunter1.qa@test.ranchops.com +15125550101" [ref=f4e2247]:
+                    - generic [ref=f4e2248]:
+                      - generic [ref=f4e2249]: QA-AUTO-mvyufr0k0g Hunter QA One
+                      - generic [ref=f4e2250]: qa-auto-mvyufr0k0g-hunter1.qa@test.ranchops.com
+                      - generic [ref=f4e2251]: "+15125550101"
+                  - cell "QA-AUTO-BASE Ranch A" [ref=f4e2252]
+                  - cell "Hunter" [ref=f4e2253]
+                  - cell [ref=f4e2259]
+                  - cell "Pending" [ref=f4e2260]
+                  - cell [ref=f4e2266]:
+                    - button "Edit" [ref=f4e2267]
+                - row [ref=f4e2268] [cursor=pointer]:
+                  - cell "QA-AUTO-BASE Jonathan Mercer qa-auto-base-jonathan@test.ranchops.com +15125550503" [ref=f4e2269]:
+                    - generic [ref=f4e2270]:
+                      - generic [ref=f4e2271]: QA-AUTO-BASE Jonathan Mercer
+                      - generic [ref=f4e2272]: qa-auto-base-jonathan@test.ranchops.com
+                      - generic [ref=f4e2273]: "+15125550503"
+                  - cell "QA-AUTO-BASE Ranch A" [ref=f4e2274]
+                  - cell "Hunter" [ref=f4e2275]
+                  - cell [ref=f4e2281]
+                  - cell "Pending" [ref=f4e2282]
+                  - cell [ref=f4e2288]:
+                    - button "Edit" [ref=f4e2289]
+            - generic [ref=f4e2292]:
+              - generic [ref=f4e2293]:
+                - generic [ref=f4e2294]: Showing 1 to 10 of 201 results
+                - generic [ref=f4e2295]:
+                  - generic [ref=f4e2296]: per page
+                  - combobox [ref=f4e2297]:
+                    - generic: "10"
+              - generic [ref=f4e2300]:
+                - button [disabled]
+                - button "1" [ref=f4e2302]
+                - button "2" [ref=f4e2304]
+                - button "3" [ref=f4e2306]
+                - button "21" [ref=f4e2314]
+                - button [ref=f4e2315]

@@ -1,0 +1,49 @@
+- generic [ref=f10e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - generic [ref=f10e3]:
+    - banner [ref=f10e4]:
+      - generic [ref=f10e5]:
+        - generic [ref=f10e11]:
+          - heading "RanchOps Pro" [level=1] [ref=f10e12]
+          - paragraph [ref=f10e13]: Super Admin Portal
+        - button [ref=f10e15]
+    - generic [ref=f10e16]:
+      - complementary [ref=f10e17]:
+        - navigation [ref=f10e19]:
+          - link "Dashboard" [ref=f10e21] [cursor=pointer]:
+            - /url: /dashboard
+          - generic [ref=f10e27]:
+            - heading "Ranch Management" [level=4] [ref=f10e28]
+            - link "Ranches" [ref=f10e29] [cursor=pointer]:
+              - /url: /ranches
+            - link "Ranch Admins" [ref=f10e34] [cursor=pointer]:
+              - /url: /admin-users
+          - generic [ref=f10e40]:
+            - heading "Guest Operations" [level=4] [ref=f10e41]
+            - link "Bookings" [ref=f10e42] [cursor=pointer]:
+              - /url: /bookings
+            - link "Guests" [ref=f10e45] [cursor=pointer]:
+              - /url: /guests
+            - link "Staff & Guides" [ref=f10e51] [cursor=pointer]:
+              - /url: /staff
+          - generic [ref=f10e64]:
+            - heading "Record Keeping" [level=4] [ref=f10e65]
+            - link "Harvest Logs" [ref=f10e66] [cursor=pointer]:
+              - /url: /harvest
+            - link "Invoices" [ref=f10e70] [cursor=pointer]:
+              - /url: /invoices
+      - main [ref=f10e74]:
+        - generic [ref=f10e76]:
+          - generic [ref=f10e77]:
+            - generic [ref=f10e78]:
+              - heading "Ranch Management" [level=1] [ref=f10e79]
+              - paragraph [ref=f10e80]: Manage all ranches in the system
+            - button "Create new ranch" [ref=f10e81]: Create New Ranch
+          - textbox "Search ranches..." [ref=f10e90]
+          - generic [ref=f10e91]:
+            - heading "All Ranches" [level=2] [ref=f10e92]
+            - generic [ref=f10e93]:
+              - button "Switch to card view" [ref=f10e94]
+              - button "Switch to list view" [ref=f10e95]

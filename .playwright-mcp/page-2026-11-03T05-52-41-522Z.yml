@@ -1,0 +1,84 @@
+- generic [ref=f4e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - generic [ref=f4e14]:
+    - banner [ref=f4e15]:
+      - generic [ref=f4e16]:
+        - generic [ref=f4e22]:
+          - heading "RanchOps Pro" [level=1] [ref=f4e23]
+          - paragraph [ref=f4e24]: Super Admin Portal
+        - button [ref=f4e26]
+    - generic [ref=f4e27]:
+      - complementary [ref=f4e28]:
+        - navigation [ref=f4e30]:
+          - link "Dashboard" [ref=f4e32] [cursor=pointer]:
+            - /url: /dashboard
+          - generic [ref=f4e38]:
+            - heading "Ranch Management" [level=4] [ref=f4e39]
+            - link "Ranches" [ref=f4e40] [cursor=pointer]:
+              - /url: /ranches
+            - link "Ranch Admins" [ref=f4e45] [cursor=pointer]:
+              - /url: /admin-users
+          - generic [ref=f4e51]:
+            - heading "Guest Operations" [level=4] [ref=f4e52]
+            - link "Bookings" [ref=f4e53] [cursor=pointer]:
+              - /url: /bookings
+            - link "Guests" [ref=f4e56] [cursor=pointer]:
+              - /url: /guests
+            - link "Staff & Guides" [ref=f4e62] [cursor=pointer]:
+              - /url: /staff
+          - generic [ref=f4e75]:
+            - heading "Record Keeping" [level=4] [ref=f4e76]
+            - link "Harvest Logs" [ref=f4e77] [cursor=pointer]:
+              - /url: /harvest
+            - link "Invoices" [ref=f4e81] [cursor=pointer]:
+              - /url: /invoices
+      - main [ref=f4e85]:
+        - generic [ref=f4e1962]:
+          - button "Back to Bookings" [ref=f4e1964]
+          - heading "Create New Booking" [level=1] [ref=f4e1966]
+          - generic [ref=f4e1969]:
+            - generic [ref=f4e1970]:
+              - generic [ref=f4e1971]: "1"
+              - paragraph [ref=f4e1973]: Ranch & Dates
+            - generic [ref=f4e1976]:
+              - generic [ref=f4e1977]: "2"
+              - paragraph [ref=f4e1979]: Accommodation
+            - generic [ref=f4e1982]:
+              - generic [ref=f4e1983]: "3"
+              - paragraph [ref=f4e1985]: Party Details
+            - generic [ref=f4e1988]:
+              - generic [ref=f4e1989]: "4"
+              - paragraph [ref=f4e1991]: Assignment
+            - generic [ref=f4e1994]:
+              - generic [ref=f4e1995]: "5"
+              - paragraph [ref=f4e1997]: Review
+          - generic [ref=f4e1998]:
+            - generic [ref=f4e1999]:
+              - generic [ref=f4e2000]:
+                - heading "Select Ranch & Dates" [level=3] [ref=f4e2001]
+                - paragraph [ref=f4e2002]: Choose ranch and dates
+              - generic [ref=f4e2003]:
+                - generic [ref=f4e2004]:
+                  - generic [ref=f4e2005]:
+                    - text: Booking Type
+                    - generic [ref=f4e2006]: "*"
+                  - generic [ref=f4e2007]:
+                    - button "Hunting Guided hunting trip with licensed hunters" [ref=f4e2008]:
+                      - generic [ref=f4e2013]: Hunting
+                      - generic [ref=f4e2014]: Guided hunting trip with licensed hunters
+                    - button "Recreational Non-hunting outdoor experience" [ref=f4e2015]:
+                      - generic [ref=f4e2018]: Recreational
+                      - generic [ref=f4e2019]: Non-hunting outdoor experience
+                    - button "Maintenance Property maintenance or staff work" [ref=f4e2020]:
+                      - generic [ref=f4e2023]: Maintenance
+                      - generic [ref=f4e2024]: Property maintenance or staff work
+                - generic [ref=f4e2025]:
+                  - generic [ref=f4e2026]:
+                    - text: Select Ranch
+                    - generic [ref=f4e2027]: "*"
+                  - combobox [ref=f4e2028]:
+                    - generic: Choose ranch...
+                  - combobox [aria-hidden] [ref=f4e2031]
+            - button "Next" [ref=f4e2033]

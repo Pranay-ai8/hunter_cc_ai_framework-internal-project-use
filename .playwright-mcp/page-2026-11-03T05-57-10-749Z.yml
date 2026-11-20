@@ -1,0 +1,31 @@
+- generic [ref=f5e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - main [ref=f5e1400]:
+    - generic [ref=f5e1401]:
+      - generic [ref=f5e1402]:
+        - heading "Change Password" [level=3] [ref=f5e1407]
+        - paragraph [ref=f5e1408]: Update your password by entering your current password and choosing a new one
+      - generic [ref=f5e1410]:
+        - generic [ref=f5e1411]:
+          - text: Current Password
+          - generic [ref=f5e1412]:
+            - textbox "Current Password" [ref=f5e1413]:
+              - /placeholder: Enter current password
+            - button "Show password" [ref=f5e1414]
+        - generic [ref=f5e1418]:
+          - text: New Password
+          - generic [ref=f5e1419]:
+            - textbox "New Password" [ref=f5e1420]:
+              - /placeholder: Enter new password
+            - button "Show password" [ref=f5e1421]
+          - paragraph [ref=f5e1425]: Min 8 characters with uppercase, lowercase, number, and special character
+        - generic [ref=f5e1426]:
+          - text: Confirm New Password
+          - generic [ref=f5e1427]:
+            - textbox "Confirm New Password" [ref=f5e1428]:
+              - /placeholder: Confirm new password
+            - button "Show password" [ref=f5e1429]
+        - button "Change Password" [ref=f5e1433]
+        - button "Cancel" [ref=f5e1434]

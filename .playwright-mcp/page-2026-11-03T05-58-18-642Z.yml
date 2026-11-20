@@ -1,0 +1,113 @@
+- generic [ref=f16e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - generic [ref=f16e14]:
+    - banner [ref=f16e15]:
+      - generic [ref=f16e16]:
+        - generic [ref=f16e22]:
+          - heading "RanchOps Pro" [level=1] [ref=f16e23]
+          - paragraph [ref=f16e24]: Super Admin Portal
+        - button [ref=f16e26]
+    - generic [ref=f16e27]:
+      - complementary [ref=f16e28]:
+        - navigation [ref=f16e30]:
+          - link "Dashboard" [ref=f16e32] [cursor=pointer]:
+            - /url: /dashboard
+          - generic [ref=f16e38]:
+            - heading "Ranch Management" [level=4] [ref=f16e39]
+            - link "Ranches" [ref=f16e40] [cursor=pointer]:
+              - /url: /ranches
+            - link "Ranch Admins" [ref=f16e45] [cursor=pointer]:
+              - /url: /admin-users
+          - generic [ref=f16e51]:
+            - heading "Guest Operations" [level=4] [ref=f16e52]
+            - link "Bookings" [ref=f16e53] [cursor=pointer]:
+              - /url: /bookings
+            - link "Guests" [ref=f16e56] [cursor=pointer]:
+              - /url: /guests
+            - link "Staff & Guides" [ref=f16e62] [cursor=pointer]:
+              - /url: /staff
+          - generic [ref=f16e75]:
+            - heading "Record Keeping" [level=4] [ref=f16e76]
+            - link "Harvest Logs" [ref=f16e77] [cursor=pointer]:
+              - /url: /harvest
+            - link "Invoices" [ref=f16e81] [cursor=pointer]:
+              - /url: /invoices
+      - main [ref=f16e85]:
+        - generic [ref=f16e1382]:
+          - button "Back to Bookings" [ref=f16e1383]
+          - generic [ref=f16e1384]:
+            - generic [ref=f16e1385]:
+              - heading "Booking BK-2026-1004" [level=1] [ref=f16e1386]
+              - generic: 🟡 Pending
+              - generic [ref=f16e1387]: Hunting
+            - generic [ref=f16e1397]:
+              - paragraph [ref=f16e1398]: Created
+              - paragraph [ref=f16e1399]: 11/02/2026 • 11:56 AM
+              - paragraph [ref=f16e1400]: by Super Admin
+          - generic [ref=f16e1401]:
+            - generic [ref=f16e1402]:
+              - generic [ref=f16e1403]:
+                - generic [ref=f16e1404]:
+                  - heading "Waiver Status - Action Required" [level=3] [ref=f16e1405]
+                  - paragraph [ref=f16e1408]: "Progress: 0 of 1 signed (0%)"
+                - generic [ref=f16e1409]:
+                  - generic [ref=f16e1410]:
+                    - generic [ref=f16e1411]:
+                      - generic [ref=f16e1412]: "Deadline:"
+                      - generic [ref=f16e1413]: 01/18/2027 (76 days remaining)
+                    - progressbar [ref=f16e1414]
+                  - generic [ref=f16e1416]:
+                    - heading "Hunter Waiver Status" [level=4] [ref=f16e1417]
+                    - generic [ref=f16e1419]:
+                      - generic [ref=f16e1420]: QA-AUTO-mvyufr0k1t Dale Fox
+                      - generic [ref=f16e1425]:
+                        - generic [ref=f16e1426]: Pending (Reminder sent)
+                        - button "Send waiver to QA-AUTO-mvyufr0k1t Dale Fox" [ref=f16e1427]
+                        - button "Call QA-AUTO-mvyufr0k1t Dale Fox (no phone)" [disabled]
+                  - generic [ref=f16e1428]:
+                    - heading "Quick Actions" [level=4] [ref=f16e1429]
+                    - button "Resend Waiver to QA-AUTO-mvyufr0k1t Dale Fox" [ref=f16e1430]
+                    - button "Extend Waiver Deadline" [ref=f16e1431]
+              - generic [ref=f16e1432]:
+                - heading "Booking Details" [level=3] [ref=f16e1434]
+                - generic [ref=f16e1438]:
+                  - generic [ref=f16e1439]:
+                    - paragraph [ref=f16e1440]: Stay Information
+                    - paragraph [ref=f16e1441]: 01/25/2027 - 01/27/2027 (2)
+                  - generic [ref=f16e1442]:
+                    - paragraph [ref=f16e1443]: Accommodation
+                    - paragraph [ref=f16e1444]: QA-AUTO Room 1 (1 guests) - $300 Total
+              - generic [ref=f16e1445]:
+                - generic [ref=f16e1446]:
+                  - heading "Guest Services" [level=3] [ref=f16e1447]
+                  - paragraph [ref=f16e1451]: Services and add-ons attached to this booking
+                - paragraph [ref=f16e1453]: No guest services have been added for this booking.
+              - generic [ref=f16e1454]:
+                - heading "Next Steps" [level=3] [ref=f16e1456]
+                - list [ref=f16e1458]:
+                  - listitem [ref=f16e1459]:
+                    - generic [ref=f16e1462]: All participants (hunters and guests) must sign waivers before approval
+                  - listitem [ref=f16e1463]:
+                    - generic [ref=f16e1467]: Guest notifications will be sent upon approval
+            - generic [ref=f16e1468]:
+              - generic [ref=f16e1469]:
+                - heading "Quick Actions" [level=3] [ref=f16e1471]
+                - generic [ref=f16e1472]:
+                  - button "Edit Booking" [ref=f16e1473]
+                  - button "Approve Booking" [ref=f16e1474]
+                  - button "Cancel Booking" [ref=f16e1476]
+              - generic [ref=f16e1477]:
+                - heading "Party Information" [level=3] [ref=f16e1479]
+                - generic [ref=f16e1485]:
+                  - generic [ref=f16e1486]:
+                    - paragraph [ref=f16e1487]: Total Party
+                    - paragraph [ref=f16e1488]: 1 people
+                  - generic [ref=f16e1489]:
+                    - paragraph [ref=f16e1490]: Hunters
+                    - paragraph [ref=f16e1491]: QA-AUTO-mvyufr0k1t Dale Fox
+                  - paragraph [ref=f16e1493]: Guests
+              - generic [ref=f16e1494]:
+                - heading "Guide Assignment" [level=3] [ref=f16e1496]
+                - paragraph [ref=f16e1498]: Unassigned

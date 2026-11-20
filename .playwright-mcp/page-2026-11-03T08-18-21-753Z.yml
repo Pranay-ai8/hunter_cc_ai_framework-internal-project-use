@@ -1,0 +1,55 @@
+- generic [ref=f4e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - generic [ref=f4e44]:
+    - banner [ref=f4e45]:
+      - generic [ref=f4e46]:
+        - generic [ref=f4e52]:
+          - heading "QUATTRO DIAMANTE RANCH" [level=1] [ref=f4e53]
+          - paragraph [ref=f4e54]: Guide Portal
+        - button [ref=f4e56]
+    - generic [ref=f4e57]:
+      - complementary [ref=f4e58]:
+        - navigation [ref=f4e60]:
+          - generic [ref=f4e61]:
+            - link "Dashboard" [ref=f4e62] [cursor=pointer]:
+              - /url: /dashboard
+            - link "Bookings" [ref=f4e68] [cursor=pointer]:
+              - /url: /bookings
+            - link "Harvest Logs" [active] [ref=f4e71] [cursor=pointer]:
+              - /url: /harvest
+      - main [ref=f4e75]:
+        - generic [ref=f4e474]:
+          - generic [ref=f4e475]:
+            - generic [ref=f4e476]:
+              - heading "Harvest Logs" [level=1] [ref=f4e477]
+              - paragraph [ref=f4e478]: View and manage harvest records
+            - button "Log New Harvest" [ref=f4e480]
+          - generic [ref=f4e481]:
+            - heading "Tag Allocations" [level=3] [ref=f4e483]
+            - generic [ref=f4e484]: Loading tag allocations...
+          - generic [ref=f4e487]:
+            - textbox "Search by ID, species, or hunter..." [ref=f4e492]
+            - combobox [ref=f4e493]:
+              - generic: All Species
+            - button "From Date" [ref=f4e496]
+            - button "To Date" [ref=f4e497]
+          - generic [ref=f4e498]:
+            - generic [ref=f4e499]:
+              - heading "All Harvest Logs" [level=2] [ref=f4e501]
+              - generic [ref=f4e502]:
+                - button [ref=f4e503]
+                - button [ref=f4e504]
+            - table [ref=f4e508]:
+              - rowgroup [ref=f4e509]:
+                - row [ref=f4e510]:
+                  - columnheader "Harvest ID" [ref=f4e511]
+                  - columnheader "Species" [ref=f4e512]
+                  - columnheader "Animal" [ref=f4e513]
+                  - columnheader "Kill Date" [ref=f4e514]
+                  - columnheader "Tag" [ref=f4e515]
+                  - columnheader "Weight" [ref=f4e516]
+              - rowgroup [ref=f4e517]:
+                - row [ref=f4e518]:
+                  - cell "No harvest logs found" [ref=f4e519]

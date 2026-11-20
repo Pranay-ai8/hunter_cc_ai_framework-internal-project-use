@@ -1,0 +1,59 @@
+- generic [ref=f11e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - generic [ref=f11e3]:
+    - banner [ref=f11e4]:
+      - generic [ref=f11e5]:
+        - generic [ref=f11e11]:
+          - heading "RanchOps Pro" [level=1] [ref=f11e12]
+          - paragraph [ref=f11e13]: Super Admin Portal
+        - button [ref=f11e15]
+    - generic [ref=f11e16]:
+      - complementary [ref=f11e17]:
+        - navigation [ref=f11e19]:
+          - link "Dashboard" [ref=f11e21] [cursor=pointer]:
+            - /url: /dashboard
+          - generic [ref=f11e27]:
+            - heading "Ranch Management" [level=4] [ref=f11e28]
+            - link "Ranches" [ref=f11e29] [cursor=pointer]:
+              - /url: /ranches
+            - link "Ranch Admins" [ref=f11e34] [cursor=pointer]:
+              - /url: /admin-users
+          - generic [ref=f11e40]:
+            - heading "Guest Operations" [level=4] [ref=f11e41]
+            - link "Bookings" [ref=f11e42] [cursor=pointer]:
+              - /url: /bookings
+            - link "Guests" [ref=f11e45] [cursor=pointer]:
+              - /url: /guests
+            - link "Staff & Guides" [ref=f11e51] [cursor=pointer]:
+              - /url: /staff
+          - generic [ref=f11e64]:
+            - heading "Record Keeping" [level=4] [ref=f11e65]
+            - link "Harvest Logs" [ref=f11e66] [cursor=pointer]:
+              - /url: /harvest
+            - link "Invoices" [ref=f11e70] [cursor=pointer]:
+              - /url: /invoices
+      - main [ref=f11e74]:
+        - generic [ref=f11e76]:
+          - generic [ref=f11e77]:
+            - generic [ref=f11e78]:
+              - heading "Booking Management" [level=1] [ref=f11e79]
+              - paragraph [ref=f11e80]: View and manage all bookings
+            - button "New Booking" [ref=f11e81]
+          - generic [ref=f11e84]:
+            - textbox "Search by booking ID, hunter, or guide" [ref=f11e89]:
+              - /placeholder: Search by booking ID, hunter, or guide...
+            - combobox [ref=f11e90]:
+              - generic: All Status
+            - combobox [ref=f11e93]:
+              - generic: All Guides
+            - combobox [ref=f11e96]:
+              - generic: All Types
+            - button "From Date" [ref=f11e99]
+            - button "To Date" [ref=f11e100]
+          - generic [ref=f11e101]:
+            - heading "All Bookings" [level=2] [ref=f11e103]
+            - generic [ref=f11e104]:
+              - button "Card view" [ref=f11e105]
+              - button "Table view" [ref=f11e106]

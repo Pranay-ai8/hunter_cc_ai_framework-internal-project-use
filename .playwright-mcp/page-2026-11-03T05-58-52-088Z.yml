@@ -1,0 +1,23 @@
+- generic [ref=f1e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - main [ref=f1e4]:
+    - generic [ref=f1e5]:
+      - generic [ref=f1e6]:
+        - heading "RanchOps Pro" [level=1] [ref=f1e11]
+        - paragraph [ref=f1e12]: Sign in to your account
+      - generic [ref=f1e13]:
+        - generic [ref=f1e14]:
+          - generic [ref=f1e15]:
+            - text: Email
+            - textbox "Email" [ref=f1e16]:
+              - /placeholder: your.email@example.com
+          - generic [ref=f1e17]:
+            - text: Password
+            - generic [ref=f1e18]:
+              - textbox "Password" [ref=f1e19]:
+                - /placeholder: •••••••••
+              - button "Show password" [ref=f1e20]
+          - button "Sign In" [ref=f1e24]
+        - button "Forgot/Reset Password?" [ref=f1e26]

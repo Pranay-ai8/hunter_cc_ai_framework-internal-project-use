@@ -1,0 +1,50 @@
+- generic [ref=f4e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - generic [ref=f4e44]:
+    - banner [ref=f4e45]:
+      - generic [ref=f4e46]:
+        - generic [ref=f4e52]:
+          - heading "QUATTRO DIAMANTE RANCH" [level=1] [ref=f4e53]
+          - paragraph [ref=f4e54]: Guide Portal
+        - button [ref=f4e56]
+    - generic [ref=f4e57]:
+      - complementary [ref=f4e58]:
+        - navigation [ref=f4e60]:
+          - generic [ref=f4e61]:
+            - link "Dashboard" [ref=f4e62] [cursor=pointer]:
+              - /url: /dashboard
+            - link "Bookings" [ref=f4e68] [cursor=pointer]:
+              - /url: /bookings
+            - link "Harvest Logs" [ref=f4e71] [cursor=pointer]:
+              - /url: /harvest
+      - main [ref=f4e75]:
+        - generic [ref=f4e599]:
+          - button "Back to Bookings" [ref=f4e600]
+          - generic [ref=f4e601]:
+            - generic [ref=f4e602]:
+              - heading "Booking BK-2026-1048" [level=1] [ref=f4e603]
+              - generic: 🟡 Pending
+              - generic [ref=f4e604]: Maintenance
+            - generic [ref=f4e614]:
+              - paragraph [ref=f4e615]: Created
+              - paragraph [ref=f4e616]: 09/21/2026 • 11:34 PM
+              - paragraph [ref=f4e617]: by Super Admin
+          - generic [ref=f4e618]:
+            - generic [ref=f4e620]:
+              - heading "Booking Details" [level=3] [ref=f4e622]
+              - generic [ref=f4e626]:
+                - generic [ref=f4e627]:
+                  - paragraph [ref=f4e628]: Stay Information
+                  - paragraph [ref=f4e629]: 09/26/2026 - 09/27/2026 (1)
+                - generic [ref=f4e630]:
+                  - paragraph [ref=f4e631]: Accommodation
+                  - paragraph [ref=f4e632]: twelv
+            - generic [ref=f4e634]:
+              - heading "Guide Assignment" [level=3] [ref=f4e636]
+              - generic [ref=f4e638]:
+                - paragraph [ref=f4e639]: Assigned Guide
+                - paragraph [ref=f4e640]: Guide Ch
+                - generic [ref=f4e641]: "+17087644465"
+                - generic [ref=f4e645]: guidec01@gmail.com

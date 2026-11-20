@@ -1,0 +1,218 @@
+- generic [ref=f4e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - generic [ref=f4e14]:
+    - banner [ref=f4e15]:
+      - generic [ref=f4e16]:
+        - generic [ref=f4e22]:
+          - heading "RanchOps Pro" [level=1] [ref=f4e23]
+          - paragraph [ref=f4e24]: Super Admin Portal
+        - button [ref=f4e26]
+    - generic [ref=f4e27]:
+      - complementary [ref=f4e28]:
+        - navigation [ref=f4e30]:
+          - link "Dashboard" [ref=f4e32] [cursor=pointer]:
+            - /url: /dashboard
+          - generic [ref=f4e38]:
+            - heading "Ranch Management" [level=4] [ref=f4e39]
+            - link "Ranches" [ref=f4e40] [cursor=pointer]:
+              - /url: /ranches
+            - link "Ranch Admins" [ref=f4e45] [cursor=pointer]:
+              - /url: /admin-users
+          - generic [ref=f4e51]:
+            - heading "Guest Operations" [level=4] [ref=f4e52]
+            - link "Bookings" [active] [ref=f4e53] [cursor=pointer]:
+              - /url: /bookings
+            - link "Guests" [ref=f4e56] [cursor=pointer]:
+              - /url: /guests
+            - link "Staff & Guides" [ref=f4e62] [cursor=pointer]:
+              - /url: /staff
+          - generic [ref=f4e75]:
+            - heading "Record Keeping" [level=4] [ref=f4e76]
+            - link "Harvest Logs" [ref=f4e77] [cursor=pointer]:
+              - /url: /harvest
+            - link "Invoices" [ref=f4e81] [cursor=pointer]:
+              - /url: /invoices
+      - main [ref=f4e85]:
+        - generic [ref=f4e1728]:
+          - generic [ref=f4e1729]:
+            - generic [ref=f4e1730]:
+              - heading "Booking Management" [level=1] [ref=f4e1731]
+              - paragraph [ref=f4e1732]: View and manage all bookings
+            - button "New Booking" [ref=f4e1733]
+          - generic [ref=f4e1736]:
+            - textbox "Search by booking ID, hunter, or guide" [ref=f4e1741]:
+              - /placeholder: Search by booking ID, hunter, or guide...
+            - combobox [ref=f4e1742]:
+              - generic: All Status
+            - combobox [ref=f4e1745]:
+              - generic: All Guides
+            - combobox [ref=f4e1748]:
+              - generic: All Types
+            - button "From Date" [ref=f4e1751]
+            - button "To Date" [ref=f4e1752]
+          - generic [ref=f4e1753]:
+            - heading "All Bookings" [level=2] [ref=f4e1755]
+            - generic [ref=f4e1756]:
+              - button "Card view" [ref=f4e1757]
+              - button "Table view" [ref=f4e1758]
+          - table [ref=f4e1762]:
+            - rowgroup [ref=f4e1763]:
+              - row [ref=f4e1764]:
+                - columnheader "Booking Id" [ref=f4e1765]
+                - columnheader "Hunter" [ref=f4e1766]
+                - columnheader "Check-in" [ref=f4e1767]
+                - columnheader "Check-out" [ref=f4e1768]
+                - columnheader "Hunters" [ref=f4e1769]
+                - columnheader "Guests" [ref=f4e1770]
+                - columnheader "Guide" [ref=f4e1771]
+                - columnheader "Waivers" [ref=f4e1772]
+                - columnheader "Type" [ref=f4e1773]
+                - columnheader "Status" [ref=f4e1774]
+                - columnheader "Actions" [ref=f4e1775]
+            - rowgroup [ref=f4e1776]:
+              - row [ref=f4e1777] [cursor=pointer]:
+                - cell "BK-2026-1004" [ref=f4e1778]
+                - cell "QA-AUTO-mvyufr0k1t Dale Fox" [ref=f4e1779]
+                - cell "01/25/2027" [ref=f4e1780]
+                - cell "01/27/2027" [ref=f4e1781]
+                - cell "1" [ref=f4e1782]
+                - cell "0" [ref=f4e1783]
+                - cell "-" [ref=f4e1784]
+                - cell "0/1" [ref=f4e1786]
+                - cell "Hunting" [ref=f4e1787]
+                - cell "pending" [ref=f4e1789]
+                - cell [ref=f4e1790]:
+                  - button "More options" [ref=f4e1792]
+              - row [ref=f4e1793] [cursor=pointer]:
+                - cell "BK-2026-1241" [ref=f4e1794]
+                - cell "QA-AUTO-mvyufr0k1t Dale Fox" [ref=f4e1795]
+                - cell "01/25/2027" [ref=f4e1796]
+                - cell "01/27/2027" [ref=f4e1797]
+                - cell "1" [ref=f4e1798]
+                - cell "0" [ref=f4e1799]
+                - cell "-" [ref=f4e1800]
+                - cell "0/1" [ref=f4e1802]
+                - cell "Hunting" [ref=f4e1803]
+                - cell "pending" [ref=f4e1805]
+                - cell [ref=f4e1806]:
+                  - button "More options" [ref=f4e1808]
+              - row [ref=f4e1809] [cursor=pointer]:
+                - cell "BK-2026-1240" [ref=f4e1810]
+                - cell "QA-AUTO-mvyufr0k1r Recent Hunter" [ref=f4e1811]
+                - cell "01/05/2027" [ref=f4e1812]
+                - cell "01/07/2027" [ref=f4e1813]
+                - cell "1" [ref=f4e1814]
+                - cell "0" [ref=f4e1815]
+                - cell "-" [ref=f4e1816]
+                - cell "0/1" [ref=f4e1818]
+                - cell "Hunting" [ref=f4e1819]
+                - cell "pending" [ref=f4e1821]
+                - cell [ref=f4e1822]:
+                  - button "More options" [ref=f4e1824]
+              - row [ref=f4e1825] [cursor=pointer]:
+                - cell "BK-2026-1239" [ref=f4e1826]
+                - cell "QA-AUTO-mvyufr0k1j Hunter QA One" [ref=f4e1827]
+                - cell "05/25/2027" [ref=f4e1828]
+                - cell "05/27/2027" [ref=f4e1829]
+                - cell "1" [ref=f4e1830]
+                - cell "0" [ref=f4e1831]
+                - cell "-" [ref=f4e1832]
+                - cell "0/1" [ref=f4e1834]
+                - cell "Hunting" [ref=f4e1835]
+                - cell "pending" [ref=f4e1837]
+                - cell [ref=f4e1838]:
+                  - button "More options" [ref=f4e1840]
+              - row [ref=f4e1841] [cursor=pointer]:
+                - cell "BK-2026-1011" [ref=f4e1842]
+                - cell "QA-AUTO-mvyufr0k1f Hunter QA One" [ref=f4e1843]
+                - cell "05/26/2027" [ref=f4e1844]
+                - cell "05/28/2027" [ref=f4e1845]
+                - cell "1" [ref=f4e1846]
+                - cell "0" [ref=f4e1847]
+                - cell "-" [ref=f4e1848]
+                - cell "0/1" [ref=f4e1850]
+                - cell "Hunting" [ref=f4e1851]
+                - cell "pending" [ref=f4e1853]
+                - cell [ref=f4e1854]:
+                  - button "More options" [ref=f4e1856]
+              - row [ref=f4e1857] [cursor=pointer]:
+                - cell "BK-2026-1238" [ref=f4e1858]
+                - cell "QA-AUTO-BASE B083 Hunter" [ref=f4e1859]
+                - cell "04/21/2027" [ref=f4e1860]
+                - cell "04/23/2027" [ref=f4e1861]
+                - cell "1" [ref=f4e1862]
+                - cell "0" [ref=f4e1863]
+                - cell "-" [ref=f4e1864]
+                - cell "0/1" [ref=f4e1866]
+                - cell "Hunting" [ref=f4e1867]
+                - cell "pending" [ref=f4e1869]
+                - cell [ref=f4e1870]:
+                  - button "More options" [ref=f4e1872]
+              - row [ref=f4e1873] [cursor=pointer]:
+                - cell "BK-2026-1235" [ref=f4e1874]
+                - cell "QA-AUTO-BASE B082 Hunter" [ref=f4e1875]
+                - cell "04/16/2027" [ref=f4e1876]
+                - cell "04/18/2027" [ref=f4e1877]
+                - cell "1" [ref=f4e1878]
+                - cell "0" [ref=f4e1879]
+                - cell "-" [ref=f4e1880]
+                - cell "0/1" [ref=f4e1882]
+                - cell "Hunting" [ref=f4e1883]
+                - cell "pending" [ref=f4e1885]
+                - cell [ref=f4e1886]:
+                  - button "More options" [ref=f4e1888]
+              - row [ref=f4e1889] [cursor=pointer]:
+                - cell "BK-2026-1232" [ref=f4e1890]
+                - cell "QA-AUTO-BASE B022 Hunter" [ref=f4e1891]
+                - cell "02/09/2027" [ref=f4e1892]
+                - cell "02/11/2027" [ref=f4e1893]
+                - cell "1" [ref=f4e1894]
+                - cell "0" [ref=f4e1895]
+                - cell "-" [ref=f4e1896]
+                - cell "0/1" [ref=f4e1898]
+                - cell "Hunting" [ref=f4e1899]
+                - cell "cancelled" [ref=f4e1901]
+                - cell [ref=f4e1902]:
+                  - button "More options" [ref=f4e1904]
+              - row [ref=f4e1905] [cursor=pointer]:
+                - cell "BK-2026-1221" [ref=f4e1906]
+                - cell "QA-AUTO-mvyufr0k0z Hunter QA One" [ref=f4e1907]
+                - cell "07/15/2027" [ref=f4e1908]
+                - cell "07/17/2027" [ref=f4e1909]
+                - cell "1" [ref=f4e1910]
+                - cell "0" [ref=f4e1911]
+                - cell "-" [ref=f4e1912]
+                - cell "0/1" [ref=f4e1914]
+                - cell "Hunting" [ref=f4e1915]
+                - cell "pending" [ref=f4e1917]
+                - cell [ref=f4e1918]:
+                  - button "More options" [ref=f4e1920]
+              - row [ref=f4e1921] [cursor=pointer]:
+                - cell "BK-2026-1220" [ref=f4e1922]
+                - cell "QA-AUTO-mvyufr0k0s Hunter QA One" [ref=f4e1923]
+                - cell "07/26/2027" [ref=f4e1924]
+                - cell "07/28/2027" [ref=f4e1925]
+                - cell "1" [ref=f4e1926]
+                - cell "0" [ref=f4e1927]
+                - cell "QA-AUTO-BASE Guide One" [ref=f4e1928]
+                - cell "0/1" [ref=f4e1929]
+                - cell "Hunting" [ref=f4e1930]
+                - cell "pending" [ref=f4e1932]
+                - cell [ref=f4e1933]:
+                  - button "More options" [ref=f4e1935]
+          - generic [ref=f4e1938]:
+            - generic [ref=f4e1939]:
+              - generic [ref=f4e1940]: Showing 1 to 10 of 254 results
+              - generic [ref=f4e1941]:
+                - generic [ref=f4e1942]: per page
+                - combobox [ref=f4e1943]:
+                  - generic: "10"
+            - generic [ref=f4e1946]:
+              - button [disabled]
+              - button "1" [ref=f4e1948]
+              - button "2" [ref=f4e1950]
+              - button "3" [ref=f4e1952]
+              - button "26" [ref=f4e1960]
+              - button [ref=f4e1961]

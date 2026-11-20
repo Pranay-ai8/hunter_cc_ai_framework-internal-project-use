@@ -1,0 +1,209 @@
+- generic [ref=f4e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - generic [ref=f4e14]:
+    - banner [ref=f4e15]:
+      - generic [ref=f4e16]:
+        - generic [ref=f4e22]:
+          - heading "RanchOps Pro" [level=1] [ref=f4e23]
+          - paragraph [ref=f4e24]: Super Admin Portal
+        - button [ref=f4e26]
+    - generic [ref=f4e27]:
+      - complementary [ref=f4e28]:
+        - navigation [ref=f4e30]:
+          - link "Dashboard" [ref=f4e32] [cursor=pointer]:
+            - /url: /dashboard
+          - generic [ref=f4e38]:
+            - heading "Ranch Management" [level=4] [ref=f4e39]
+            - link "Ranches" [ref=f4e40] [cursor=pointer]:
+              - /url: /ranches
+            - link "Ranch Admins" [ref=f4e45] [cursor=pointer]:
+              - /url: /admin-users
+          - generic [ref=f4e51]:
+            - heading "Guest Operations" [level=4] [ref=f4e52]
+            - link "Bookings" [ref=f4e53] [cursor=pointer]:
+              - /url: /bookings
+            - link "Guests" [ref=f4e56] [cursor=pointer]:
+              - /url: /guests
+            - link "Staff & Guides" [ref=f4e62] [cursor=pointer]:
+              - /url: /staff
+          - generic [ref=f4e75]:
+            - heading "Record Keeping" [level=4] [ref=f4e76]
+            - link "Harvest Logs" [active] [ref=f4e77] [cursor=pointer]:
+              - /url: /harvest
+            - link "Invoices" [ref=f4e81] [cursor=pointer]:
+              - /url: /invoices
+      - main [ref=f4e85]:
+        - generic [ref=f4e2594]:
+          - generic [ref=f4e2595]:
+            - generic [ref=f4e2596]:
+              - heading "Harvest Logs" [level=1] [ref=f4e2597]
+              - paragraph [ref=f4e2598]: View and manage harvest records
+            - generic [ref=f4e2599]:
+              - button "Log New Harvest" [ref=f4e2600]
+              - button "Tag Settings" [ref=f4e2601]
+          - generic [ref=f4e2604]:
+            - textbox "Search by ID, species, or hunter..." [ref=f4e2609]
+            - combobox [ref=f4e2610]:
+              - generic: All Species
+            - combobox [ref=f4e2613]:
+              - generic: All Ranches
+            - button "From Date" [ref=f4e2616]
+            - button "To Date" [ref=f4e2617]
+          - generic [ref=f4e2618]:
+            - generic [ref=f4e2619]:
+              - heading "All Harvest Logs" [level=2] [ref=f4e2621]
+              - generic [ref=f4e2622]:
+                - button [ref=f4e2623]
+                - button [ref=f4e2624]
+            - table [ref=f4e2628]:
+              - rowgroup [ref=f4e2629]:
+                - row [ref=f4e2630]:
+                  - columnheader "Harvest ID" [ref=f4e2631]
+                  - columnheader "Species" [ref=f4e2632]
+                  - columnheader "Animal" [ref=f4e2633]
+                  - columnheader "Kill Date" [ref=f4e2634]
+                  - columnheader "Tag" [ref=f4e2635]
+                  - columnheader "Weight" [ref=f4e2636]
+                  - columnheader "Actions" [ref=f4e2637]
+              - rowgroup [ref=f4e2638]:
+                - row [ref=f4e2639] [cursor=pointer]:
+                  - cell "HV-2026-1004" [ref=f4e2640]
+                  - cell "WTD" [ref=f4e2642]
+                  - cell "Whitetail Deer" [ref=f4e2643]
+                  - cell "10/29/2026" [ref=f4e2644]
+                  - cell "71920788" [ref=f4e2645]
+                  - cell "—" [ref=f4e2646]
+                  - cell [ref=f4e2647]:
+                    - generic [ref=f4e2648]:
+                      - button "Edit" [ref=f4e2649]
+                      - button [ref=f4e2650]
+                - row [ref=f4e2651] [cursor=pointer]:
+                  - cell "HV-2026-1003" [ref=f4e2652]
+                  - cell "WTD" [ref=f4e2654]
+                  - cell "Whitetail Deer" [ref=f4e2655]
+                  - cell "10/29/2026" [ref=f4e2656]
+                  - cell "71781419" [ref=f4e2657]
+                  - cell "—" [ref=f4e2658]
+                  - cell [ref=f4e2659]:
+                    - generic [ref=f4e2660]:
+                      - button "Edit" [ref=f4e2661]
+                      - button [ref=f4e2662]
+                - row [ref=f4e2663] [cursor=pointer]:
+                  - cell "HV-2026-1017" [ref=f4e2664]
+                  - cell "WTD" [ref=f4e2666]
+                  - cell "Deer" [ref=f4e2667]
+                  - cell "10/27/2026" [ref=f4e2668]
+                  - cell "2345612" [ref=f4e2669]
+                  - cell "—" [ref=f4e2670]
+                  - cell [ref=f4e2671]:
+                    - generic [ref=f4e2672]:
+                      - button "Edit" [ref=f4e2673]
+                      - button [ref=f4e2674]
+                - row [ref=f4e2675] [cursor=pointer]:
+                  - cell "HV-2026-1016" [ref=f4e2676]
+                  - cell "mnkymle" [ref=f4e2678]
+                  - cell "mnkyy" [ref=f4e2679]
+                  - cell "10/28/2026" [ref=f4e2680]
+                  - cell "—" [ref=f4e2681]
+                  - cell "—" [ref=f4e2682]
+                  - cell [ref=f4e2683]:
+                    - generic [ref=f4e2684]:
+                      - button "Edit" [ref=f4e2685]
+                      - button [ref=f4e2686]
+                - row [ref=f4e2687] [cursor=pointer]:
+                  - cell "HV-2026-1006" [ref=f4e2688]
+                  - cell "WTD" [ref=f4e2690]
+                  - cell "WT BUCK up to 130\"" [ref=f4e2691]
+                  - cell "10/27/2026" [ref=f4e2692]
+                  - cell "123455" [ref=f4e2693]
+                  - cell "—" [ref=f4e2694]
+                  - cell [ref=f4e2695]:
+                    - generic [ref=f4e2696]:
+                      - button "Edit" [ref=f4e2697]
+                      - button [ref=f4e2698]
+                - row [ref=f4e2699] [cursor=pointer]:
+                  - cell "HV-2026-1001" [ref=f4e2700]
+                  - cell "RGT" [ref=f4e2702]
+                  - cell "Turkey" [ref=f4e2703]
+                  - cell "9/20/2026" [ref=f4e2704]
+                  - cell "5991255" [ref=f4e2705]
+                  - cell "20 lbs" [ref=f4e2706]
+                  - cell [ref=f4e2707]:
+                    - generic [ref=f4e2708]:
+                      - button "Edit" [ref=f4e2709]
+                      - button [ref=f4e2710]
+                - row [ref=f4e2711] [cursor=pointer]:
+                  - cell "HV-2026-1005" [ref=f4e2712]
+                  - cell "RGT" [ref=f4e2714]
+                  - cell "WT BUCK up to 130\"" [ref=f4e2715]
+                  - cell "9/16/2026" [ref=f4e2716]
+                  - cell "—" [ref=f4e2717]
+                  - cell "77 lbs" [ref=f4e2718]
+                  - cell [ref=f4e2719]:
+                    - generic [ref=f4e2720]:
+                      - button "Edit" [ref=f4e2721]
+                      - button [ref=f4e2722]
+                - row [ref=f4e2723] [cursor=pointer]:
+                  - cell "HV-2026-1015 Invoiced · INV-2026-1002 · BK-2026-1002" [ref=f4e2724]:
+                    - generic [ref=f4e2725]:
+                      - text: HV-2026-1015
+                      - generic "Invoiced on INV-2026-1002 (BK-2026-1002)" [ref=f4e2726]:
+                        - text: Invoiced · INV-2026-1002
+                        - generic [ref=f4e2727]: · BK-2026-1002
+                  - cell "FHG" [ref=f4e2728]
+                  - cell "chimpan" [ref=f4e2729]
+                  - cell "8/15/2026" [ref=f4e2730]
+                  - cell "—" [ref=f4e2731]
+                  - cell "111 lbs" [ref=f4e2732]
+                  - cell [ref=f4e2733]:
+                    - generic [ref=f4e2734]:
+                      - button "Edit" [ref=f4e2735]
+                      - button [ref=f4e2736]
+                - row [ref=f4e2737] [cursor=pointer]:
+                  - cell "HV-2026-1013 Invoiced · INV-2026-1002 · BK-2026-1002" [ref=f4e2738]:
+                    - generic [ref=f4e2739]:
+                      - text: HV-2026-1013
+                      - generic "Invoiced on INV-2026-1002 (BK-2026-1002)" [ref=f4e2740]:
+                        - text: Invoiced · INV-2026-1002
+                        - generic [ref=f4e2741]: · BK-2026-1002
+                  - cell "FHG" [ref=f4e2742]
+                  - cell "chimpan" [ref=f4e2743]
+                  - cell "8/15/2026" [ref=f4e2744]
+                  - cell "—" [ref=f4e2745]
+                  - cell "—" [ref=f4e2746]
+                  - cell [ref=f4e2747]:
+                    - generic [ref=f4e2748]:
+                      - button "Edit" [ref=f4e2749]
+                      - button [ref=f4e2750]
+                - row [ref=f4e2751] [cursor=pointer]:
+                  - cell "HV-2026-1012 Invoiced · INV-2026-1002 · BK-2026-1002" [ref=f4e2752]:
+                    - generic [ref=f4e2753]:
+                      - text: HV-2026-1012
+                      - generic "Invoiced on INV-2026-1002 (BK-2026-1002)" [ref=f4e2754]:
+                        - text: Invoiced · INV-2026-1002
+                        - generic [ref=f4e2755]: · BK-2026-1002
+                  - cell "zeroi" [ref=f4e2756]
+                  - cell "chimpan-2" [ref=f4e2757]
+                  - cell "8/14/2026" [ref=f4e2758]
+                  - cell "—" [ref=f4e2759]
+                  - cell "—" [ref=f4e2760]
+                  - cell [ref=f4e2761]:
+                    - generic [ref=f4e2762]:
+                      - button "Edit" [ref=f4e2763]
+                      - button [ref=f4e2764]
+          - generic [ref=f4e2767]:
+            - generic [ref=f4e2768]:
+              - generic [ref=f4e2769]: Showing 1 to 10 of 32 results
+              - generic [ref=f4e2770]:
+                - generic [ref=f4e2771]: per page
+                - combobox [ref=f4e2772]:
+                  - generic: "10"
+            - generic [ref=f4e2775]:
+              - button [disabled]
+              - button "1" [ref=f4e2777]
+              - button "2" [ref=f4e2779]
+              - button "3" [ref=f4e2781]
+              - button "4" [ref=f4e2783]
+              - button [ref=f4e2784]

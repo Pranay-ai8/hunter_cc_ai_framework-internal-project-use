@@ -1,0 +1,196 @@
+- generic [ref=f3e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - generic [ref=f3e3]:
+    - banner [ref=f3e4]:
+      - generic [ref=f3e5]:
+        - generic [ref=f3e11]:
+          - heading "RanchOps Pro" [level=1] [ref=f3e12]
+          - paragraph [ref=f3e13]: Super Admin Portal
+        - button [ref=f3e15]
+    - generic [ref=f3e16]:
+      - complementary [ref=f3e17]:
+        - navigation [ref=f3e19]:
+          - link "Dashboard" [ref=f3e21] [cursor=pointer]:
+            - /url: /dashboard
+          - generic [ref=f3e27]:
+            - heading "Ranch Management" [level=4] [ref=f3e28]
+            - link "Ranches" [ref=f3e29] [cursor=pointer]:
+              - /url: /ranches
+            - link "Ranch Admins" [ref=f3e34] [cursor=pointer]:
+              - /url: /admin-users
+          - generic [ref=f3e40]:
+            - heading "Guest Operations" [level=4] [ref=f3e41]
+            - link "Bookings" [ref=f3e42] [cursor=pointer]:
+              - /url: /bookings
+            - link "Guests" [ref=f3e45] [cursor=pointer]:
+              - /url: /guests
+            - link "Staff & Guides" [ref=f3e51] [cursor=pointer]:
+              - /url: /staff
+          - generic [ref=f3e64]:
+            - heading "Record Keeping" [level=4] [ref=f3e65]
+            - link "Harvest Logs" [ref=f3e66] [cursor=pointer]:
+              - /url: /harvest
+            - link "Invoices" [ref=f3e70] [cursor=pointer]:
+              - /url: /invoices
+      - main [ref=f3e74]:
+        - generic [ref=f3e76]:
+          - generic [ref=f3e77]:
+            - generic [ref=f3e78]:
+              - heading "Dashboard" [level=1] [ref=f3e79]
+              - paragraph [ref=f3e80]: Complete ranch management overview
+            - button "New Booking" [ref=f3e82]
+          - generic [ref=f3e120]:
+            - heading "Tag Allocations" [level=3] [ref=f3e122]
+            - generic [ref=f3e123]: Loading tag allocations...
+          - generic [ref=f3e125]:
+            - generic [ref=f3e127]:
+              - heading "Booking Calendar" [level=3] [ref=f3e128]
+              - combobox [ref=f3e129]:
+                - generic: All Ranches
+            - generic [ref=f3e134]:
+              - generic [ref=f3e135]:
+                - generic [ref=f3e136]:
+                  - button "today" [disabled] [ref=f3e137]
+                  - generic [ref=f3e138]:
+                    - button "Previous month" [ref=f3e139] [cursor=pointer]:
+                      - img [ref=f3e140]: 
+                    - button "Next month" [ref=f3e141] [cursor=pointer]:
+                      - img [ref=f3e142]: 
+                - heading "November 2026" [level=2] [ref=f3e144]
+                - generic [ref=f3e146]:
+                  - button "Month" [pressed] [ref=f3e147] [cursor=pointer]
+                  - button "Week" [ref=f3e148] [cursor=pointer]
+                  - button "Day" [ref=f3e149] [cursor=pointer]
+                  - button "Agenda" [ref=f3e150] [cursor=pointer]
+              - generic "November 2026" [ref=f3e151]:
+                - grid [ref=f3e153]:
+                  - rowgroup [ref=f3e154]:
+                    - row [ref=f3e158]:
+                      - columnheader "Sunday" [ref=f3e159]:
+                        - generic "Sunday" [ref=f3e161]: Sun
+                      - columnheader "Monday" [ref=f3e162]:
+                        - generic "Monday" [ref=f3e164]: Mon
+                      - columnheader "Tuesday" [ref=f3e165]:
+                        - generic "Tuesday" [ref=f3e167]: Tue
+                      - columnheader "Wednesday" [ref=f3e168]:
+                        - generic "Wednesday" [ref=f3e170]: Wed
+                      - columnheader "Thursday" [ref=f3e171]:
+                        - generic "Thursday" [ref=f3e173]: Thu
+                      - columnheader "Friday" [ref=f3e174]:
+                        - generic "Friday" [ref=f3e176]: Fri
+                      - columnheader "Saturday" [ref=f3e177]:
+                        - generic "Saturday" [ref=f3e179]: Sat
+                  - rowgroup [ref=f3e180]:
+                    - generic [ref=f3e183]:
+                      - row [ref=f3e185]:
+                        - gridcell "November 1, 2026" [ref=f3e186]:
+                          - generic "November 1, 2026" [ref=f3e189]: "1"
+                        - gridcell "November 2, 2026" [ref=f3e191]:
+                          - generic "November 2, 2026" [ref=f3e194]: "2"
+                        - gridcell "November 3, 2026" [ref=f3e196]:
+                          - generic "November 3, 2026" [ref=f3e199]: "3"
+                        - gridcell "November 4, 2026" [ref=f3e201]:
+                          - generic "November 4, 2026" [ref=f3e204]: "4"
+                        - gridcell "November 5, 2026" [ref=f3e206]:
+                          - generic "November 5, 2026" [ref=f3e209]: "5"
+                        - gridcell "November 6, 2026" [ref=f3e211]:
+                          - generic "November 6, 2026" [ref=f3e214]: "6"
+                        - gridcell "November 7, 2026" [ref=f3e216]:
+                          - generic "November 7, 2026" [ref=f3e219]: "7"
+                      - row [ref=f3e221]:
+                        - gridcell "November 8, 2026" [ref=f3e222]:
+                          - generic "November 8, 2026" [ref=f3e225]: "8"
+                        - gridcell "November 9, 2026" [ref=f3e227]:
+                          - generic "November 9, 2026" [ref=f3e230]: "9"
+                        - gridcell "November 10, 2026" [ref=f3e232]:
+                          - generic "November 10, 2026" [ref=f3e235]: "10"
+                        - gridcell "November 11, 2026" [ref=f3e237]:
+                          - generic "November 11, 2026" [ref=f3e240]: "11"
+                        - gridcell "November 12, 2026" [ref=f3e242]:
+                          - generic "November 12, 2026" [ref=f3e245]: "12"
+                        - gridcell "November 13, 2026" [ref=f3e247]:
+                          - generic "November 13, 2026" [ref=f3e250]: "13"
+                        - gridcell "November 14, 2026" [ref=f3e252]:
+                          - generic "November 14, 2026" [ref=f3e255]: "14"
+                      - row [ref=f3e257]:
+                        - gridcell "November 15, 2026" [ref=f3e258]:
+                          - generic "November 15, 2026" [ref=f3e261]: "15"
+                        - gridcell "November 16, 2026" [ref=f3e263]:
+                          - generic "November 16, 2026" [ref=f3e266]: "16"
+                        - gridcell "November 17, 2026" [ref=f3e268]:
+                          - generic "November 17, 2026" [ref=f3e271]: "17"
+                        - gridcell "November 18, 2026" [ref=f3e273]:
+                          - generic "November 18, 2026" [ref=f3e276]: "18"
+                        - gridcell "November 19, 2026" [ref=f3e278]:
+                          - generic "November 19, 2026" [ref=f3e281]: "19"
+                        - gridcell "November 20, 2026" [ref=f3e283]:
+                          - generic "November 20, 2026" [ref=f3e286]: "20"
+                        - gridcell "November 21, 2026" [ref=f3e288]:
+                          - generic "November 21, 2026" [ref=f3e291]: "21"
+                      - row [ref=f3e293]:
+                        - gridcell "November 22, 2026" [ref=f3e294]:
+                          - generic "November 22, 2026" [ref=f3e297]: "22"
+                        - gridcell "November 23, 2026" [ref=f3e299]:
+                          - generic "November 23, 2026" [ref=f3e302]: "23"
+                        - gridcell "November 24, 2026" [ref=f3e304]:
+                          - generic "November 24, 2026" [ref=f3e307]: "24"
+                        - gridcell "November 25, 2026" [ref=f3e309]:
+                          - generic "November 25, 2026" [ref=f3e312]: "25"
+                        - gridcell "November 26, 2026" [ref=f3e314]:
+                          - generic "November 26, 2026" [ref=f3e317]: "26"
+                        - gridcell "November 27, 2026" [ref=f3e319]:
+                          - generic "November 27, 2026" [ref=f3e322]: "27"
+                        - gridcell "November 28, 2026" [ref=f3e324]:
+                          - generic "November 28, 2026" [ref=f3e327]: "28"
+                      - row [ref=f3e329]:
+                        - gridcell "November 29, 2026" [ref=f3e330]:
+                          - generic "November 29, 2026" [ref=f3e333]: "29"
+                        - gridcell "November 30, 2026" [ref=f3e335]:
+                          - generic "November 30, 2026" [ref=f3e338]: "30"
+                        - gridcell "December 1, 2026" [ref=f3e340]:
+                          - generic "December 1, 2026" [ref=f3e343]: "1"
+                        - gridcell "December 2, 2026" [ref=f3e345]:
+                          - generic "December 2, 2026" [ref=f3e348]: "2"
+                        - gridcell "December 3, 2026" [ref=f3e350]:
+                          - generic "December 3, 2026" [ref=f3e353]: "3"
+                        - gridcell "December 4, 2026" [ref=f3e355]:
+                          - generic "December 4, 2026" [ref=f3e358]: "4"
+                        - gridcell "December 5, 2026" [ref=f3e360]:
+                          - generic "December 5, 2026" [ref=f3e363]: "5"
+                      - row [ref=f3e365]:
+                        - gridcell "December 6, 2026" [ref=f3e366]:
+                          - generic "December 6, 2026" [ref=f3e369]: "6"
+                        - gridcell "December 7, 2026" [ref=f3e371]:
+                          - generic "December 7, 2026" [ref=f3e374]: "7"
+                        - gridcell "December 8, 2026" [ref=f3e376]:
+                          - generic "December 8, 2026" [ref=f3e379]: "8"
+                        - gridcell "December 9, 2026" [ref=f3e381]:
+                          - generic "December 9, 2026" [ref=f3e384]: "9"
+                        - gridcell "December 10, 2026" [ref=f3e386]:
+                          - generic "December 10, 2026" [ref=f3e389]: "10"
+                        - gridcell "December 11, 2026" [ref=f3e391]:
+                          - generic "December 11, 2026" [ref=f3e394]: "11"
+                        - gridcell "December 12, 2026" [ref=f3e396]:
+                          - generic "December 12, 2026" [ref=f3e399]: "12"
+            - generic [ref=f3e401]:
+              - generic [ref=f3e402]: Booking type
+              - generic [ref=f3e403]:
+                - generic [ref=f3e404]: Hunting
+                - generic [ref=f3e407]: Recreational
+                - generic [ref=f3e410]: Maintenance
+          - generic [ref=f3e415]:
+            - heading "Recent Bookings" [level=3] [ref=f3e416]
+            - generic [ref=f3e417]:
+              - generic [ref=f3e418]:
+                - button [ref=f3e419]
+                - button [ref=f3e420]
+              - button "View All" [ref=f3e421]
+          - generic [ref=f3e428]:
+            - heading "Active Ranches" [level=3] [ref=f3e429]
+            - generic [ref=f3e430]:
+              - generic [ref=f3e431]:
+                - button [ref=f3e432]
+                - button [ref=f3e433]
+              - button "View All" [ref=f3e434]

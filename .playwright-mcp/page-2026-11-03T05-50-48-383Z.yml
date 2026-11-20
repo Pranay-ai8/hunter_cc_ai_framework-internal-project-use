@@ -1,0 +1,25 @@
+- generic [ref=f1e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - main [ref=f1e15]:
+    - generic [ref=f1e16]:
+      - generic [ref=f1e17]:
+        - heading "RanchOps Pro" [level=1] [ref=f1e22]
+        - paragraph [ref=f1e23]: Sign in to your account
+      - generic [ref=f1e24]:
+        - generic [ref=f1e25]:
+          - generic [ref=f1e26]:
+            - text: Email
+            - textbox "Email" [disabled] [ref=f1e27]:
+              - /placeholder: your.email@example.com
+              - text: superadmin@buckhouse.com
+          - generic [ref=f1e28]:
+            - text: Password
+            - generic [ref=f1e29]:
+              - textbox "Password" [disabled] [ref=f1e30]:
+                - /placeholder: •••••••••
+                - text: Admin@123!
+              - button "Show password" [disabled] [ref=f1e31]
+          - button "Signing in..." [disabled]
+        - button "Forgot/Reset Password?" [ref=f1e37]
