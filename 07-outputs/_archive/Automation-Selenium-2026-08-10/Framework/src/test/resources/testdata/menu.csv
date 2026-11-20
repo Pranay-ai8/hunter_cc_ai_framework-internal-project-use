@@ -1,7 +1,0 @@
-Key,Username,Password,ProductName,SortOption
-hamburgerMenuDisplaysAllExpectedLinks,standard_user,secret_sauce,,
-allItemsNavigatesToInventory,standard_user,secret_sauce,,
-resetAppStateClearsCartWithoutLogout,standard_user,secret_sauce,Sauce Labs Backpack,
-resetAppStateResetsSortOrderWithoutLogout,standard_user,secret_sauce,,Price (high to low)
-logoutEndsSessionAndReturnsToLogin,standard_user,secret_sauce,,
-aboutNavigatesAwayFromApplication,standard_user,secret_sauce,,

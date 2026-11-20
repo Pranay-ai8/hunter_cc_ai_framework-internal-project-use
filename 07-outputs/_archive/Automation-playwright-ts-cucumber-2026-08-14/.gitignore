@@ -1,6 +1,0 @@
-# Symlink to Framework/node_modules (see AutomationSummary.md "Structural Discrepancy")
-node_modules
-
-# Self-healing locator runtime artifacts (see 03-standards/playwright-typescript-standards.md)
-healing-cache.json
-healing-report.log

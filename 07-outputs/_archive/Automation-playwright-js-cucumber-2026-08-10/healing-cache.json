@@ -1,9 +1,0 @@
-{
-  "https://www.saucedemo.com/cart.html|#checkout12": {
-    "success": true,
-    "locator": "page.getByText(\"Checkout\")",
-    "confidence": 0.7666666666666666,
-    "strategy": "rule-based",
-    "timestamp": 1786526943891
-  }
-}

@@ -1,7 +1,0 @@
-{
-  "browser": "chromium",
-  "headless": true,
-  "defaultTimeout": 15000,
-  "navigationTimeout": 30000,
-  "slowMo": 0
-}

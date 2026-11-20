@@ -1,7 +1,0 @@
-{
-    "testDataLocation": "src/helper/util/test-data/testData.csv",
-    "defaultTimeOut": 60000,
-    "playwrightTimeout": 30000,
-    "navigationTimeout": 30000,
-    "expectTimeout": 10000
-}

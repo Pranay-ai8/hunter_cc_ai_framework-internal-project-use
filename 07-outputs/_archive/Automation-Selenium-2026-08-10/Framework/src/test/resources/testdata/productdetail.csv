@@ -1,5 +1,0 @@
-Key,Username,Password,ProductName
-clickingProductNameOpensDetailPage,standard_user,secret_sauce,Sauce Labs Backpack
-clickingProductImageOpensDetailPage,standard_user,secret_sauce,Sauce Labs Backpack
-addToCartUpdatesBadge,standard_user,secret_sauce,Sauce Labs Backpack
-backToProductsReturnsToInventory,standard_user,secret_sauce,Sauce Labs Backpack

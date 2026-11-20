@@ -1,9 +1,0 @@
-Key,Username,Password,ProductA,ProductB
-singleItemAddedAppearsOnCartPage,standard_user,secret_sauce,Sauce Labs Backpack,
-multipleItemsAddedIndependentlyAppearOnCartPage,standard_user,secret_sauce,Sauce Labs Backpack,Sauce Labs Bike Light
-removeItemFromCartPage,standard_user,secret_sauce,Sauce Labs Backpack,
-removeItemDirectlyFromInventoryPage,standard_user,secret_sauce,Sauce Labs Backpack,
-cartContentsPersistAcrossNavigation,standard_user,secret_sauce,Sauce Labs Backpack,
-continueShoppingReturnsToInventory,standard_user,secret_sauce,,
-emptyCartDisplaysCorrectly,standard_user,secret_sauce,,
-problemUserRemoveButtonBehaviorInCart,problem_user,secret_sauce,Sauce Labs Backpack,
