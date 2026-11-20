@@ -1,0 +1,93 @@
+{
+  "module": "login-error",
+  "url": "https://www.saucedemo.com/",
+  "capturedAt": "2026-08-14T06:22:28.560Z",
+  "note": "After unknown-credential login attempt",
+  "elementCount": 7,
+  "elements": [
+    {
+      "tag": "input",
+      "id": "user-name",
+      "class": "input_error form_input error",
+      "name": "user-name",
+      "role": "",
+      "ariaLabel": "",
+      "dataTestId": "username",
+      "placeholder": "Username",
+      "forAttr": "",
+      "text": ""
+    },
+    {
+      "tag": "svg",
+      "id": "",
+      "class": {},
+      "name": "",
+      "role": "img",
+      "ariaLabel": "",
+      "dataTestId": "",
+      "placeholder": "",
+      "forAttr": "",
+      "text": ""
+    },
+    {
+      "tag": "input",
+      "id": "password",
+      "class": "input_error form_input error",
+      "name": "password",
+      "role": "",
+      "ariaLabel": "",
+      "dataTestId": "password",
+      "placeholder": "Password",
+      "forAttr": "",
+      "text": ""
+    },
+    {
+      "tag": "svg",
+      "id": "",
+      "class": {},
+      "name": "",
+      "role": "img",
+      "ariaLabel": "",
+      "dataTestId": "",
+      "placeholder": "",
+      "forAttr": "",
+      "text": ""
+    },
+    {
+      "tag": "button",
+      "id": "",
+      "class": "error-button",
+      "name": "",
+      "role": "",
+      "ariaLabel": "",
+      "dataTestId": "error-button",
+      "placeholder": "",
+      "forAttr": "",
+      "text": ""
+    },
+    {
+      "tag": "svg",
+      "id": "",
+      "class": {},
+      "name": "",
+      "role": "img",
+      "ariaLabel": "",
+      "dataTestId": "",
+      "placeholder": "",
+      "forAttr": "",
+      "text": ""
+    },
+    {
+      "tag": "input",
+      "id": "login-button",
+      "class": "submit-button btn_action",
+      "name": "login-button",
+      "role": "",
+      "ariaLabel": "",
+      "dataTestId": "login-button",
+      "placeholder": "",
+      "forAttr": "",
+      "text": ""
+    }
+  ]
+}

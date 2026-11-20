@@ -1,0 +1,153 @@
+{
+  "module": "productDetail",
+  "url": "https://www.saucedemo.com/inventory-item.html?id=4",
+  "capturedAt": "2026-08-14T06:22:28.717Z",
+  "note": "First product's detail page",
+  "elementCount": 12,
+  "elements": [
+    {
+      "tag": "button",
+      "id": "react-burger-menu-btn",
+      "class": "",
+      "name": "",
+      "role": "",
+      "ariaLabel": "",
+      "dataTestId": "",
+      "placeholder": "",
+      "forAttr": "",
+      "text": "Open Menu"
+    },
+    {
+      "tag": "a",
+      "id": "inventory_sidebar_link",
+      "class": "bm-item menu-item",
+      "name": "",
+      "role": "",
+      "ariaLabel": "",
+      "dataTestId": "inventory-sidebar-link",
+      "placeholder": "",
+      "forAttr": "",
+      "text": "All Items"
+    },
+    {
+      "tag": "a",
+      "id": "about_sidebar_link",
+      "class": "bm-item menu-item",
+      "name": "",
+      "role": "",
+      "ariaLabel": "",
+      "dataTestId": "about-sidebar-link",
+      "placeholder": "",
+      "forAttr": "",
+      "text": "About"
+    },
+    {
+      "tag": "a",
+      "id": "logout_sidebar_link",
+      "class": "bm-item menu-item",
+      "name": "",
+      "role": "",
+      "ariaLabel": "",
+      "dataTestId": "logout-sidebar-link",
+      "placeholder": "",
+      "forAttr": "",
+      "text": "Logout"
+    },
+    {
+      "tag": "a",
+      "id": "reset_sidebar_link",
+      "class": "bm-item menu-item",
+      "name": "",
+      "role": "",
+      "ariaLabel": "",
+      "dataTestId": "reset-sidebar-link",
+      "placeholder": "",
+      "forAttr": "",
+      "text": "Reset App State"
+    },
+    {
+      "tag": "button",
+      "id": "react-burger-cross-btn",
+      "class": "",
+      "name": "",
+      "role": "",
+      "ariaLabel": "",
+      "dataTestId": "",
+      "placeholder": "",
+      "forAttr": "",
+      "text": "Close Menu"
+    },
+    {
+      "tag": "a",
+      "id": "",
+      "class": "shopping_cart_link",
+      "name": "",
+      "role": "",
+      "ariaLabel": "",
+      "dataTestId": "shopping-cart-link",
+      "placeholder": "",
+      "forAttr": "",
+      "text": ""
+    },
+    {
+      "tag": "button",
+      "id": "back-to-products",
+      "class": "btn btn_secondary back btn_large inventory_details_back_button",
+      "name": "back-to-products",
+      "role": "",
+      "ariaLabel": "",
+      "dataTestId": "back-to-products",
+      "placeholder": "",
+      "forAttr": "",
+      "text": "Back to products"
+    },
+    {
+      "tag": "button",
+      "id": "add-to-cart",
+      "class": "btn btn_primary btn_small btn_inventory",
+      "name": "add-to-cart",
+      "role": "",
+      "ariaLabel": "",
+      "dataTestId": "add-to-cart",
+      "placeholder": "",
+      "forAttr": "",
+      "text": "Add to cart"
+    },
+    {
+      "tag": "a",
+      "id": "",
+      "class": "",
+      "name": "",
+      "role": "",
+      "ariaLabel": "",
+      "dataTestId": "social-twitter",
+      "placeholder": "",
+      "forAttr": "",
+      "text": "Twitter"
+    },
+    {
+      "tag": "a",
+      "id": "",
+      "class": "",
+      "name": "",
+      "role": "",
+      "ariaLabel": "",
+      "dataTestId": "social-facebook",
+      "placeholder": "",
+      "forAttr": "",
+      "text": "Facebook"
+    },
+    {
+      "tag": "a",
+      "id": "",
+      "class": "",
+      "name": "",
+      "role": "",
+      "ariaLabel": "",
+      "dataTestId": "social-linkedin",
+      "placeholder": "",
+      "forAttr": "",
+      "text": "LinkedIn"
+    }
+  ]
+}

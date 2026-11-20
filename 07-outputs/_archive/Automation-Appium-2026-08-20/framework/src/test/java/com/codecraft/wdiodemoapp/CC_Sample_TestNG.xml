@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="WdioNativeDemoAppSmokeSuite" verbose="1">
+    <listeners>
+        <listener class-name="com.codecraft.wdiodemoapp.testng.TestListener"/>
+    </listeners>
+    <test name="WdioNativeDemoAppSmokeTests" preserve-order="true">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.codecraft.wdiodemoapp.hometests.HomeTests"/>
+            <class name="com.codecraft.wdiodemoapp.navigationtests.NavigationTests"/>
+            <class name="com.codecraft.wdiodemoapp.webviewtests.WebviewTests"/>
+            <class name="com.codecraft.wdiodemoapp.logintests.LoginTests"/>
+            <class name="com.codecraft.wdiodemoapp.formstests.FormsTests"/>
+            <class name="com.codecraft.wdiodemoapp.swipetests.SwipeTests"/>
+            <class name="com.codecraft.wdiodemoapp.dragtests.DragTests"/>
+            <class name="com.codecraft.wdiodemoapp.permissionstests.PermissionsTests"/>
+        </classes>
+    </test>
+</suite>

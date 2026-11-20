@@ -1,0 +1,52 @@
+
+/* Orange background for Light Mode */
+body {
+    background-color: #ffa500 !important;
+}
+
+/* Fix main container transparency in Light Mode */
+.main_container {
+    background: #ffffff !important;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* DARK MODE OVERRIDES */
+/* The reporter usually applies .dark or matches system preferences */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a !important; /* Dark neutral background */
+    }
+    .main_container, .x_panel {
+        background: #2a2a2a !important;
+        color: #ffffff !important;
+    }
+    .x_title {
+        color: #ffffff !important;
+        border-bottom: 2px solid #ffa500 !important;
+    }
+    table, th, td {
+        color: #ffffff !important;
+        border-color: #444 !important;
+    }
+}
+
+/* Explicit class-based Dark Mode support (if reporter toggles .dark-mode class) */
+body.dark-mode {
+    background-color: #1a1a1a !important;
+}
+body.dark-mode .main_container, 
+body.dark-mode .x_panel {
+    background: #2a2a2a !important;
+    color: #ffffff !important;
+}
+
+/* Header Styling */
+.x_title h2 {
+    font-weight: bold;
+    color: #333;
+}
+
+body.dark-mode .x_title h2 {
+    color: #ffa500;
+}

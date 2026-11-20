@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "target": "ES2021",
+        "module": "CommonJS",
+        "moduleResolution": "node",
+        "lib": [
+            "es2021"
+        ],
+        "typeRoots": [
+            "./node_modules/@types",
+            "src/helper/types"
+        ],
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "strict": false,
+        "outDir": "./dist"
+    },
+    "include": [
+        "src/**/*.ts"
+    ]
+}

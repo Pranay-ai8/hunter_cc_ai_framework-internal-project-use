@@ -1,0 +1,9 @@
+{
+  "valid": { "firstName": "Jane", "lastName": "Doe", "postalCode": "12345" },
+  "longAlphanumericPostalCode": {
+    "firstName": "Jane",
+    "lastName": "Doe",
+    "postalCode": "A1B2C3-LONGCODE-0001"
+  },
+  "problemUserValid": { "firstName": "Jane", "lastName": "Doe", "postalCode": "12345" }
+}
