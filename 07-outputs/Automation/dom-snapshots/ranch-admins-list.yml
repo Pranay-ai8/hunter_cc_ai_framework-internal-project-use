@@ -1,0 +1,193 @@
+- generic [ref=f4e2]:
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications alt+T"
+  - generic [ref=f4e14]:
+    - banner [ref=f4e15]:
+      - generic [ref=f4e16]:
+        - generic [ref=f4e22]:
+          - heading "RanchOps Pro" [level=1] [ref=f4e23]
+          - paragraph [ref=f4e24]: Super Admin Portal
+        - button [ref=f4e26]
+    - generic [ref=f4e27]:
+      - complementary [ref=f4e28]:
+        - navigation [ref=f4e30]:
+          - link "Dashboard" [ref=f4e32] [cursor=pointer]:
+            - /url: /dashboard
+          - generic [ref=f4e38]:
+            - heading "Ranch Management" [level=4] [ref=f4e39]
+            - link "Ranches" [ref=f4e40] [cursor=pointer]:
+              - /url: /ranches
+            - link "Ranch Admins" [active] [ref=f4e45] [cursor=pointer]:
+              - /url: /admin-users
+          - generic [ref=f4e51]:
+            - heading "Guest Operations" [level=4] [ref=f4e52]
+            - link "Bookings" [ref=f4e53] [cursor=pointer]:
+              - /url: /bookings
+            - link "Guests" [ref=f4e56] [cursor=pointer]:
+              - /url: /guests
+            - link "Staff & Guides" [ref=f4e62] [cursor=pointer]:
+              - /url: /staff
+          - generic [ref=f4e75]:
+            - heading "Record Keeping" [level=4] [ref=f4e76]
+            - link "Harvest Logs" [ref=f4e77] [cursor=pointer]:
+              - /url: /harvest
+            - link "Invoices" [ref=f4e81] [cursor=pointer]:
+              - /url: /invoices
+      - main [ref=f4e85]:
+        - generic [ref=f4e1542]:
+          - generic [ref=f4e1543]:
+            - generic [ref=f4e1544]:
+              - heading "Ranch Admin Management" [level=1] [ref=f4e1545]
+              - paragraph [ref=f4e1546]: Manage ranch administrators
+            - button "Create new ranch admin" [ref=f4e1547]: Create New Admin
+          - textbox "Search by name, email, or ranch" [ref=f4e1554]:
+            - /placeholder: Search by name, email, or ranch...
+          - generic [ref=f4e1555]:
+            - heading "All Ranch Admins" [level=2] [ref=f4e1557]
+            - generic [ref=f4e1558]:
+              - button "Switch to card view" [ref=f4e1559]
+              - button "Switch to table view" [ref=f4e1560]
+          - table [ref=f4e1564]:
+            - rowgroup [ref=f4e1565]:
+              - row [ref=f4e1566]:
+                - columnheader "Admin" [ref=f4e1567]
+                - columnheader "Email" [ref=f4e1568]
+                - columnheader "Assigned Ranch" [ref=f4e1569]
+                - columnheader "Created" [ref=f4e1570]
+                - columnheader "Actions" [ref=f4e1571]
+            - rowgroup [ref=f4e1572]:
+              - row [ref=f4e1573]:
+                - cell "QRE QA-AUTO-BASE RA Edit" [ref=f4e1574]:
+                  - generic [ref=f4e1575]:
+                    - generic [ref=f4e1576]: QRE
+                    - generic [ref=f4e1578]: QA-AUTO-BASE RA Edit
+                - cell "qa-auto-base-ra-edit@test.ranchops.com" [ref=f4e1579]
+                - cell "QA-AUTO-BASE Ranch A" [ref=f4e1580]
+                - cell "10/30/2026" [ref=f4e1581]
+                - cell [ref=f4e1582]:
+                  - generic [ref=f4e1583]:
+                    - button "Edit" [ref=f4e1584]
+                    - button [ref=f4e1585]
+              - row [ref=f4e1586]:
+                - cell "QRA QA-AUTO-mvt6e2g80k Ranch Admin" [ref=f4e1587]:
+                  - generic [ref=f4e1588]:
+                    - generic [ref=f4e1589]: QRA
+                    - generic [ref=f4e1591]: QA-AUTO-mvt6e2g80k Ranch Admin
+                - cell "qa-auto-mvt6e2g80k@test.ranchops.com" [ref=f4e1592]
+                - cell "QA-AUTO-BASE Ranch A" [ref=f4e1593]
+                - cell "10/29/2026" [ref=f4e1594]
+                - cell [ref=f4e1595]:
+                  - generic [ref=f4e1596]:
+                    - button "Edit" [ref=f4e1597]
+                    - button [ref=f4e1598]
+              - row [ref=f4e1599]:
+                - cell "QRA QA-AUTO-mvt6e2g802 Ranch Admin" [ref=f4e1600]:
+                  - generic [ref=f4e1601]:
+                    - generic [ref=f4e1602]: QRA
+                    - generic [ref=f4e1604]: QA-AUTO-mvt6e2g802 Ranch Admin
+                - cell "qa-auto-mvt6e2g802@test.ranchops.com" [ref=f4e1605]
+                - cell "QA-AUTO-BASE Ranch A" [ref=f4e1606]
+                - cell "10/29/2026" [ref=f4e1607]
+                - cell [ref=f4e1608]:
+                  - generic [ref=f4e1609]:
+                    - button "Edit" [ref=f4e1610]
+                    - button [ref=f4e1611]
+              - row [ref=f4e1612]:
+                - cell "QRO QA-AUTO-BASE RA One" [ref=f4e1613]:
+                  - generic [ref=f4e1614]:
+                    - generic [ref=f4e1615]: QRO
+                    - generic [ref=f4e1617]: QA-AUTO-BASE RA One
+                - cell "qa-auto-base-ra-one@test.ranchops.com" [ref=f4e1618]
+                - cell "QA-AUTO-BASE Ranch A" [ref=f4e1619]
+                - cell "10/28/2026" [ref=f4e1620]
+                - cell [ref=f4e1621]:
+                  - generic [ref=f4e1622]:
+                    - button "Edit" [ref=f4e1623]
+                    - button [ref=f4e1624]
+              - row [ref=f4e1625]:
+                - cell "T test" [ref=f4e1626]:
+                  - generic [ref=f4e1627]:
+                    - generic [ref=f4e1628]: T
+                    - generic [ref=f4e1630]: test
+                - cell "testauto12@gmail.com" [ref=f4e1631]
+                - cell "test ranch 01" [ref=f4e1632]
+                - cell "10/27/2026" [ref=f4e1633]
+                - cell [ref=f4e1634]:
+                  - generic [ref=f4e1635]:
+                    - button "Edit" [ref=f4e1636]
+                    - button [ref=f4e1637]
+              - row [ref=f4e1638]:
+                - cell "MU1 Mike Updated 1790062184105" [ref=f4e1639]:
+                  - generic [ref=f4e1640]:
+                    - generic [ref=f4e1641]: MU1
+                    - generic [ref=f4e1643]: Mike Updated 1790062184105
+                - cell "jose.maria.1790062009683@ranch.com" [ref=f4e1644]
+                - cell "QUATTRO DIAMANTE RANCH" [ref=f4e1645]
+                - cell "09/22/2026" [ref=f4e1646]
+                - cell [ref=f4e1647]:
+                  - generic [ref=f4e1648]:
+                    - button "Edit" [ref=f4e1649]
+                    - button [ref=f4e1650]
+              - row [ref=f4e1651]:
+                - cell "S1 SearchTarget 1790061981924" [ref=f4e1652]:
+                  - generic [ref=f4e1653]:
+                    - generic [ref=f4e1654]: S1
+                    - generic [ref=f4e1656]: SearchTarget 1790061981924
+                - cell "jose.maria.1790061981924@ranch.com" [ref=f4e1657]
+                - cell "QUATTRO DIAMANTE RANCH" [ref=f4e1658]
+                - cell "09/22/2026" [ref=f4e1659]
+                - cell [ref=f4e1660]:
+                  - generic [ref=f4e1661]:
+                    - button "Edit" [ref=f4e1662]
+                    - button [ref=f4e1663]
+              - row [ref=f4e1664]:
+                - cell "JD1 John Doe 1790061934958" [ref=f4e1665]:
+                  - generic [ref=f4e1666]:
+                    - generic [ref=f4e1667]: JD1
+                    - generic [ref=f4e1669]: John Doe 1790061934958
+                - cell "jose.maria.1790061934958@ranch.com" [ref=f4e1670]
+                - cell "QUATTRO DIAMANTE RANCH" [ref=f4e1671]
+                - cell "09/22/2026" [ref=f4e1672]
+                - cell [ref=f4e1673]:
+                  - generic [ref=f4e1674]:
+                    - button "Edit" [ref=f4e1675]
+                    - button [ref=f4e1676]
+              - row [ref=f4e1677]:
+                - cell "MU1 Mike Updated 1790055606228" [ref=f4e1678]:
+                  - generic [ref=f4e1679]:
+                    - generic [ref=f4e1680]: MU1
+                    - generic [ref=f4e1682]: Mike Updated 1790055606228
+                - cell "jose.maria.1790055416600@ranch.com" [ref=f4e1683]
+                - cell "QUATTRO DIAMANTE RANCH" [ref=f4e1684]
+                - cell "09/22/2026" [ref=f4e1685]
+                - cell [ref=f4e1686]:
+                  - generic [ref=f4e1687]:
+                    - button "Edit" [ref=f4e1688]
+                    - button [ref=f4e1689]
+              - row [ref=f4e1690]:
+                - cell "S1 SearchTarget 1790055388288" [ref=f4e1691]:
+                  - generic [ref=f4e1692]:
+                    - generic [ref=f4e1693]: S1
+                    - generic [ref=f4e1695]: SearchTarget 1790055388288
+                - cell "jose.maria.1790055388288@ranch.com" [ref=f4e1696]
+                - cell "QUATTRO DIAMANTE RANCH" [ref=f4e1697]
+                - cell "09/22/2026" [ref=f4e1698]
+                - cell [ref=f4e1699]:
+                  - generic [ref=f4e1700]:
+                    - button "Edit" [ref=f4e1701]
+                    - button [ref=f4e1702]
+          - generic [ref=f4e1704]:
+            - generic [ref=f4e1705]:
+              - generic [ref=f4e1706]: Showing 1 to 10 of 53 results
+              - generic [ref=f4e1707]:
+                - generic [ref=f4e1708]: per page
+                - combobox [ref=f4e1709]:
+                  - generic: "10"
+            - generic [ref=f4e1712]:
+              - button [disabled]
+              - button "1" [ref=f4e1714]
+              - button "2" [ref=f4e1716]
+              - button "3" [ref=f4e1718]
+              - button "6" [ref=f4e1726]
+              - button [ref=f4e1727]

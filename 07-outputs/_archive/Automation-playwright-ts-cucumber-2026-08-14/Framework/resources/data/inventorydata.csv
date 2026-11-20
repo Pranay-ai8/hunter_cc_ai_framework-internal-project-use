@@ -1,0 +1,8 @@
+Key|username|password|sortOption
+sort_name_az|standard_user|AUTO|az
+sort_name_za|standard_user|AUTO|za
+sort_price_lohi|standard_user|AUTO|lohi
+sort_price_hilo|standard_user|AUTO|hilo
+problem_user_images|problem_user|AUTO|
+error_user_sort|error_user|AUTO|az
+visual_user_layout|visual_user|AUTO|

@@ -1,0 +1,1 @@
+[2026-08-12T09:29:03.892Z] HEALED: "#checkout12" → "page.getByText("Checkout")" (confidence: 0.7666666666666666, original error: locator.waitFor: Timeout 3000ms exceeded.)

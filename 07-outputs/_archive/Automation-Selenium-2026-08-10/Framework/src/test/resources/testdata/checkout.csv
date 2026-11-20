@@ -1,0 +1,13 @@
+Key,Username,Password,ProductName,FirstName,LastName,PostalCode
+checkoutButtonNavigatesToStepOne,standard_user,secret_sauce,Sauce Labs Backpack,,,
+blankFirstNameBlocked,standard_user,secret_sauce,Sauce Labs Backpack,,Doe,12345
+blankLastNameBlocked,standard_user,secret_sauce,Sauce Labs Backpack,Jane,,12345
+blankPostalCodeBlocked,standard_user,secret_sauce,Sauce Labs Backpack,Jane,Doe,
+validStepOneSubmissionProceedsToStepTwo,standard_user,secret_sauce,Sauce Labs Backpack,Jane,Doe,12345
+stepTwoDisplaysCorrectItemsTaxAndTotal,standard_user,secret_sauce,Sauce Labs Backpack,Jane,Doe,12345
+finishCompletesPurchaseAndClearsCart,standard_user,secret_sauce,Sauce Labs Backpack,Jane,Doe,12345
+cancelOnStepOneReturnsToCart,standard_user,secret_sauce,Sauce Labs Backpack,,,
+cancelOnStepTwoReturnsToInventory,standard_user,secret_sauce,Sauce Labs Backpack,Jane,Doe,12345
+errorUserMayThrowRandomErrorDuringCheckout,error_user,secret_sauce,Sauce Labs Backpack,Jane,Doe,12345
+problemUserLastNameFieldMayFail,problem_user,secret_sauce,Sauce Labs Backpack,Jane,Doe,12345
+postalCodeAcceptsLongAlphanumericValueWithoutError,standard_user,secret_sauce,Sauce Labs Backpack,Jane,Doe,A1B2C3-LONGCODE-0001

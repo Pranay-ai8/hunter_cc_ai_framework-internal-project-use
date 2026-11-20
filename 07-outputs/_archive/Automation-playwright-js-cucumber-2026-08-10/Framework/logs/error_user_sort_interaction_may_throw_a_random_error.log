@@ -1,0 +1,5 @@
+2026-08-07T08:41:34.943Z [INFO] Typed 'error_user' into: Username
+2026-08-07T08:41:35.040Z [INFO] Typed password into: Password
+2026-08-07T08:41:35.125Z [INFO] Clicked on element: Login
+2026-08-07T08:41:35.149Z [INFO] Selected 'Price (high to low)' on: Product Sort Dropdown
+2026-08-07T08:41:35.164Z [INFO] Selected 'Name (A to Z)' on: Product Sort Dropdown

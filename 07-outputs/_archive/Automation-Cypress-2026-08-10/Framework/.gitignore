@@ -1,0 +1,8 @@
+node_modules/
+.npm-cache/
+cypress/videos/
+cypress/screenshots/
+cypress/reports/
+cypress/downloads/
+.env
+npm-debug.log*

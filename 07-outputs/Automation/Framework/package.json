@@ -1,0 +1,42 @@
+{
+  "name": "play-ts-cucumber",
+  "version": "1.0.0",
+  "description": "Playwright Cucumber TS framework - The easiest way to learn",
+  "main": "index.js",
+  "scripts": {
+    "test": "ts-node src/helper/report/runner.ts",
+    "report": "npx ts-node src/helper/report/report.ts",
+    "test:failed": "cross-env ENV=STG ts-node src/helper/report/runner.ts -p rerun @rerun.txt",
+    "test:all": "cross-env ENV=STG ts-node src/helper/report/runner.ts",
+    "test:smoke": "cross-env ENV=STG ts-node src/helper/report/runner.ts --tags @smoke",
+    "test:regression": "cross-env ENV=STG ts-node src/helper/report/runner.ts --tags @regression",
+    "test:staging": "cross-env ENV=STG ts-node src/helper/report/runner.ts",
+    "test:sanity": "cross-env ENV=PRD ts-node src/helper/report/runner.ts --tags @sanity",
+    "test:smoke1": "cross-env ENV=STG ts-node src/helper/report/runner.ts --tags @smoke1"
+  },
+  "keywords": [
+    "cucumber",
+    "cucumber - TS",
+    "playwright-cucumber"
+  ],
+  "author": "Continental QA",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^9.0.1",
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.2.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "fs-extra": "^11.1.1",
+    "multiple-cucumber-html-reporter": "^3.3.0",
+    "ts-node": "^10.9.1",
+    "winston": "^3.8.2"
+  },
+  "dependencies": {
+    "csv-parse": "^6.1.0",
+    "date-fns": "^4.4.0",
+    "jsdom": "^29.1.1",
+    "playwright": "^1.62.1",
+    "xlsx": "^0.18.5"
+  }
+}

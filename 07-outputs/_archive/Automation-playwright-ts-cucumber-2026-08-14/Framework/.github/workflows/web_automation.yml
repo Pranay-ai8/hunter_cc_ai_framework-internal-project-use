@@ -1,0 +1,27 @@
+name: SauceDemo Web Automation
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      suite:
+        description: 'Suite to run (smoke|regression|e2e|sanity)'
+        required: false
+        default: 'smoke'
+
+jobs:
+  smoke:
+    if: github.event_name != 'workflow_dispatch' || github.event.inputs.suite == 'smoke'
+    uses: ./.github/workflows/reusable_workflow.yml
+    with:
+      suite: smoke
+    secrets: inherit
+
+  regression:
+    if: github.event_name == 'workflow_dispatch' && github.event.inputs.suite == 'regression'
+    uses: ./.github/workflows/reusable_workflow.yml
+    with:
+      suite: regression
+    secrets: inherit

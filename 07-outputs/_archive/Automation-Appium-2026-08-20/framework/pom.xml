@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.codecraft.wdiodemoapp</groupId>
+    <artifactId>wdio-native-demo-app-automation</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <defaultSuiteFiles>src/test/java/com/codecraft/wdiodemoapp/CC_TestNG.xml</defaultSuiteFiles>
+        <suiteFile>${defaultSuiteFiles}</suiteFile>
+
+        <testng.version>7.11.0</testng.version>
+        <java.client.appium>9.4.0</java.client.appium>
+        <!--
+            java-client 9.4.0's own POM declares selenium-api/-remote-driver/-support as the OPEN
+            RANGE [4.26.0, 5.0) rather than a fixed version. Left unpinned, Maven resolves that
+            range to whatever the newest published Selenium is at build time — which was 4.47.0
+            when this was first tried, and 4.47.0 has REMOVED org.openqa.selenium.ContextAware /
+            org.openqa.selenium.html5.LocationContext, interfaces AndroidDriver's class hierarchy
+            still references, causing a hard compile failure unrelated to any code in this project.
+            Pin explicitly to 4.26.0 — the floor of java-client 9.4.0's declared range, i.e. the
+            version it actually was built and tested against — via dependencyManagement, so the
+            dependency stays on the latest java-client without inheriting an untested Selenium.
+        -->
+        <selenium.version>4.26.0</selenium.version>
+        <log4j.version>2.26.0</log4j.version>
+        <commons.lang3.version>3.20.0</commons.lang3.version>
+        <jackson.version>2.19.0</jackson.version>
+    </properties>
+
+    <profiles>
+        <profile>
+            <id>android</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <RunOn.value>ANDROID_APP</RunOn.value>
+                <Context.value>NATIVE</Context.value>
+                <Setup.value>Local</Setup.value>
+            </properties>
+        </profile>
+        <profile>
+            <id>ios</id>
+            <properties>
+                <RunOn.value>iOS_APP</RunOn.value>
+                <Context.value>NATIVE</Context.value>
+                <Setup.value>Local</Setup.value>
+            </properties>
+        </profile>
+    </profiles>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.seleniumhq.selenium</groupId>
+                <artifactId>selenium-api</artifactId>
+                <version>${selenium.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seleniumhq.selenium</groupId>
+                <artifactId>selenium-remote-driver</artifactId>
+                <version>${selenium.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seleniumhq.selenium</groupId>
+                <artifactId>selenium-support</artifactId>
+                <version>${selenium.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seleniumhq.selenium</groupId>
+                <artifactId>selenium-http</artifactId>
+                <version>${selenium.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seleniumhq.selenium</groupId>
+                <artifactId>selenium-json</artifactId>
+                <version>${selenium.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seleniumhq.selenium</groupId>
+                <artifactId>selenium-manager</artifactId>
+                <version>${selenium.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.seleniumhq.selenium</groupId>
+                <artifactId>selenium-os</artifactId>
+                <version>${selenium.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>io.appium</groupId>
+            <artifactId>java-client</artifactId>
+            <version>${java.client.appium}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons.lang3.version}</version>
+        </dependency>
+        <!-- SelfHealer cache/log persistence (healing-cache.json) -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <!-- Filtering substitutes ${RunOn.value}/${Context.value}/${Setup.value} (set per active
+             Maven profile above) into config.properties' RUN_ON/CONTEXT/SETUP placeholders. -->
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <testResources>
+            <testResource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </testResource>
+        </testResources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.15.0</version>
+                <configuration>
+                    <release>17</release>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.5.6</version>
+                <configuration>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>${suiteFile}</suiteXmlFile>
+                    </suiteXmlFiles>
+                    <testFailureIgnore>false</testFailureIgnore>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

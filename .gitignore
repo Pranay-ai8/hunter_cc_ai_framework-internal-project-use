@@ -4,13 +4,3 @@ __pycache__/
 *.pyc
 .env
 .mcp.json
-07-outputs/*/
-!07-outputs/Automation/
-07-outputs/Automation/*
-!07-outputs/Automation/Framework/
-07-outputs/Automation/Framework/*
-!07-outputs/Automation/Framework/src/
-!07-outputs/Automation/Framework/docs/
-!07-outputs/Automation/Framework/test-output/
-!07-outputs/Automation/Framework/pom.xml
-!07-outputs/Automation/Framework/Jenkinsfile

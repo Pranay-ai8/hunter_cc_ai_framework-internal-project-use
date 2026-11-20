@@ -1,0 +1,46 @@
+name: Reusable Test Runner
+
+on:
+  workflow_call:
+    inputs:
+      suite:
+        required: true
+        type: string
+
+jobs:
+  run-suite:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: 07-outputs/Automation/Framework
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+
+      - name: Run ${{ inputs.suite }} suite
+        run: npm run test:${{ inputs.suite }}
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results-${{ inputs.suite }}
+          path: 07-outputs/Automation/Framework/test-results/
+
+      - name: Send email notification
+        if: always()
+        uses: ./.github/actions/email_notification
+        with:
+          summary-file: 07-outputs/Automation/Framework/test-results/email-summary.html
+          smtp-host: ${{ secrets.SMTP_HOST }}
+          smtp-user: ${{ secrets.SMTP_USER }}
+          smtp-password: ${{ secrets.SMTP_PASSWORD }}
