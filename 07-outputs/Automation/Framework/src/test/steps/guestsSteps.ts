@@ -186,7 +186,7 @@ When("User clicks the guest form {string} button", async function (buttonName: s
 });
 
 
-Then("Submission should be blocked with inline errors under Full Name and Email Address", async function () {
+Then("Submission should be blocked with an inline error under Full Name", async function () {
   await getGuestsPage().verifyMandatoryFieldErrors();
 });
 

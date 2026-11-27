@@ -19,6 +19,20 @@ Feature: Bookings Module
     And User clicks green 'Create Booking' button on Step 5
     Then Booking is created, user is redirected to list page, and pending booking appears at the top
 
+  @regression @Key:BTC041E @High @Type:Functional
+  Scenario: Verify hunter added on a first-time booking receives and signs the waiver
+    Given User is logged in as Super Admin
+    When User clicks on 'Bookings' under GUEST OPERATIONS in the left sidebar
+    And User clicks '+ New Booking' button
+    And User completes Steps 1 to 4 with Ranch 'test ranch', Dates '{today+auto}' to '{today+auto+4}', room 'The king room' for 3 guests, a brand-new Hunter, and Guide 'athul pp'
+    And User clicks green 'Create Booking' button on Step 5, creating a real booking
+    Then Booking is created, user is redirected to list page, and pending booking appears at the top
+    When User opens the newly created booking
+    Then The Waiver Status card confirms the waiver email was sent to the hunter
+    When User retrieves the waiver invite email from MailHog and signs it as the hunter
+    And User reopens the same booking
+    Then The Waiver Status card shows the waiver as Signed
+
   @Key:BTC002 @Low @Type:UI
   Scenario: Verify default view and UI elements on Bookings page
     Given User is logged in as Super Admin
@@ -323,6 +337,20 @@ Feature: Bookings Module
     When User clicks on 'Bookings' under GUEST OPERATIONS in the left sidebar
     And User clicks directly on a 'pending' Hunting booking row with an unsigned waiver
     Then The Waiver Status card confirms the waiver email was sent to the hunter
+
+  @regression @Key:BTC041C @High @Type:Functional
+  Scenario: Verify hunter signing the waiver email updates its status to Signed
+    Given User is logged in as Super Admin
+    When User clicks on 'Bookings' under GUEST OPERATIONS in the left sidebar
+    And User clicks '+ New Booking' button
+    And User completes Steps 1 to 4 with Ranch 'test ranch', Dates '{today+auto+10}' to '{today+auto+14}', room 'The king room' for 3 guests, a brand-new Hunter, and Guide 'athul pp'
+    And User clicks green 'Create Booking' button on Step 5, creating a real booking
+    Then Booking is created, user is redirected to list page, and pending booking appears at the top
+    When User opens the newly created booking
+    And User clicks 'Resend Waiver to ProHunt' button
+    And User retrieves the waiver invite email from MailHog and signs it as the hunter
+    And User reopens the same booking
+    Then The Waiver Status card shows the waiver as Signed
 
   @Key:BTC042 @High @Type:Validation
   Scenario: Verify 'Check in Guests' early check-in error handling

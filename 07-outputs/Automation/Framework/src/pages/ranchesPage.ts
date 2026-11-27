@@ -3,6 +3,9 @@ import PlaywrightWrapper from "../helper/wrapper/PlaywrightWrapper";
 
 export default class RanchesPage {
     private base: PlaywrightWrapper;
+    // Captured right after the Save Changes click, before networkidle/renavigation below can let an
+    // auto-dismissing success toast disappear unseen.
+    public lastSaveToastVisible: boolean = false;
 
     constructor(private page: Page) {
         this.base = new PlaywrightWrapper(page);
@@ -299,8 +302,25 @@ export default class RanchesPage {
     async selectCategory(category: string) {
         const catBtn = this.page.locator(this.Elements.animalCategoryBtn + ', ' + this.Elements.animalCategoryInput).first();
         if (await catBtn.isVisible({ timeout: 2000 }).catch(() => false)) {
-            await catBtn.click({ force: true }).catch(() => {});
-            await this.page.locator('div[role="option"], [role="option"]').filter({ hasText: category }).first().click().catch(() => {});
+            // Previously this click was also silently swallowed, so a category that failed to apply
+            // (e.g. the options list hadn't rendered yet) left the Species dropdown with zero options
+            // downstream, surfacing as a confusing "no options" failure on an unrelated later step.
+            // The single click here was also unreliable on its own (confirmed live: "Turkey" is a real,
+            // always-present category option - it just didn't always open on the first try), so retry
+            // the click like the Add Guide wizard's ranch dropdown does.
+            const option = this.page.locator('div[role="option"], [role="option"]').filter({ hasText: category }).first();
+            let opened = false;
+            for (let i = 0; i < 3; i++) {
+                await catBtn.click({ force: true }).catch(() => {});
+                if (await option.isVisible({ timeout: 2000 }).catch(() => false)) {
+                    opened = true;
+                    break;
+                }
+            }
+            if (!opened) {
+                await option.waitFor({ state: 'visible', timeout: 5000 });
+            }
+            await option.click();
         }
     }
 
@@ -523,6 +543,11 @@ export default class RanchesPage {
         // Enable mock route to prevent mutating real records in the DEV database
         await this.setupRanchCreationMock();
         await this.base.click(this.Elements.saveChangesBtn);
+        // Capture the toast here, immediately after the click - it auto-dismisses after a few seconds,
+        // and the networkidle wait + possible sidebar renavigation below routinely took long enough that
+        // by the time the Then step checked for it, it had already disappeared.
+        this.lastSaveToastVisible = await this.page.locator(this.Elements.successToastMessage)
+            .isVisible({ timeout: 8000 }).catch(() => false);
         // Wait for redirect to ranches list or navigate back
         await this.page.waitForLoadState('networkidle').catch(() => {});
         const url = this.page.url();
@@ -965,7 +990,9 @@ export default class RanchesPage {
 
     async verifyRanchesLayoutRendered() {
         await expect(this.page.locator(this.Elements.pageTitle)).toBeVisible();
-        await expect(this.page.locator(this.Elements.table)).toBeVisible();
+        // Accumulated regression test data (ranches created by prior runs are never cleaned up) means
+        // the table's data fetch has gotten measurably slower than Playwright's 5s default.
+        await expect(this.page.locator(this.Elements.table)).toBeVisible({ timeout: 15000 });
     }
 
     async verifyTrimmedRecordInList(name: string) {

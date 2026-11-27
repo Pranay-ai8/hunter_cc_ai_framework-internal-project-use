@@ -395,8 +395,9 @@ async fillDobAndAddress(dob: string, address: string) {
   }
 
   async verifyMandatoryFieldErrors() {
+    // Email Address has no required-field asterisk in Edit Guest Profile and the app does not
+    // validate it on submit — confirmed live on STG (2026-11-23). Only Full Name is enforced.
     await expect(this.page.locator('text=/Full Name is required/i').first()).toBeVisible();
-    await expect(this.page.locator('text=/Email Address is required/i').first()).toBeVisible();
   }
 
   // ============ TC_GST_005: Successful profile update ============
@@ -1118,9 +1119,21 @@ async clickCompletedGuestRow(identifier: string) {
     }
   }
 
-  // 3. Fallback: If no completed waiver row exists across any pages on STG, click first row
+  // 3. Fallback: If no completed waiver row exists across any pages on STG, click first row.
+  // The search loop above leaves the grid sitting on whichever page it stopped at (often the last,
+  // under-filled page after exhausting all 10 pages) - "first row" must mean page 1, not that page,
+  // or this fallback has nothing to click when the last page happens to be empty.
   if (!completedRowFound) {
     console.log('[TC_GST_028] No guest with "Completed" waiver status found across pages on STG. Fallback to first row.');
+    const prevPageBtn = this.page
+      .locator('button[aria-label*="previous" i], button:has(svg.lucide-chevron-left)')
+      .first();
+    for (let i = 0; i < maxPagesToSearch; i++) {
+      if (!(await prevPageBtn.isEnabled().catch(() => false))) break;
+      await prevPageBtn.click();
+      await this.page.waitForLoadState('networkidle').catch(() => {});
+      await this.page.waitForTimeout(300);
+    }
     const firstRow = this.page.locator('tbody tr').first();
     await firstRow.waitFor({ state: 'visible', timeout: 10000 });
     await firstRow.locator('td').first().click();
@@ -1162,6 +1175,12 @@ async verifySignedWaiverOpenedOrDownloaded() {
     await popup.waitForLoadState('domcontentloaded').catch(() => {});
     const url = popup.url();
     expect(url).toMatch(/pdf|\.amazonaws\.com|waiver/i);
+    // Close it immediately after verifying. Left open, this popup shares the suite's cookies/session
+    // with the main page - if it's an authenticated app route rather than a static PDF, it runs a
+    // second copy of the app's own background session/token-refresh logic in parallel with the main
+    // tab, which is a known cause of repeated, fast session invalidation on long unattended runs.
+    await popup.close().catch(() => {});
+    (this as any).waiverPopup = null;
   } else {
     const pdfCard = this.page.locator('div').filter({ hasText: /Signed Waiver/i }).first();
     await expect(pdfCard).toBeVisible({ timeout: 5000 });
@@ -1271,7 +1290,10 @@ async verifySignedWaiverEmptyStateMessage(expectedMessage: string = 'Signed waiv
 
   await signedWaiverCard.waitFor({ state: 'visible', timeout: 10000 });
 
-  const notAvailableText = signedWaiverCard.locator(`text=/${expectedMessage}/i`).first();
+  // A Minor guest shows a different, equally valid empty-state message pending guardian
+  // sign-off instead of the generic "not available yet" copy — accept either variant.
+  const emptyStatePattern = new RegExp(`${expectedMessage}|Waiver pending . must be signed by`, 'i');
+  const notAvailableText = signedWaiverCard.getByText(emptyStatePattern).first();
   await expect(notAvailableText).toBeVisible({ timeout: 10000 });
 }
   // ============ TC_GST_030: Session expiration ============

@@ -1,0 +1,203 @@
+<title>RanchOps Smoke Report</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+/* Layout: header band + summary stat row + stacked timeline of runs + fix log table */
+:root{
+  --bg:#faf8f5; --surface:#ffffff; --border:#e4ddd2; --fg:#231f1a; --muted:#6b6256;
+  --accent:#2f5233; --accent-soft:#e7efe6; --bad:#9c3b2e; --bad-soft:#f7e6e2; --warn:#a2731a; --warn-soft:#f6ecd8;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#15130f; --surface:#1d1a15; --border:#332e26; --fg:#f1ede4; --muted:#a79e8d;
+    --accent:#7fb285; --accent-soft:#223424; --bad:#e08974; --bad-soft:#3a2420; --warn:#e0b45c; --warn-soft:#3a2e18;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#15130f; --surface:#1d1a15; --border:#332e26; --fg:#f1ede4; --muted:#a79e8d;
+  --accent:#7fb285; --accent-soft:#223424; --bad:#e08974; --bad-soft:#3a2420; --warn:#e0b45c; --warn-soft:#3a2e18;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--fg);
+  font-family:"Inter",system-ui,sans-serif; font-size:15px; line-height:1.55;
+  padding-left:max(16px, env(safe-area-inset-left,0px));
+  padding-right:max(16px, env(safe-area-inset-right,0px));
+}
+h1,h2,h3{font-family:"Space Grotesk","Inter",system-ui,sans-serif; text-wrap:balance; margin:0}
+.wrap{max-width:980px; margin:0 auto; padding-block:2.5rem 4rem}
+
+.hero{
+  margin-top:calc(-1 * env(safe-area-inset-top,0px));
+  padding-top:calc(env(safe-area-inset-top,0px) + 2.25rem);
+  padding-bottom:1.75rem; border-bottom:1px solid var(--border);
+}
+.eyebrow{font-size:.75rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); font-weight:600}
+.hero h1{font-size:clamp(1.6rem,3.4vw,2.2rem); margin-top:.35rem}
+.hero p{color:var(--muted); margin-top:.5rem; max-width:60ch}
+.meta-row{display:flex; flex-wrap:wrap; gap:.4rem 1.2rem; margin-top:1rem; font-size:.85rem; color:var(--muted)}
+.meta-row strong{color:var(--fg)}
+
+.stats{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:1px; background:var(--border); border:1px solid var(--border); border-radius:12px; overflow:hidden; margin-top:1.75rem}
+.stat{background:var(--surface); padding:1rem 1.1rem; min-width:0}
+.stat .num{font-family:"Space Grotesk",sans-serif; font-size:1.8rem; font-variant-numeric:tabular-nums}
+.stat .label{color:var(--muted); font-size:.78rem; margin-top:.15rem}
+.stat.good .num{color:var(--accent)}
+
+section{margin-top:2.75rem}
+section > h2{font-size:1.25rem; margin-bottom:.25rem}
+section > .sub{color:var(--muted); font-size:.9rem; margin-bottom:1.1rem}
+
+.runs{display:flex; flex-direction:column; gap:.6rem}
+.run{display:grid; grid-template-columns:auto 1fr auto; gap:.3rem 1rem; align-items:center; background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:.85rem 1.1rem}
+.run .dot{width:10px; height:10px; border-radius:50%; background:var(--bad)}
+.run.pass .dot{background:var(--accent)}
+.run .title{font-weight:600; min-width:0}
+.run .detail{grid-column:2; color:var(--muted); font-size:.85rem}
+.run .result{font-variant-numeric:tabular-nums; font-weight:600; text-align:right; white-space:nowrap}
+.run.pass .result{color:var(--accent)}
+.run.fail .result{color:var(--bad)}
+
+.cards{display:flex; flex-direction:column; gap:1rem}
+.card{background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:1.25rem 1.4rem; min-width:0}
+.card-head{display:flex; flex-wrap:wrap; justify-content:space-between; align-items:baseline; gap:.5rem .75rem}
+.card-head h3{font-size:1.02rem}
+.tag{font-size:.72rem; font-weight:700; letter-spacing:.03em; text-transform:uppercase; padding:.2rem .55rem; border-radius:999px; white-space:nowrap}
+.tag.fixed{background:var(--accent-soft); color:var(--accent)}
+.tag.conflict{background:var(--warn-soft); color:var(--warn)}
+.card .cause{margin-top:.6rem; color:var(--muted); font-size:.9rem}
+.card .fix{margin-top:.7rem; font-size:.88rem}
+.card .fix b{color:var(--fg)}
+.filelist{margin-top:.6rem; display:flex; flex-direction:column; gap:.25rem}
+.filelist code{font-family:"JetBrains Mono",ui-monospace,monospace; font-size:.8rem; background:var(--accent-soft); color:var(--accent); padding:.12rem .4rem; border-radius:5px; word-break:break-all}
+.filelist.conflict code{background:var(--warn-soft); color:var(--warn)}
+
+.openq{background:var(--warn-soft); border:1px solid var(--warn); border-radius:10px; padding:1rem 1.2rem; font-size:.92rem}
+.openq b{color:var(--warn)}
+
+table{width:100%; border-collapse:collapse; font-size:.85rem}
+th,td{text-align:left; padding:.55rem .7rem; border-bottom:1px solid var(--border); vertical-align:top}
+th{color:var(--muted); font-weight:600; font-size:.75rem; text-transform:uppercase; letter-spacing:.04em}
+tr:last-child td{border-bottom:none}
+
+footer{margin-top:3rem; padding-top:1.25rem; border-top:1px solid var(--border); color:var(--muted); font-size:.8rem}
+
+@media (max-width:560px){
+  .run{grid-template-columns:auto 1fr; }
+  .run .result{grid-column:2; text-align:left}
+}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+
+<div class="wrap">
+  <div class="hero">
+    <div class="eyebrow">RanchOps Pro &middot; Automation Smoke Report</div>
+    <h1>Smoke suite: 0 &rarr; 74 of 74 passing</h1>
+    <p>Playwright + Cucumber smoke suite (<code>@smoke</code> tag) against STG, run three times while three failures were diagnosed and fixed in the automation framework.</p>
+    <div class="meta-row">
+      <div>Environment: <strong>STG</strong> &middot; dev-dashboard.hunter.igoalzero.com</div>
+      <div>Framework: <strong>07-outputs/Automation/Framework</strong></div>
+      <div>Date: <strong>2026-11-23</strong></div>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat good"><div class="num">74 / 74</div><div class="label">Scenarios passing (final run)</div></div>
+    <div class="stat good"><div class="num">414 / 414</div><div class="label">Steps passing (final run)</div></div>
+    <div class="stat"><div class="num">3</div><div class="label">Runs to reach green</div></div>
+    <div class="stat"><div class="num">4</div><div class="label">Files changed</div></div>
+    <div class="stat"><div class="num">~9m30s</div><div class="label">Full suite duration</div></div>
+  </div>
+
+  <section>
+    <h2>Run timeline</h2>
+    <div class="sub">Each run is the actual pass/fail count observed, not an estimate.</div>
+    <div class="runs">
+      <div class="run fail">
+        <div class="dot"></div>
+        <div class="title">Run 1 &mdash; environment not configured</div>
+        <div class="detail">Every scenario errored on <code>page.goto</code>: &ldquo;Cannot navigate to invalid URL&rdquo;. <code>src/helper/env/.env.STG</code> did not exist, so <code>BASEURL</code> was empty.</div>
+        <div class="result">0 / 74</div>
+      </div>
+      <div class="run fail">
+        <div class="dot"></div>
+        <div class="title">Run 2 &mdash; after creating .env.STG</div>
+        <div class="detail">Real navigation and login worked. Three distinct scenario failures surfaced, each investigated against the live app.</div>
+        <div class="result">71 / 74</div>
+      </div>
+      <div class="run pass">
+        <div class="dot"></div>
+        <div class="title">Run 3 &mdash; after all three fixes</div>
+        <div class="detail">Full suite re-run end to end with no scenario-level changes outstanding.</div>
+        <div class="result">74 / 74</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>What was wrong, and what changed</h2>
+    <div class="sub">Each of the three real failures, root cause, and the exact fix applied.</div>
+    <div class="cards">
+
+      <div class="card">
+        <div class="card-head">
+          <h3>1 &middot; Log Harvest on a Checked-In Hunting booking</h3>
+          <span class="tag fixed">Fixed</span>
+        </div>
+        <div class="cause">STG had zero Hunting bookings in <strong>Approved</strong> status, so the suite's existing self-heal helper (which checks in an eligible Approved booking) had nothing to work with &mdash; every Hunting booking was Pending, Checked Out, or Cancelled.</div>
+        <div class="fix"><b>Fix:</b> extended <code>ensureCheckedInHuntingBooking()</code> to fall back to an eligible <strong>Pending</strong> Hunting booking with a past/current check-in date, approve it, then check it in. Also wired the existing <code>Given a 'Checked In' Hunting booking exists</code> precondition into the scenario, which had simply never been added.</div>
+        <div class="filelist">
+          <code>src/pages/bookingsPage.ts</code>
+          <code>src/test/features/sanity/sanity.feature</code>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>2 &middot; TC_GST_004 &mdash; Edit Guest Profile mandatory fields</h3>
+          <span class="tag conflict">Test updated</span>
+        </div>
+        <div class="cause">The test cleared Full Name and Email, then expected both to show a required-field error. Verified live on STG: Email Address has no required-field asterisk on this form and the app does not validate it on submit &mdash; only Full Name is enforced. This is a conflict between the test's assumption and actual app behavior, not a broken locator.</div>
+        <div class="fix"><b>Decision (per your instruction):</b> updated the test case to match confirmed app behavior rather than filing it as a defect. <code>verifyMandatoryFieldErrors()</code> now asserts only the Full Name error, with a comment recording why Email Address was dropped.</div>
+        <div class="filelist conflict">
+          <code>src/pages/guestsPage.ts</code>
+          <code>src/test/steps/guestsSteps.ts</code>
+          <code>src/test/features/sanity/sanity.feature</code>
+          <code>src/test/features/regression/guests.feature</code>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-head">
+          <h3>3 &middot; TC_GST_029 &mdash; Signed Waiver empty state</h3>
+          <span class="tag fixed">Fixed</span>
+        </div>
+        <div class="cause">The fallback "pending guest" row resolved to guest <em>signmin</em>, who is a <strong>Minor</strong> with a guardian on file. Minors correctly show "Waiver pending &mdash; must be signed by [guardian]" instead of the generic "Signed waiver PDF is not available yet." hardcoded in test data. Both messages are legitimate app states.</div>
+        <div class="fix"><b>Fix:</b> <code>verifySignedWaiverEmptyStateMessage()</code> now accepts either valid empty-state message instead of only the generic one.</div>
+        <div class="filelist">
+          <code>src/pages/guestsPage.ts</code>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Also fixed along the way</h2>
+    <div class="sub">Environment setup required before any scenario could run at all.</div>
+    <table>
+      <tr><th>Issue</th><th>Resolution</th></tr>
+      <tr><td><code>src/helper/env/.env.STG</code> missing</td><td>Created with <code>BASEURL</code> and super-admin credentials, derived from fallback values used consistently throughout the codebase and confirmed against a prior passing report.</td></tr>
+      <tr><td>Dependencies not installed</td><td>Ran <code>npm install</code> in the Framework directory.</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Open item</h2>
+    <div class="openq"><b>Product conflict, resolved by your call:</b> Email Address on Edit Guest Profile is not enforced as required by the app. You chose to update the test case rather than log it as a defect &mdash; flagging here for traceability in case that's worth confirming against the original requirement later.</div>
+  </section>
+
+  <footer>RanchOps Pro automation framework &middot; 07-outputs/Automation/Framework &middot; report generated 2026-11-23</footer>
+</div>

@@ -37,7 +37,7 @@ Feature: Guests Directory & Profile Management
     And User clears the Full Name input field
     And User clears the Email Address input field
     And User clicks the guest form "Save Changes" button
-    Then Submission should be blocked with inline errors under Full Name and Email Address
+    Then Submission should be blocked with an inline error under Full Name
 
   @UI @High @Critical @Functional @StateTransition @Key:TC_GST_005
   Scenario: TC_GST_005 Verify successful update of Guest Profile details

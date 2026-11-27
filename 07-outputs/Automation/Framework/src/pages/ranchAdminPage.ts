@@ -703,8 +703,9 @@ async confirmDeletion() {
   const deleteAdminBtn = modal.locator('button', { hasText: 'Delete Admin' });
   await deleteAdminBtn.click();
 
-  // Wait for modal dialog to close completely
-  await expect(modal).toBeHidden({ timeout: 10000 });
+  // Wait for modal dialog to close completely - the delete + grid re-index this waits on has gotten
+  // slower as regression test data (admins created by prior runs, never cleaned up) has accumulated.
+  await expect(modal).toBeHidden({ timeout: 20000 });
 }
 
 async verifyRowRemovedFromGrid(identifier: string) {

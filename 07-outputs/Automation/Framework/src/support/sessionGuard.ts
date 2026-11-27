@@ -3,7 +3,11 @@ import * as path from "path";
 import LoginPage from "../pages/loginPage";
 import { fixture } from "./pageFixture";
 
-const RELOGIN_COOLDOWN_MS = 10 * 60 * 1000;
+// Kept short on purpose: during a long regression run the shared session can die repeatedly
+// (short backend token TTL), and a long cooldown here turns each death into a multi-minute
+// cascade of instantly-failing scenarios (every scenario hits the cooldown guard below until
+// it expires) instead of a single quick, guarded re-login.
+const RELOGIN_COOLDOWN_MS = 60 * 1000;
 let lastReloginAt = 0;
 
 export async function ensureSuperAdminSession(page: Page): Promise<void> {
@@ -28,8 +32,11 @@ export async function ensureSuperAdminSession(page: Page): Promise<void> {
 
     const loginPage = new LoginPage(page);
     await loginPage.navigateToLogin();
-    const adminEmail = process.env.SUPER_ADMIN_EMAIL || process.env.SUPERADMIN_USER || "superadmin@buckhouse.com";
-    const adminPassword = process.env.SUPER_ADMIN_PASSWORD || process.env.SUPERADMIN_PASSWORD || "Admin@123!";
+    const adminEmail = process.env.SUPER_ADMIN_EMAIL || process.env.SUPERADMIN_USER;
+    const adminPassword = process.env.SUPER_ADMIN_PASSWORD || process.env.SUPERADMIN_PASSWORD;
+    if (!adminEmail || !adminPassword) {
+        throw new Error("SUPER_ADMIN_EMAIL/SUPER_ADMIN_PASSWORD must be set in the environment - no hardcoded fallback credentials.");
+    }
     await loginPage.enterCredentials(adminEmail, adminPassword);
     await loginPage.clickSignIn();
     await page.waitForURL(/.*\/dashboard/, { timeout: 30000 });
