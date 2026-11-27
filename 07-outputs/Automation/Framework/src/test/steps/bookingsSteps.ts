@@ -762,6 +762,16 @@ When('User reopens the same booking', async function () {
     await fixture.subStepLogger?.success("Reopened booking");
 });
 
+// Confirmed live: adding a minor dispatches its own separate waiver invite - the hunter signing
+// theirs does NOT auto-complete the minor's. Both must be signed independently to reach "N of N".
+Then('Waiver Status shows all party members signed', async function () {
+    fixture.logger.info("Verifying all party members' waivers are signed");
+    await fixture.subStepLogger?.info("Verifying all party members' waivers are signed");
+    const waiverText = await bookingsPage.getWaiverSentConfirmationText();
+    expect(waiverText).toMatch(/Progress:\s*(\d+)\s*of\s*\1\s*signed/i);
+    await fixture.subStepLogger?.success("Verified all party members' waivers are signed");
+});
+
 Then('The Waiver Status card shows the waiver as Signed', async function () {
     fixture.logger.info("Verifying waiver status is now Signed");
     await fixture.subStepLogger?.info("Verifying waiver status is now Signed");

@@ -357,15 +357,21 @@ Feature: Bookings Module
     Given User is logged in as Super Admin
     When User clicks on 'Bookings' under GUEST OPERATIONS in the left sidebar
     And User clicks '+ New Booking' button
-    And User completes Steps 1 to 4 with Ranch 'test ranch', Dates '{today+auto+20}' to '{today+auto+24}', room 'The king room' for 3 guests, a brand-new Hunter, and Guide 'athul pp'
+    And User completes Steps 1 to 4 with Ranch 'test ranch', Dates '{today+auto+30}' to '{today+auto+34}', room 'The king room' for 3 guests, a brand-new Hunter, and Guide 'athul pp'
     And User clicks green 'Create Booking' button on Step 5, creating a real booking
     Then Booking is created, user is redirected to list page, and pending booking appears at the top
-    When User retrieves the Complete Your Profile email from MailHog and opens it
+    When User opens the newly created booking
+    And User retrieves the waiver invite email from MailHog and signs it as the hunter
+    And User reopens the same booking
+    And User retrieves the Complete Your Profile email from MailHog and opens it
     Then Action Required banner lists the missing profile fields
     When User fills the required phone, license, and license expiration fields
     And User adds a Minor Hunter from the Complete Your Profile page
     And User clicks 'Save and Finalize' button
     Then The profile is completed successfully
+    When User retrieves the waiver invite email from MailHog and signs it as the hunter
+    And User reopens the same booking
+    Then Waiver Status shows all party members signed
 
   @Key:BTC042 @High @Type:Validation
   Scenario: Verify 'Check in Guests' early check-in error handling
