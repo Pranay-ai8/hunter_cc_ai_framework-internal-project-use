@@ -1,0 +1,51 @@
+{
+  "name": "saucedemo-playwright-cucumber-ts",
+  "version": "1.0.0",
+  "description": "Playwright (driver) + Cucumber (BDD) + TypeScript automation suite for SauceDemo (https://www.saucedemo.com/)",
+  "private": true,
+  "scripts": {
+    "pretest": "ts-node src/report/custom/init.ts",
+    "test": "cucumber-js --config=config/cucumber.js",
+    "posttest": "ts-node src/report/custom/report.ts",
+    "test:failed": "cucumber-js -p rerun @rerun.txt || true && ts-node src/report/custom/report.ts",
+    "test:smoke": "cross-env ENV=PRD TAGS=\"--tags @smoke\" ts-node src/report/custom/runCucumberWithReport.ts",
+    "test:regression": "cross-env ENV=PRD TAGS=\"--tags @regression\" ts-node src/report/custom/runCucumberWithReport.ts",
+    "test:e2e": "cross-env ENV=PRD TAGS=\"--tags @e2e\" ts-node src/report/custom/runCucumberWithReport.ts",
+    "test:sanity": "cross-env ENV=PRD TAGS=\"--tags @sanity\" ts-node src/report/custom/runCucumberWithReport.ts",
+    "test:inprogress": "cross-env ENV=PRD TAGS=\"--tags @inprogress\" ts-node src/report/custom/runCucumberWithReport.ts",
+    "lint": "cd .. && eslint \"Framework/src/**/*.ts\" \"PageObjects/**/*.ts\" \"Scripts/**/*.ts\"",
+    "lint:fix": "cd .. && eslint \"Framework/src/**/*.ts\" \"PageObjects/**/*.ts\" \"Scripts/**/*.ts\" --fix",
+    "format": "prettier --write \"src/**/*.ts\" \"../PageObjects/**/*.ts\" \"../Scripts/**/*.ts\"",
+    "format:check": "prettier --check \"src/**/*.ts\" \"../PageObjects/**/*.ts\" \"../Scripts/**/*.ts\"",
+    "typecheck": "tsc --noEmit",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.1.1",
+    "@playwright/test": "^1.49.0",
+    "@types/fs-extra": "^11.0.4",
+    "@typescript-eslint/eslint-plugin": "^8.16.0",
+    "@typescript-eslint/parser": "^8.16.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^9.15.0",
+    "eslint-config-prettier": "^9.1.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.10",
+    "multiple-cucumber-html-reporter": "^3.9.2",
+    "prettier": "^3.3.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "csv-parse": "^5.6.0",
+    "dotenv": "^16.4.5",
+    "fs-extra": "^11.2.0",
+    "winston": "^3.16.0"
+  },
+  "lint-staged": {
+    "src/**/*.ts": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+target/
+out/
+.idea/
+*.class
+*.iml
+Screenshots/
+logs/
+test-output/
+.DS_Store

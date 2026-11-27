@@ -656,17 +656,20 @@ export default class StaffsGuidesPage {
         if (!ranchName || ranchName.startsWith('<') || ranchName === "Powderhorn Ranch" || ranchName === "Kannur Ranch") ranchName = "Koramnaga Ranch";
         
         const dropdown = this.page.locator('button[role="combobox"]').filter({ hasText: /Choose the ranch|Select Ranch/i }).or(this.page.locator('button[role="combobox"]')).first();
-        
-        for (let i = 0; i < 3; i++) {
+
+        // The ranch list backing this dropdown fetches every ranch in the environment, which has grown
+        // large from accumulated regression test data (every run creates new ranches that are never
+        // cleaned up) - the old 3-attempt/~7.5s retry budget was routinely too short for that fetch to
+        // resolve, leaving the dropdown with zero options and the wizard stuck on Step 1.
+        for (let i = 0; i < 6; i++) {
             const state = await dropdown.getAttribute('data-state').catch(() => null);
             if (state !== 'open') {
                 await dropdown.click({ force: true });
-                await this.page.waitForTimeout(1500);
             }
-            
+
             const optionCount = await this.page.locator('div[role="option"]').count();
             if (optionCount > 0) break;
-            await this.page.waitForTimeout(1000);
+            await this.page.waitForTimeout(2000);
         }
 
         let option = this.page.locator('div[role="option"]').filter({ hasText: new RegExp(ranchName, 'i') }).first();
@@ -678,11 +681,17 @@ export default class StaffsGuidesPage {
                 option = this.page.locator('div[role="option"]:not(:has-text("Choose")):not(:has-text("Select"))').first();
             }
         }
-        
-        if (await option.isVisible().catch(() => false)) {
+
+        if (await option.isVisible({ timeout: 5000 }).catch(() => false)) {
             await option.click({ force: true });
         } else {
-            console.warn("WARNING: No valid ranch option was found to click in the dropdown!");
+            // Fail loudly right here instead of silently leaving the wizard stuck on Step 1 - every
+            // later wizard step (Step 2's name fields, Step 3, etc.) would otherwise time out one by one
+            // with no indication that ranch selection was the real cause.
+            throw new Error(
+                `selectRanchInAddWizard: no ranch option was found in the dropdown after retrying for ~12s ` +
+                `(wanted "${ranchName}"). The wizard cannot proceed past Step 1 without a ranch selected.`
+            );
         }
         await this.page.waitForTimeout(500);
     }

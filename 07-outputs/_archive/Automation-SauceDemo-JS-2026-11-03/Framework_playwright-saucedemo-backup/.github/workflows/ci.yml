@@ -1,0 +1,49 @@
+name: SauceDemo Playwright JS Cucumber CI
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  ui-tests:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: 07-outputs/Automation/Framework
+    env:
+      ENV: PRD
+      BROWSER: chromium
+      HEADLESS: "true"
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+
+      - name: Run smoke suite
+        run: npm run test:smoke
+
+      - name: Run regression suite
+        if: always()
+        run: npm run test:regression
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: |
+            07-outputs/Automation/Framework/test-results/
+            07-outputs/Automation/Framework/allure-results/
+            07-outputs/Automation/healing-report.log

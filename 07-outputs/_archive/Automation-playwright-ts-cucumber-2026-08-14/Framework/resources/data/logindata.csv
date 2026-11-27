@@ -1,0 +1,10 @@
+Key|username|password|expectedError
+locked_out_login|locked_out_user|AUTO|Epic sadface: Sorry, this user has been locked out.
+blank_username||secret_sauce|Epic sadface: Username is required
+blank_password|standard_user||Epic sadface: Password is required
+unknown_credentials|not_a_real_user|wrong_password|Epic sadface: Username and password do not match any user in this service
+performance_glitch_login|performance_glitch_user|AUTO|
+problem_user_login|problem_user|AUTO|
+error_user_login|error_user|AUTO|
+visual_user_login|visual_user|AUTO|
+session_timeout|standard_user|AUTO|

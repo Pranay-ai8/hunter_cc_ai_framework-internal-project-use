@@ -1,0 +1,46 @@
+name: Playwright Tests (SauceDemo, JS/Cucumber)
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    # SauceDemo "may be updated without notice" (docx Section 10) — run a daily
+    # smoke check against the live site to catch locator/behavior drift early.
+    - cron: '0 3 * * *'
+
+jobs:
+  ui-tests:
+    timeout-minutes: 30
+    runs-on: ubuntu-latest
+    env:
+      ENV: PRD
+      BROWSER: chromium
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install dependencies
+        working-directory: 07-outputs/Automation/Framework
+        run: npm ci
+      - name: Install Playwright Browsers
+        working-directory: 07-outputs/Automation/Framework
+        run: npx playwright install --with-deps
+      - name: Run smoke suite on push/PR, full regression on schedule
+        working-directory: 07-outputs/Automation/Framework
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ]; then
+            npm run test:regression
+          else
+            npm run test:smoke
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: test-results
+          path: |
+            07-outputs/Automation/Framework/test-results/
+            07-outputs/Automation/Framework/allure-results/
+          retention-days: 14

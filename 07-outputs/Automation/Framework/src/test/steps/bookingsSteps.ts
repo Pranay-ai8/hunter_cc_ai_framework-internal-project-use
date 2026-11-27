@@ -4,6 +4,8 @@ import { fixture } from "../../support/pageFixture";
 import LoginPage from "../../pages/loginPage";
 import BookingsPage from "../../pages/bookingsPage";
 import { DateHelper } from "../../helper/util/DateHelper";
+import { waitForLatestEmailBySubject, extractSigningLink } from "../../helper/mail/mailhogClient";
+import DocusealPage from "../../pages/docusealPage";
 let loginPage: LoginPage;
 let bookingsPage: BookingsPage;
 
@@ -26,7 +28,7 @@ When('User clicks on \'Bookings\' under GUEST OPERATIONS in the left sidebar', a
 // Nothing else in this suite performs a real successful check-in (the only check-in scenario tests the
 // early-check-in error path), so this replenishes one if none currently exists rather than letting those
 // scenarios fail against an empty grid.
-Given('a \'Checked In\' Hunting booking exists', async function () {
+Given('a \'Checked In\' Hunting booking exists', { timeout: 120 * 1000 }, async function () {
     fixture.logger.info("Ensuring a 'Checked In' Hunting booking exists");
     await fixture.subStepLogger?.info("Ensuring a 'Checked In' Hunting booking exists");
     bookingsPage = new BookingsPage(fixture.page);
@@ -662,12 +664,52 @@ When('User clicks directly on a {string} Hunting booking row with an unsigned wa
     await fixture.subStepLogger?.success(`Clicked ${status} Hunting booking row with an unsigned waiver`);
 });
 
+When('User opens the newly created booking', async function () {
+    fixture.logger.info("Opening the newly created booking from the top of the list");
+    await fixture.subStepLogger?.info("Opening the newly created booking from the top of the list");
+    await bookingsPage.clickMostRecentBookingRow();
+    await fixture.subStepLogger?.success("Opened the newly created booking");
+});
+
 Then('The Waiver Status card confirms the waiver email was sent to the hunter', async function () {
     fixture.logger.info("Verifying waiver email was sent to the hunter");
     await fixture.subStepLogger?.info("Verifying waiver email was sent to the hunter");
     const waiverText = await bookingsPage.getWaiverSentConfirmationText();
     expect(waiverText).toMatch(/\(Reminder sent\)|\(Email sent\)|Signed/i);
     await fixture.subStepLogger?.success("Verified waiver email was sent to the hunter");
+});
+
+// Retrieves the DocuSeal "invited to sign" email that the Resend Waiver action just dispatched (via
+// MailHog, which this STG environment uses as its outbound mail catcher), opens its signing link, and
+// completes the signature as the hunter - a separate, unauthenticated page from the admin session on
+// fixture.page.
+When('User retrieves the waiver invite email from MailHog and signs it as the hunter', async function () {
+    fixture.logger.info("Fetching waiver invite email from MailHog and signing it");
+    await fixture.subStepLogger?.info("Fetching waiver invite email from MailHog and signing it");
+
+    const email = await waitForLatestEmailBySubject('invited to sign', Date.now() - 2 * 60 * 1000, 30000);
+    const signingLink = extractSigningLink(email.body);
+
+    const docusealPage = new DocusealPage();
+    const signingTab = await docusealPage.signAs(fixture.page.context(), signingLink, 'Automation Hunter');
+    await signingTab.close();
+
+    await fixture.subStepLogger?.success("Signed waiver via DocuSeal");
+});
+
+When('User reopens the same booking', async function () {
+    fixture.logger.info("Reopening the same booking");
+    await fixture.subStepLogger?.info("Reopening the same booking");
+    await bookingsPage.reopenLastBooking();
+    await fixture.subStepLogger?.success("Reopened booking");
+});
+
+Then('The Waiver Status card shows the waiver as Signed', async function () {
+    fixture.logger.info("Verifying waiver status is now Signed");
+    await fixture.subStepLogger?.info("Verifying waiver status is now Signed");
+    const waiverText = await bookingsPage.getWaiverSentConfirmationText();
+    expect(waiverText).toMatch(/Signed/i);
+    await fixture.subStepLogger?.success("Verified waiver status is Signed");
 });
 
 When('User clicks \'Extend Waiver Deadline\' button', async function () {
@@ -969,6 +1011,14 @@ When('User clicks green {string} button on Step {int}', async function (btnName:
     } else {
         await fixture.page.getByRole('button', { name: btnName }).click();
     }
+});
+
+// Used only by the two waiver-email scenarios - see clickCreateBookingReal's own comment for why they
+// need a real, persisted booking instead of the mocked path every other scenario above uses.
+When('User clicks green \'Create Booking\' button on Step {int}, creating a real booking', { timeout: 30 * 1000 }, async function (step: number) {
+    fixture.logger.info(`Clicking green Create Booking button on Step ${step} (real backend, not mocked)`);
+    await fixture.subStepLogger?.info(`Clicking green Create Booking button on Step ${step} (real backend, not mocked)`);
+    await bookingsPage.clickCreateBookingReal();
 });
 
 Then('Wizard advances to Step {int} of {int} and stepper shows Step {int} completed', async function (currentStep: number, totalSteps: number, completedStep: number) {
@@ -1284,6 +1334,15 @@ When('User completes Steps {int} to {int} with Ranch {string}, Dates {string} to
     await bookingsPage.clickWizardNext();
 });
 
+// A genuine "first booking for this hunter" waiver test needs a guest who has never had a waiver/
+// submission before - ensureHunterInParty always reuses an existing hunter (see its own comment), so
+// this adds a brand-new one via a timestamp-suffixed name/email instead.
+When('User completes Steps {int} to {int} with Ranch {string}, Dates {string} to {string}, room {string} for {int} guests, a brand-new Hunter, and Guide {string}', async function (s1: number, s4: number, ranch: string, checkIn: string, checkOut: string, room: string, guests: number, guide: string) {
+    fixture.logger.info("Completing Steps 1 to 4 with a brand-new hunter");
+    await fixture.subStepLogger?.info("Completing Steps 1 to 4 with a brand-new hunter");
+    await bookingsPage.fillWizardStepsOneToFourBrandNewHunter(ranch, DateHelper.parse(checkIn), DateHelper.parse(checkOut), room, guests, guide);
+});
+
 When('User completes Step 1 for {string} booking and clicks \'Next\'', async function (bookingType: string) {
     fixture.logger.info(`Completing Step 1 for ${bookingType} booking`);
     await fixture.subStepLogger?.info(`Completing Step 1 for ${bookingType} booking`);
@@ -1351,9 +1410,19 @@ Then('Step {int} summary page displays correct details, pricing, and waiver dead
 Then('Booking is created, user is redirected to list page, and pending booking appears at the top', async function () {
     fixture.logger.info("Verifying booking created and redirected");
     await fixture.subStepLogger?.info("Verifying booking created and redirected");
-    await expect(fixture.page).toHaveURL(/.*\/bookings/, { timeout: 15000 });
+    await expect(fixture.page).toHaveURL(/.*\/bookings/, { timeout: 20000 });
     const pageHeading = fixture.page.locator('h1, h2, h3').filter({ hasText: /Booking Management|Booking Details|Edit Booking|BK-/i });
-    await expect(pageHeading.first()).toBeVisible({ timeout: 15000 });
+    const errorToast = fixture.page.getByText(/error|fail|invalid|conflict detected/i).first();
+    const headingSeen = await pageHeading.first().isVisible({ timeout: 25000 }).catch(() => false);
+    if (!headingSeen) {
+        const toastText = await errorToast.isVisible({ timeout: 1000 }).catch(() => false)
+            ? await errorToast.textContent().catch(() => null)
+            : null;
+        throw new Error(
+            `Booking heading never appeared after a real (non-mocked) Create Booking submission.` +
+            (toastText ? ` An error-looking toast was visible: "${toastText}"` : ' No error toast was visible either.')
+        );
+    }
     await fixture.subStepLogger?.success("Verified booking created and redirected");
 });
 

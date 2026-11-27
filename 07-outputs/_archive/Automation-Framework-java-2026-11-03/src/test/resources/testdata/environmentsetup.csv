@@ -1,0 +1,3 @@
+Key,Username,Password,Notes
+DevModeTrigger,devmode,please,FR-AUTH-011 hidden developer/QA environment-switch trigger on the Login screen - confirmed by the user as an intentional, access-controlled QA tool (not a leftover). Selects the "Test" backend (https://api-test.eyeqmonitoring.com) via the Developer Mode dialog.
+QaUser,anupama.mundaragi@codecraft.co.in,Admin@1234,Real QA login account for the Test backend - used for TC_FUNC_AUTH_004 and every other @Test method's normal login once EnvironmentSetup has run.

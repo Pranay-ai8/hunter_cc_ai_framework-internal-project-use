@@ -1,0 +1,8 @@
+node_modules/
+test-results/
+allure-results/
+allure-report/
+src/helper/env/.env.*
+!src/helper/env/.env.*.example
+@rerun.txt
+healing-cache.json

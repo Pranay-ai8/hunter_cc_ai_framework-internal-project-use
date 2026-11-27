@@ -272,17 +272,72 @@ export default class BookingsPage {
             }
         }
         await row.waitFor({ state: 'visible' }).catch(() => {});
+        this.lastOpenedBookingId = (await row.locator('td').first().textContent().catch(() => '') || '').trim();
         await row.click();
         await this.page.waitForTimeout(2000);
     }
-    
+
+    // Set by the "brand-new Hunter" wizard step so this can find the booking it just created by that
+    // hunter's unique name, rather than assuming it's sorted to the top of the list - the list isn't
+    // reliably sorted by creation time alone (e.g. other bookings created moments earlier in the same
+    // run/session can still sort above it), so trusting row order picked up the wrong, already-signed
+    // booking in practice.
+    lastCreatedHunterName: string = "";
+
+    async fillWizardStepsOneToFourBrandNewHunter(
+        ranch: string, checkInParsed: string, checkOutParsed: string, room: string, guests: number, guide: string
+    ): Promise<void> {
+        await this.selectBookingType("Hunting");
+        await this.selectWizardRanch(ranch);
+        await this.selectWizardDate("Check-in Date", checkInParsed);
+        await this.selectWizardDate("Check-out Date", checkOutParsed);
+        await this.clickWizardNext();
+        await this.selectRoom(room);
+        await this.setGuestCount(room, guests.toString());
+        await this.clickWizardNext();
+        const uniqueSuffix = Date.now();
+        const uniqueHunterName = `QA-AUTO-${uniqueSuffix} Fresh Hunter`;
+        await this.addBrandNewHunterToParty(uniqueHunterName, `qa.auto.${uniqueSuffix}@mailinator.com`);
+        this.lastCreatedHunterName = uniqueHunterName;
+        await this.clickWizardNext();
+        await this.assignWizardGuide(guide);
+        await this.clickWizardNext();
+    }
+
+    async clickMostRecentBookingRow(): Promise<void> {
+        // The list isn't reliably sorted by creation time (confirmed live: a freshly created booking did
+        // not appear in/near the first row), and the table only renders a page's worth of rows at a time -
+        // so filtering tbody rows already on the page can simply miss it. Searching by the unique hunter
+        // name guarantees it surfaces regardless of sort order or pagination.
+        if (this.lastCreatedHunterName) {
+            await this.typeInSearchBar(this.lastCreatedHunterName);
+            await this.page.waitForTimeout(2000);
+        }
+        const row = this.page.locator('tbody tr').first();
+        await row.waitFor({ state: 'visible', timeout: 10000 });
+        this.lastOpenedBookingId = (await row.locator('td').first().textContent().catch(() => '') || '').trim();
+        await row.click();
+        await this.page.waitForTimeout(2000);
+    }
+
+    // Set by clickBookingRowWithStatus/clickBookingRow so a later step can navigate back to the list
+    // and reopen this same booking (e.g. after signing its waiver on an external page) without the
+    // caller needing to know/track the booking id itself.
+    lastOpenedBookingId: string = "";
+
+    async reopenLastBooking(): Promise<void> {
+        await this.clickBackToBookings();
+        await this.clickBookingRow(this.lastOpenedBookingId);
+    }
+
     // Several scenarios (log-harvest-on-a-checked-in-booking flows) need a "Checked In" Hunting booking
     // to already exist. Nothing in this suite performs a real, successful check-in (the only check-in
     // scenario deliberately tests the early-check-in *error* path), so that data was never replenished
     // and eventually ran out after repeated runs. Ensure one exists before those scenarios run: reuse an
     // existing Approved Hunting booking whose check-in date has already arrived if one is available
-    // (checking in early is blocked by the app, by design), otherwise report clearly why none could be
-    // prepared rather than silently proceeding against an empty grid.
+    // (checking in early is blocked by the app, by design); if none is Approved, fall back to an eligible
+    // Pending Hunting booking and approve it first. Otherwise report clearly why none could be prepared
+    // rather than silently proceeding against an empty grid.
     async ensureCheckedInHuntingBooking(): Promise<void> {
         await this.selectStatus('Checked In').catch(() => {});
         await this.selectType('Hunting').catch(() => {});
@@ -294,39 +349,64 @@ export default class BookingsPage {
             return;
         }
 
-        await this.selectStatus('Approved').catch(() => {});
-        await this.page.waitForTimeout(1000);
-
-        const approvedRows = this.page.locator('tbody tr').filter({ hasText: /hunting/i });
-        const count = await approvedRows.count().catch(() => 0);
         const today = new Date();
         today.setHours(0, 0, 0, 0);
 
-        for (let i = 0; i < count; i++) {
-            const candidateRow = approvedRows.nth(i);
-            const checkInText = await candidateRow.locator('td').nth(2).textContent().catch(() => '');
-            if (!checkInText) continue;
-            const parsedDate = new Date(checkInText.trim());
-            if (isNaN(parsedDate.getTime()) || parsedDate > today) continue;
+        const tryCheckInEligibleRows = async (rows: ReturnType<typeof this.page.locator>): Promise<boolean> => {
+            const count = await rows.count().catch(() => 0);
+            for (let i = 0; i < count; i++) {
+                const candidateRow = rows.nth(i);
+                const checkInText = await candidateRow.locator('td').nth(2).textContent().catch(() => '');
+                if (!checkInText) continue;
+                const parsedDate = new Date(checkInText.trim());
+                if (isNaN(parsedDate.getTime()) || parsedDate > today) continue;
 
-            await candidateRow.click();
-            await this.page.waitForTimeout(1500);
+                await candidateRow.click();
+                await this.page.waitForTimeout(1500);
 
-            const checkInBtn = this.page.getByRole('button', { name: /Check In Guests/i }).first();
-            if (!(await checkInBtn.isVisible({ timeout: 3000 }).catch(() => false))) {
-                await this.clickBackToBookings().catch(() => {});
-                continue;
+                // A Pending booking needs approving before "Check In Guests" becomes available.
+                await this.clickApproveBookingQuickAction().catch(() => {});
+
+                const checkInBtn = this.page.getByRole('button', { name: /Check In Guests/i }).first();
+                if (!(await checkInBtn.isVisible({ timeout: 3000 }).catch(() => false))) {
+                    await this.clickBackToBookings().catch(() => {});
+                    continue;
+                }
+                await checkInBtn.click();
+                await this.clickConfirmCheckIn();
+
+                const blocked = await this.page.locator('text=/Cannot check in before the scheduled date/i').first()
+                    .isVisible({ timeout: 2000 }).catch(() => false);
+                if (blocked) {
+                    await this.clickBackToBookings().catch(() => {});
+                    continue;
+                }
+                return true;
             }
-            await checkInBtn.click();
-            await this.clickConfirmCheckIn();
+            return false;
+        };
 
-            const blocked = await this.page.locator('text=/Cannot check in before the scheduled date/i').first()
-                .isVisible({ timeout: 2000 }).catch(() => false);
-            if (blocked) {
-                await this.clickBackToBookings().catch(() => {});
-                continue;
-            }
-            return;
+        await this.selectStatus('Approved').catch(() => {});
+        await this.page.waitForTimeout(1000);
+        const approvedRows = this.page.locator('tbody tr').filter({ hasText: /hunting/i });
+        if (await tryCheckInEligibleRows(approvedRows)) return;
+
+        // No Approved Hunting booking was eligible — fall back to a Pending one with a past/current
+        // check-in date and approve it first (the app blocks approving/checking in before that date).
+        await this.selectStatus('Pending').catch(() => {});
+        await this.page.waitForTimeout(1000);
+        const pendingRows = this.page.locator('tbody tr').filter({ hasText: /hunting/i });
+        if (await tryCheckInEligibleRows(pendingRows)) return;
+
+        // Still nothing eligible - rather than requiring a booking to be seeded in STG, do a normal,
+        // real (unmocked) check-in: edit any Pending Hunting booking's dates to today via the real Edit
+        // Booking form (dates are only locked once a booking is Approved - see BTC045), save it, then
+        // retry the normal approve + check-in flow on it.
+        if (await this.makePendingHuntingBookingEligible()) {
+            await this.selectStatus('Pending').catch(() => {});
+            await this.page.waitForTimeout(1000);
+            const retriedPendingRows = this.page.locator('tbody tr').filter({ hasText: /hunting/i });
+            if (await tryCheckInEligibleRows(retriedPendingRows)) return;
         }
 
         // Diagnostic: dump every Hunting booking and its status/check-in date, so the error says exactly
@@ -342,11 +422,45 @@ export default class BookingsPage {
         }
 
         throw new Error(
-            'Could not prepare a "Checked In" Hunting booking: none exist already, and no Approved Hunting ' +
-            'booking with a check-in date on or before today is available to check in (the app blocks checking ' +
-            'in before the scheduled date). This needs a Hunting booking seeded with a past/current check-in date. ' +
+            'Could not prepare a "Checked In" Hunting booking: none exist already, no Approved/Pending Hunting ' +
+            'booking with a check-in date on or before today was available to check in, and editing a Pending ' +
+            'one\'s dates to today (real, unmocked edit + approve + check-in) also did not produce one. ' +
             `All ${allCount} current Hunting bookings (any status): ${rowSummaries.length ? rowSummaries.join(' || ') : '(none at all)'}`
         );
+    }
+
+    // Edits any Pending Hunting booking's Check-in/Check-out dates to today/today+2 via the real,
+    // unmocked Edit Booking form (dates are only locked once Approved - see BTC045) and saves it with
+    // "Save & Keep Pending", so the normal approve + check-in flow above can then pick it up. This is a
+    // real app action on a real existing booking, not a network mock or externally-seeded data.
+    private async makePendingHuntingBookingEligible(): Promise<boolean> {
+        const pendingHuntingRow = this.page.locator('tbody tr').filter({ hasText: /hunting/i }).first();
+        if (!(await pendingHuntingRow.isVisible({ timeout: 3000 }).catch(() => false))) {
+            return false;
+        }
+
+        await pendingHuntingRow.click();
+        await this.page.waitForTimeout(1500);
+
+        const editBtn = this.page.getByRole('button', { name: 'Edit Booking', exact: false }).first();
+        if (!(await editBtn.isVisible({ timeout: 4000 }).catch(() => false))) {
+            await this.clickBackToBookings().catch(() => {});
+            return false;
+        }
+        await editBtn.click();
+        await this.page.waitForTimeout(1500);
+
+        await this.selectWizardDate('Check-in Date', DateHelper.parse('today'));
+        await this.selectWizardDate('Check-out Date', DateHelper.parse('today+2'));
+
+        const saveBtn = this.page.getByRole('button', { name: /Save & Keep Pending/i }).first();
+        if (!(await saveBtn.isVisible({ timeout: 3000 }).catch(() => false))) {
+            await this.clickBackToBookings().catch(() => {});
+            return false;
+        }
+        await saveBtn.click();
+        await this.page.waitForTimeout(1500);
+        return true;
     }
 
     async clickBookingCard(bookingId: string) {
@@ -380,11 +494,21 @@ export default class BookingsPage {
     }
 
 
+    // Known app bug: if any other hunter on the same booking is already signed, this fails outright
+    // ("No waiver submissions were created. Failed: <signed hunter>") instead of just resending to the
+    // still-pending one - the backend appears to try recreating every party member's submission and
+    // errors on the already-completed one. Scenarios that need this to actually dispatch an email
+    // should use a booking where no hunter has signed yet (reported separately as a product bug).
     async clickResendWaiver() {
         const btn = this.page.locator('button, a').filter({ hasText: /Resend Waiver/i }).first();
-        if (await btn.isVisible({ timeout: 2000 }).catch(() => false)) {
-            await btn.click();
+        // The Quick Actions panel (like the Waiver Status card) can take a while to render on a
+        // freshly-opened booking detail page. The old 2s check silently no-op'd if it wasn't ready yet,
+        // which meant the next step waited 30s for an email that was never actually requested - throwing
+        // here instead makes that failure point directly at the real cause.
+        if (!(await btn.isVisible({ timeout: 10000 }).catch(() => false))) {
+            throw new Error('clickResendWaiver: "Resend Waiver" button never became visible on the booking detail page.');
         }
+        await btn.click();
         await this.page.waitForTimeout(1000);
     }
 
@@ -412,7 +536,9 @@ export default class BookingsPage {
     // so this text is the real send confirmation surfaced on a non-mocked booking record.
     async getWaiverSentConfirmationText(): Promise<string> {
         const section = this.page.locator('h3', { hasText: /Waiver Status/i }).first();
-        await section.waitFor({ state: 'visible', timeout: 10000 });
+        // The waiver dispatch this confirms is a real async backend process kicked off by booking
+        // creation - 10s wasn't consistently enough for it to finish and the card to render.
+        await section.waitFor({ state: 'visible', timeout: 20000 });
         const bodyText = await this.page.locator('body').innerText();
         const start = bodyText.indexOf('Waiver Status');
         const end = bodyText.indexOf('Booking Details', start);
@@ -567,7 +693,7 @@ export default class BookingsPage {
         await this.page.waitForTimeout(500);
         await this.pickDateInCalendar(dateString);
     }
-    
+
     async selectDOBInWizard(dateString: string) {
         if (!dateString) return;
         const container = this.page.locator('label').filter({ hasText: 'Date of Birth' }).locator('..');
@@ -668,6 +794,45 @@ export default class BookingsPage {
         }
     }
     
+    // ensureHunterInParty's search step only ever tries two hardcoded, already-existing candidate names
+    // ("John Hunter Smith"/"erheity") regardless of what hunterName is passed in, so it always reuses an
+    // existing hunter profile rather than adding the brand-new one the caller actually asked for. A
+    // "first booking for this hunter" waiver scenario needs a guest who has genuinely never had a
+    // waiver/submission before, so this goes straight to the manual "Add Hunter" form instead of
+    // searching, using a timestamp-suffixed name/email to guarantee it's never been used before.
+    async addBrandNewHunterToParty(hunterName: string, hunterEmail: string): Promise<void> {
+        const partyChip = this.page.locator('button:has-text("Remove"), div.border:has-text("Primary")')
+            .or(this.page.getByText(/Selected Party Members/i))
+            .first();
+
+        const nameInput = this.page.locator(this.Elements.newHunterNameInput).first();
+        await nameInput.waitFor({ state: 'visible', timeout: 10000 });
+        await nameInput.fill(hunterName);
+
+        const emailInput = this.page.locator(this.Elements.newHunterEmailInput).first();
+        await emailInput.fill(hunterEmail);
+
+        const dobInput = this.page.locator('#newHunterDob, input[placeholder*="DOB"]').first();
+        if (await dobInput.isVisible({ timeout: 1000 }).catch(() => false)) {
+            await dobInput.fill('01/15/1990');
+        } else {
+            await this.selectDOBInWizard('01/15/1990').catch(() => {});
+        }
+
+        await this.fillAddressInfo("123 Main St", "Kingsville", "TX", "78363");
+
+        const addBtn = this.page.locator('button:has-text("Add Hunter")').first();
+        await addBtn.scrollIntoViewIfNeeded().catch(() => {});
+        await addBtn.click();
+        await this.page.waitForTimeout(1500);
+
+        const addedViaChip = await partyChip.isVisible({ timeout: 3000 }).catch(() => false);
+        const formClosed = !(await nameInput.isVisible({ timeout: 1000 }).catch(() => false));
+        if (!addedViaChip && !formClosed) {
+            throw new Error(`Could not add brand-new hunter "${hunterName}" to the party via the "Add Hunter" form.`);
+        }
+    }
+
     async ensureHunterInParty(hunterName: string = "John Hunter Smith", hunterEmail: string = "guest@gmail.com") {
         // "Selected Party Members" is this form's actual added-hunter confirmation (a list showing name/
         // role/email) - a "Remove" button or bordered "Primary" card never actually appears here.
@@ -1089,7 +1254,32 @@ export default class BookingsPage {
             await this.page.waitForTimeout(2000);
         }
     }
-    
+
+    // Used only by the two waiver-email scenarios: they need a genuinely persisted booking so the
+    // backend actually dispatches a real waiver email to MailHog - a mocked booking (see
+    // clickCreateBooking above) never triggers that. Deliberately a single attempt with no
+    // retry-on-conflict loop: an earlier attempt at automatic retry (editing dates / restarting the
+    // wizard with a new date range) ran into a real bug in the shared calendar-navigation helper when
+    // asked to jump far forward a second time, and kept leaving abandoned bookings behind in STG.
+    // These scenarios' date range ({today+15}-{today+19}) was chosen to already clear the one known
+    // "Turnover day conflict" (around 2026-12-03) while staying in the same near-term range proven
+    // reliable by every other booking-creation scenario in the suite.
+    async clickCreateBookingReal() {
+        const btn = this.page.locator(this.Elements.createBookingSubmitBtn).last();
+        await btn.waitFor({ state: 'visible' }).catch(() => {});
+        if (await btn.isVisible().catch(() => false)) {
+            await btn.click();
+            await this.page.waitForTimeout(3000);
+        }
+        const conflictToast = this.page.getByText(/Turnover day conflict detected/i).first();
+        if (await conflictToast.isVisible({ timeout: 5000 }).catch(() => false)) {
+            throw new Error(
+                'clickCreateBookingReal: hit a real "Turnover day conflict" on the chosen date range. ' +
+                'The date range in this scenario needs to be shifted to a different gap in existing bookings.'
+            );
+        }
+    }
+
     async clickBackToBookingsWizardLink() {
         await this.page.getByRole('button', { name: 'Back to Bookings' }).click();
         await this.page.waitForTimeout(1500);
@@ -1233,7 +1423,10 @@ export default class BookingsPage {
             await dateBtn.click();
             await this.page.waitForTimeout(500);
             const todayDay = this.page.locator('td[data-today="true"] button, button[aria-label*="Today" i], .rdp-root td[data-today="true"] button').first();
-            if (await todayDay.isVisible({ timeout: 3000 }).catch(() => false)) {
+            // "Today" can be visible but disabled (e.g. the harvest date must be strictly after
+            // check-in) - isVisible() alone doesn't catch that, and clicking a disabled button just
+            // hangs out Playwright's full actionability timeout instead of falling through below.
+            if (await todayDay.isVisible({ timeout: 3000 }).catch(() => false) && await todayDay.isEnabled().catch(() => false)) {
                 await todayDay.click();
             } else {
                 const activeDay = this.page.locator('.rdp-root td:not([data-disabled="true"]) button:not([disabled])').first();

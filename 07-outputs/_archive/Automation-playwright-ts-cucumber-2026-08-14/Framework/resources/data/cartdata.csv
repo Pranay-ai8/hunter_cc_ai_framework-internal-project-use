@@ -1,0 +1,8 @@
+Key|username|password|productA|productB
+multiple_items_cart|standard_user|AUTO|Sauce Labs Backpack|Sauce Labs Bike Light
+remove_from_cart_page|standard_user|AUTO|Sauce Labs Backpack|
+remove_from_inventory|standard_user|AUTO|Sauce Labs Backpack|
+cart_persistence|standard_user|AUTO|Sauce Labs Backpack|
+continue_shopping|standard_user|AUTO|Sauce Labs Backpack|
+empty_cart|standard_user|AUTO||
+problem_user_remove|problem_user|AUTO|Sauce Labs Backpack|

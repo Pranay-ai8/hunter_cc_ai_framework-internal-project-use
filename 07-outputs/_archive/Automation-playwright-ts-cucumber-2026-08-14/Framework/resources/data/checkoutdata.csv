@@ -1,0 +1,10 @@
+Key|username|password|productName|firstName|lastName|postalCode
+blank_first_name|standard_user|AUTO|Sauce Labs Backpack||Doe|12345
+blank_last_name|standard_user|AUTO|Sauce Labs Backpack|Jane||12345
+blank_postal_code|standard_user|AUTO|Sauce Labs Backpack|Jane|Doe|
+step2_totals|standard_user|AUTO|Sauce Labs Backpack|Jane|Doe|12345
+cancel_step1|standard_user|AUTO|Sauce Labs Backpack|||
+cancel_step2|standard_user|AUTO|Sauce Labs Backpack|Jane|Doe|12345
+postal_code_boundary|standard_user|AUTO|Sauce Labs Backpack|Jane|Doe|A1B2C3-LONGCODE-0001
+error_user_checkout|error_user|AUTO|Sauce Labs Backpack|Jane|Doe|12345
+problem_user_lastname|problem_user|AUTO|Sauce Labs Backpack|Jane|Doe|12345

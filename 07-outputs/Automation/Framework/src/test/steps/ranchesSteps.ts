@@ -89,8 +89,9 @@ Then('The default view is \'List View\'', async function () {
     await expect(fixture.page).toHaveURL(/.*\/ranches/);
     
     const tableLocator = fixture.page.locator(ranchesPage.getTableLocator());
-    await expect(tableLocator).toBeVisible(); // increased timeout just in case data takes a moment
-    
+    // Accumulated regression test data makes this fetch slower than the 5s default in a long suite run.
+    await expect(tableLocator).toBeVisible({ timeout: 15000 });
+
     await fixture.subStepLogger?.success("Verified List View is displayed by default");
 });
 
@@ -131,7 +132,7 @@ Then('Table headers accurately display all expected columns', async function () 
     const expectedHeaders = ["Ranch Name", "Location", "Admin", "Rooms", "Capacity", "Created", "Actions"];
     
     for (const header of expectedHeaders) {
-        await expect(fixture.page.locator(ranchesPage.getTableHeadersLocator(), { hasText: header })).toBeVisible();
+        await expect(fixture.page.locator(ranchesPage.getTableHeadersLocator(), { hasText: header })).toBeVisible({ timeout: 15000 });
     }
     
     await fixture.subStepLogger?.success("Verified all expected columns are present");
@@ -171,10 +172,11 @@ Then('The layout switches from a table to individual cards', async function () {
     // The table should no longer be visible
     const tableLocator = fixture.page.locator(ranchesPage.getTableLocator());
     await expect(tableLocator).toBeHidden();
-    
-    // Grid cards (e.g. Edit buttons inside cards) should be visible
+
+    // Grid cards (e.g. Edit buttons inside cards) should be visible - rendering more cards takes longer
+    // than the 5s default once test data has accumulated across regression runs.
     const cardEditBtn = fixture.page.locator('button:has-text("Edit")').first();
-    await expect(cardEditBtn).toBeVisible();
+    await expect(cardEditBtn).toBeVisible({ timeout: 15000 });
     
     await fixture.subStepLogger?.success("Verified layout switched to cards");
 });
@@ -390,8 +392,8 @@ Then('The page updates to display up to 20 rows', async function () {
     await fixture.subStepLogger?.info("Verifying table updates to display up to 20 rows");
     
     const rows = fixture.page.locator(ranchesPage.getTableRowsLocator());
-    await expect(rows.first()).toBeVisible();
-    
+    await expect(rows.first()).toBeVisible({ timeout: 15000 });
+
     const rowCount = await rows.count();
     // It should have some rows, but no more than 20
     expect(rowCount).toBeGreaterThan(0);
@@ -1390,10 +1392,13 @@ Then('Application saves changes, redirects user, and displays success toast aler
     fixture.logger.info("Verifying successful save and toast");
     await fixture.subStepLogger?.info("Verifying successful save and toast");
     
-    // Verify toast
-    const toast = fixture.page.locator(ranchesPage.getSuccessToastLocator());
-    await expect(toast).toBeVisible({ timeout: 15000 });
-    
+    // Verify toast: it auto-dismisses after a few seconds, so prefer the state ranchesPage captured
+    // immediately after the click, and only fall back to a live re-check if that wasn't recorded.
+    if (!ranchesPage.lastSaveToastVisible) {
+        const toast = fixture.page.locator(ranchesPage.getSuccessToastLocator());
+        await expect(toast).toBeVisible({ timeout: 15000 });
+    }
+
     // Verify redirect
     await expect(fixture.page).toHaveURL(/.*\/ranches/);
     

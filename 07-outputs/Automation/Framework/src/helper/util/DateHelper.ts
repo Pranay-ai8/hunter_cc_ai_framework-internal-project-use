@@ -15,6 +15,16 @@ export class DateHelper {
 
         if (keyword === 'today') {
             targetDate = now;
+        } else if (keyword === 'today+auto' || /^today\+auto\+\d+$/.test(keyword)) {
+            // For scenarios that create a real, persisted booking (not mocked): a fixed "{today+N}"
+            // offset works once, but collides with itself on every later run that day, since the real
+            // booking from the earlier run is still sitting on that exact date. This instead varies by
+            // a 30-minute time window, so repeated runs get a different date, while two calls within the
+            // same run (a check-in date and its check-out date, a fixed number of days after it) still
+            // agree on the same base offset.
+            const seed = (Math.floor(now.getTime() / (1000 * 60 * 30)) % 50) + 10; // 10-59 days out
+            const extra = keyword === 'today+auto' ? 0 : parseInt(keyword.split('+auto+')[1], 10);
+            targetDate.setDate(now.getDate() + seed + extra);
         } else if (keyword.startsWith('today+')) {
             const days = parseInt(keyword.replace('today+', ''), 10);
             targetDate.setDate(now.getDate() + days);

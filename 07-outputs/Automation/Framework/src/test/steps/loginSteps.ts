@@ -798,15 +798,20 @@ When('Internet connection is disconnected', async function () {
 Then('A network error message is displayed', async function () {
     fixture.logger.info("Verifying network error message");
     await fixture.subStepLogger?.info("Verifying network error message");
-    
-    // Wait for the specific network error message
-    // Note: If the app doesn't have a specific offline handler, the click might just silently fail or throw a net::ERR_INTERNET_DISCONNECTED
-    // We will assert on generic text that is expected in TC039
-    await loginPage.verifyToastMessageVisible("Network error");
-    
-    // Restore online state for other tests!
-    await loginPage.setNetworkOffline(false);
-    
+
+    // The whole suite shares one browser context (see hooks.ts), so if the assertion below throws
+    // without this try/finally, setNetworkOffline(false) never runs and every scenario after this one
+    // silently runs with the network disconnected - this must restore state regardless of outcome.
+    try {
+        // Wait for the specific network error message
+        // Note: If the app doesn't have a specific offline handler, the click might just silently fail or throw a net::ERR_INTERNET_DISCONNECTED
+        // We will assert on generic text that is expected in TC039
+        await loginPage.verifyToastMessageVisible("Network error");
+    } finally {
+        // Restore online state for other tests!
+        await loginPage.setNetworkOffline(false);
+    }
+
     await fixture.subStepLogger?.success("Verified network error message");
 });
 

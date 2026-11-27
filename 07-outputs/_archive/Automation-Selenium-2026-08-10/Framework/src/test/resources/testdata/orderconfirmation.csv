@@ -1,0 +1,4 @@
+Key,Username,Password,ProductName,FirstName,LastName,PostalCode
+successMessageDisplayedAfterCheckout,standard_user,secret_sauce,Sauce Labs Backpack,Jane,Doe,12345
+backHomeNavigatesToInventory,standard_user,secret_sauce,Sauce Labs Backpack,Jane,Doe,12345
+cartIsEmptyAfterOrderCompletion,standard_user,secret_sauce,Sauce Labs Backpack,Jane,Doe,12345

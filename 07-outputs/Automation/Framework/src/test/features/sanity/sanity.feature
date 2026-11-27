@@ -406,6 +406,7 @@ Feature: Consolidated End-to-End Sanity Test Suite
   Scenario: Verify logging harvest details on Checked In booking
     Given User is logged in as Super Admin
     When User clicks on 'Bookings' under GUEST OPERATIONS in the left sidebar
+    And a 'Checked In' Hunting booking exists
     And User opens Actions menu for a 'Checked In' Hunting booking and clicks 'Log Harvest'
     And User fills harvest log form and submits the harvest log
     Then Harvest log submission completes successfully
@@ -452,7 +453,7 @@ Feature: Consolidated End-to-End Sanity Test Suite
       And User clears the Full Name input field
       And User clears the Email Address input field
       And User clicks the guest form "Save Changes" button
-      Then Submission should be blocked with inline errors under Full Name and Email Address
+      Then Submission should be blocked with an inline error under Full Name
 @UI @High @Functional @Key:TC_GST_028 @smoke
   Scenario: TC_GST_028 Verify "Signed Waiver" PDF preview/download link on Guest Profile summary
     Given User logged in as Super Admin

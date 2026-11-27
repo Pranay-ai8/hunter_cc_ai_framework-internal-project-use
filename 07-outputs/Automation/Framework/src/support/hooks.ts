@@ -22,6 +22,7 @@ import * as path from "path";
 import { getEnv } from "../helper/env/env";
 import { HTMLSubStepLogger } from "./htmllSubStepLogger";
 import LoginPage from "../pages/loginPage";
+import { ensureSuperAdminSession } from "./sessionGuard";
 
 setDefaultTimeout(60 * 1000);
 
@@ -80,8 +81,11 @@ BeforeAll(async function () {
     try {
         console.log("🔐 Authenticating once for all tests...");
         await loginPage.navigateToLogin();
-        const adminEmail = process.env.SUPER_ADMIN_EMAIL || process.env.SUPERADMIN_USER || "superadmin@buckhouse.com";
-        const adminPassword = process.env.SUPER_ADMIN_PASSWORD || process.env.SUPERADMIN_PASSWORD || "Admin@123!";
+        const adminEmail = process.env.SUPER_ADMIN_EMAIL || process.env.SUPERADMIN_USER;
+        const adminPassword = process.env.SUPER_ADMIN_PASSWORD || process.env.SUPERADMIN_PASSWORD;
+        if (!adminEmail || !adminPassword) {
+            throw new Error("SUPER_ADMIN_EMAIL/SUPER_ADMIN_PASSWORD must be set in the environment - no hardcoded fallback credentials.");
+        }
         await loginPage.enterCredentials(adminEmail, adminPassword);
         await loginPage.clickSignIn();
         await mainPage.waitForURL(/.*\/dashboard/, { timeout: 30000 });
@@ -217,6 +221,12 @@ Before(async function ({ pickle }) {
     }
 
     if (isLoginTest) {
+        // The app rate-limits real sign-in attempts. login.feature has ~48 @login scenarios that each
+        // perform a genuine, unauthenticated login request, and running them back-to-back with no
+        // spacing trips that limiter (seen when running the full regression suite). A short pause
+        // before each one keeps the request rate under the limiter's threshold.
+        await fixture.page.waitForTimeout(4000);
+
         // Clear cookies and storage so login test runs unauthenticated without destroying the window
         await context.clearCookies().catch(() => {});
         await fixture.page.evaluate(() => {
@@ -233,6 +243,15 @@ Before(async function ({ pickle }) {
         }
     } else {
         fixture.logger?.info("🔹 Reusing existing browser page on Dashboard (no reload)");
+
+        // Proactively heal a dead shared session at the START of every scenario, before any of its
+        // steps run. Previously this guard only lived inside a few step files (ranches/guests/ranchAdmin),
+        // so a session death during any other feature went undetected until one of those steps happened
+        // to run - every step in between just burned its full actionability timeout and failed, turning
+        // one session death into many minutes of wasted, failing steps instead of one guarded re-login.
+        // Left uncaught on purpose: if the guard is in its cooldown window, failing fast here (one clear
+        // error) beats letting every subsequent step fail slowly against a known-dead session.
+        await ensureSuperAdminSession(fixture.page);
     }
 
     try {
@@ -337,8 +356,11 @@ After({ tags: "@Key:TC_RAM_026" }, async function () {
         await page.reload({ waitUntil: "networkidle" });
 
         const loginPage = new LoginPage(page);
-        const adminEmail = process.env.SUPER_ADMIN_EMAIL || process.env.SUPERADMIN_USER || "superadmin@buckhouse.com";
-        const adminPassword = process.env.SUPER_ADMIN_PASSWORD || process.env.SUPERADMIN_PASSWORD || "Admin@123!";
+        const adminEmail = process.env.SUPER_ADMIN_EMAIL || process.env.SUPERADMIN_USER;
+        const adminPassword = process.env.SUPER_ADMIN_PASSWORD || process.env.SUPERADMIN_PASSWORD;
+        if (!adminEmail || !adminPassword) {
+            throw new Error("SUPER_ADMIN_EMAIL/SUPER_ADMIN_PASSWORD must be set in the environment - no hardcoded fallback credentials.");
+        }
         await loginPage.login(adminEmail, adminPassword);
         await page.waitForURL(/.*\/dashboard/, { timeout: 30000 });
 
@@ -368,8 +390,11 @@ After({ tags: "@Key:SGC081" }, async function () {
         await page.reload({ waitUntil: "networkidle" });
 
         const loginPage = new LoginPage(page);
-        const adminEmail = process.env.SUPER_ADMIN_EMAIL || process.env.SUPERADMIN_USER || "superadmin@buckhouse.com";
-        const adminPassword = process.env.SUPER_ADMIN_PASSWORD || process.env.SUPERADMIN_PASSWORD || "Admin@123!";
+        const adminEmail = process.env.SUPER_ADMIN_EMAIL || process.env.SUPERADMIN_USER;
+        const adminPassword = process.env.SUPER_ADMIN_PASSWORD || process.env.SUPERADMIN_PASSWORD;
+        if (!adminEmail || !adminPassword) {
+            throw new Error("SUPER_ADMIN_EMAIL/SUPER_ADMIN_PASSWORD must be set in the environment - no hardcoded fallback credentials.");
+        }
         await loginPage.login(adminEmail, adminPassword);
         await page.waitForURL(/.*\/dashboard/, { timeout: 30000 });
 

@@ -1,0 +1,113 @@
+2026-08-07T08:32:45.236Z [INFO] Typed 'standard_user' into: Username
+2026-08-07T08:32:45.366Z [INFO] Typed password into: Password
+2026-08-07T08:32:45.491Z [INFO] Clicked on element: Login
+2026-08-07T08:32:45.523Z [INFO] Added 'Sauce Labs Backpack' to cart
+2026-08-07T08:32:45.577Z [INFO] Clicked on element: Shopping Cart Link
+2026-08-07T08:32:45.625Z [INFO] Clicked on element: Checkout Button
+2026-08-07T08:34:38.176Z [INFO] Typed 'standard_user' into: Username
+2026-08-07T08:34:38.217Z [INFO] Typed password into: Password
+2026-08-07T08:34:38.261Z [INFO] Clicked on element: Login
+2026-08-07T08:34:38.284Z [INFO] Added 'Sauce Labs Backpack' to cart
+2026-08-07T08:34:38.305Z [INFO] Clicked on element: Shopping Cart Link
+2026-08-07T08:34:38.330Z [INFO] Clicked on element: Checkout Button
+2026-08-07T08:41:06.764Z [INFO] Typed 'standard_user' into: Username
+2026-08-07T08:41:06.830Z [INFO] Typed password into: Password
+2026-08-07T08:41:06.894Z [INFO] Clicked on element: Login
+2026-08-07T08:41:06.921Z [INFO] Added 'Sauce Labs Backpack' to cart
+2026-08-07T08:41:06.952Z [INFO] Clicked on element: Shopping Cart Link
+2026-08-07T08:41:06.975Z [INFO] Clicked on element: Checkout Button
+2026-08-07T08:56:00.549Z [INFO] Typed 'standard_user' into: Username
+2026-08-07T08:56:00.589Z [INFO] Typed password into: Password
+2026-08-07T08:56:00.650Z [INFO] Clicked on element: Login
+2026-08-07T08:56:00.671Z [INFO] Added 'Sauce Labs Backpack' to cart
+2026-08-07T08:56:00.697Z [INFO] Clicked on element: Shopping Cart Link
+2026-08-07T08:56:00.721Z [INFO] Clicked on element: Checkout Button
+2026-08-07T08:56:44.835Z [INFO] Typed 'standard_user' into: Username
+2026-08-07T08:56:44.875Z [INFO] Typed password into: Password
+2026-08-07T08:56:44.919Z [INFO] Clicked on element: Login
+2026-08-07T08:56:44.937Z [INFO] Added 'Sauce Labs Backpack' to cart
+2026-08-07T08:56:44.964Z [INFO] Clicked on element: Shopping Cart Link
+2026-08-07T08:56:44.989Z [INFO] Clicked on element: Checkout Button
+2026-08-10T08:54:20.392Z [INFO] Typed 'standard_user' into: Username
+2026-08-10T08:54:20.433Z [INFO] Typed password into: Password
+2026-08-10T08:54:20.474Z [INFO] Clicked on element: Login
+2026-08-10T08:54:20.501Z [INFO] Added 'Sauce Labs Backpack' to cart
+2026-08-10T08:54:20.528Z [INFO] Clicked on element: Shopping Cart Link
+2026-08-10T08:54:20.553Z [INFO] Clicked on element: Checkout Button
+2026-08-10T08:58:16.827Z [INFO] Typed 'standard_user' into: Username
+2026-08-10T08:58:16.867Z [INFO] Typed password into: Password
+2026-08-10T08:58:16.908Z [INFO] Clicked on element: Login
+2026-08-10T08:58:16.928Z [INFO] Added 'Sauce Labs Backpack' to cart
+2026-08-10T08:58:16.955Z [INFO] Clicked on element: Shopping Cart Link
+2026-08-10T08:58:16.979Z [INFO] Clicked on element: Checkout Button
+2026-08-10T09:00:14.364Z [INFO] Typed 'standard_user' into: Username
+2026-08-10T09:00:14.406Z [INFO] Typed password into: Password
+2026-08-10T09:00:14.449Z [INFO] Clicked on element: Login
+2026-08-10T09:00:14.462Z [INFO] Added 'Sauce Labs Backpack' to cart
+2026-08-10T09:00:14.489Z [INFO] Clicked on element: Shopping Cart Link
+2026-08-10T09:00:14.515Z [INFO] Clicked on element: Checkout Button
+2026-08-10T09:01:28.806Z [INFO] Typed 'standard_user' into: Username
+2026-08-10T09:01:28.854Z [INFO] Typed password into: Password
+2026-08-10T09:01:28.952Z [INFO] Clicked on element: Login
+2026-08-10T09:01:28.979Z [INFO] Added 'Sauce Labs Backpack' to cart
+2026-08-10T09:01:29.062Z [INFO] Clicked on element: Shopping Cart Link
+2026-08-10T09:01:29.137Z [INFO] Clicked on element: Checkout Button
+2026-08-12T08:40:47.938Z [INFO] type text into succeeded: Username
+2026-08-12T08:40:47.977Z [INFO] type password into succeeded: Password
+2026-08-12T08:40:48.018Z [INFO] click succeeded: Login
+2026-08-12T08:40:48.037Z [INFO] click succeeded: Add to cart button for 'Sauce Labs Backpack'
+2026-08-12T08:40:48.037Z [INFO] Added 'Sauce Labs Backpack' to cart
+2026-08-12T08:40:48.064Z [INFO] click succeeded: Shopping Cart Link
+2026-08-12T08:40:48.088Z [INFO] click succeeded: Checkout Button
+2026-08-12T08:41:10.061Z [INFO] type text into succeeded: Username
+2026-08-12T08:41:10.098Z [INFO] type password into succeeded: Password
+2026-08-12T08:41:10.141Z [INFO] click succeeded: Login
+2026-08-12T08:41:10.152Z [INFO] click succeeded: Add to cart button for 'Sauce Labs Backpack'
+2026-08-12T08:41:10.152Z [INFO] Added 'Sauce Labs Backpack' to cart
+2026-08-12T08:41:10.171Z [INFO] click succeeded: Shopping Cart Link
+2026-08-12T08:41:10.196Z [INFO] click succeeded: Checkout Button
+2026-08-12T08:42:15.383Z [INFO] type text into succeeded: Username
+2026-08-12T08:42:15.426Z [INFO] type password into succeeded: Password
+2026-08-12T08:42:15.505Z [INFO] click succeeded: Login
+2026-08-12T08:42:15.529Z [INFO] click succeeded: Add to cart button for 'Sauce Labs Backpack'
+2026-08-12T08:42:15.529Z [INFO] Added 'Sauce Labs Backpack' to cart
+2026-08-12T08:42:15.616Z [INFO] click succeeded: Shopping Cart Link
+2026-08-12T08:42:15.682Z [INFO] click succeeded: Checkout Button
+2026-08-12T08:43:23.643Z [INFO] type text into succeeded: Username
+2026-08-12T08:43:23.682Z [INFO] type password into succeeded: Password
+2026-08-12T08:43:23.765Z [INFO] click succeeded: Login
+2026-08-12T08:43:23.796Z [INFO] click succeeded: Add to cart button for 'Sauce Labs Backpack'
+2026-08-12T08:43:23.796Z [INFO] Added 'Sauce Labs Backpack' to cart
+2026-08-12T08:43:23.866Z [INFO] click succeeded: Shopping Cart Link
+2026-08-12T08:43:23.932Z [INFO] click succeeded: Checkout Button
+2026-08-12T08:44:07.692Z [INFO] type text into succeeded: Username
+2026-08-12T08:44:07.736Z [INFO] type password into succeeded: Password
+2026-08-12T08:44:07.819Z [INFO] click succeeded: Login
+2026-08-12T08:44:07.846Z [INFO] click succeeded: Add to cart button for 'Sauce Labs Backpack'
+2026-08-12T08:44:07.846Z [INFO] Added 'Sauce Labs Backpack' to cart
+2026-08-12T08:44:07.927Z [INFO] click succeeded: Shopping Cart Link
+2026-08-12T08:44:10.934Z [WARN] [self-heal] Original locator failed: "#checkout12". Recording failure before retry.
+2026-08-12T09:15:54.841Z [INFO] type text into succeeded: Username
+2026-08-12T09:15:54.880Z [INFO] type password into succeeded: Password
+2026-08-12T09:15:54.931Z [INFO] click succeeded: Login
+2026-08-12T09:15:54.946Z [INFO] click succeeded: Add to cart button for 'Sauce Labs Backpack'
+2026-08-12T09:15:54.946Z [INFO] Added 'Sauce Labs Backpack' to cart
+2026-08-12T09:15:54.973Z [INFO] click succeeded: Shopping Cart Link
+2026-08-12T09:15:57.978Z [WARN] [self-heal] Original locator failed: "#checkout12". Recording failure before retry.
+2026-08-12T09:15:57.983Z [WARN] [self-heal] No healed locator available for "#checkout12"
+2026-08-12T09:29:00.741Z [INFO] type text into succeeded: Username
+2026-08-12T09:29:00.788Z [INFO] type password into succeeded: Password
+2026-08-12T09:29:00.829Z [INFO] click succeeded: Login
+2026-08-12T09:29:00.848Z [INFO] click succeeded: Add to cart button for 'Sauce Labs Backpack'
+2026-08-12T09:29:00.848Z [INFO] Added 'Sauce Labs Backpack' to cart
+2026-08-12T09:29:00.879Z [INFO] click succeeded: Shopping Cart Link
+2026-08-12T09:29:03.883Z [WARN] [self-heal] Original locator failed: "#checkout12". Recording failure before retry.
+2026-08-12T09:29:03.892Z [INFO] [self-heal] Retrying with healed locator: "#checkout12" → "page.getByText("Checkout")" (confidence=0.7666666666666666)
+2026-08-12T09:30:06.353Z [INFO] type text into succeeded: Username
+2026-08-12T09:30:06.440Z [INFO] type password into succeeded: Password
+2026-08-12T09:30:06.586Z [INFO] click succeeded: Login
+2026-08-12T09:30:06.619Z [INFO] click succeeded: Add to cart button for 'Sauce Labs Backpack'
+2026-08-12T09:30:06.619Z [INFO] Added 'Sauce Labs Backpack' to cart
+2026-08-12T09:30:06.752Z [INFO] click succeeded: Shopping Cart Link
+2026-08-12T09:30:09.758Z [WARN] [self-heal] Original locator failed: "#checkout12". Recording failure before retry.
+2026-08-12T09:30:09.762Z [INFO] [self-heal] Retrying with healed locator: "#checkout12" → "page.getByText("Checkout")" (confidence=0.7666666666666666)

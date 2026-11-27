@@ -1,0 +1,11 @@
+2026-08-07T08:35:13.624Z [INFO] Typed 'standard_user' into: Username
+2026-08-07T08:35:13.667Z [INFO] Typed password into: Password
+2026-08-07T08:35:13.714Z [INFO] Clicked on element: Login
+2026-08-07T08:35:13.740Z [INFO] Added 'Sauce Labs Backpack' to cart
+2026-08-07T08:35:13.765Z [INFO] Clicked on element: Shopping Cart Link
+2026-08-07T08:35:13.790Z [INFO] Clicked on element: Checkout Button
+2026-08-07T08:35:13.796Z [INFO] Typed 'Jane' into: First Name
+2026-08-07T08:35:13.801Z [INFO] Typed 'Doe' into: Last Name
+2026-08-07T08:35:13.807Z [INFO] Typed '12345' into: Postal Code
+2026-08-07T08:35:13.833Z [INFO] Clicked on element: Continue Button
+2026-08-07T08:35:13.858Z [INFO] Clicked on element: Cancel Button
