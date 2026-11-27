@@ -1,13 +1,16 @@
 import { Given, When, Then } from "@cucumber/cucumber";
-import { expect } from "@playwright/test";
+import { expect, Page } from "@playwright/test";
 import { fixture } from "../../support/pageFixture";
 import LoginPage from "../../pages/loginPage";
 import BookingsPage from "../../pages/bookingsPage";
 import { DateHelper } from "../../helper/util/DateHelper";
-import { waitForLatestEmailBySubject, extractSigningLink } from "../../helper/mail/mailhogClient";
+import { waitForLatestEmailBySubject, extractSigningLink, extractProfileCompletionLink } from "../../helper/mail/mailhogClient";
 import DocusealPage from "../../pages/docusealPage";
+import CompleteProfilePage from "../../pages/completeProfilePage";
 let loginPage: LoginPage;
 let bookingsPage: BookingsPage;
+let completeProfilePage: CompleteProfilePage;
+let completeProfileTab: Page;
 
 // --- Shared Navigation Steps ---
 When('User clicks on \'Bookings\' under GUEST OPERATIONS in the left sidebar', async function () {
@@ -695,6 +698,61 @@ When('User retrieves the waiver invite email from MailHog and signs it as the hu
     await signingTab.close();
 
     await fixture.subStepLogger?.success("Signed waiver via DocuSeal");
+});
+
+// Retrieves the separate "Action Required: Complete Your Profile" email a brand-new hunter also
+// receives when added to a booking (confirmed live - the same hunter-add action dispatches this
+// alongside the waiver invite), and keeps the opened page/page-object on the World object so the
+// following steps (fill fields, add a minor, save) can act on it.
+When('User retrieves the Complete Your Profile email from MailHog and opens it', async function () {
+    fixture.logger.info("Fetching Complete Your Profile email from MailHog");
+    await fixture.subStepLogger?.info("Fetching Complete Your Profile email from MailHog");
+
+    const email = await waitForLatestEmailBySubject('Complete Your Profile', Date.now() - 2 * 60 * 1000, 30000);
+    const profileLink = extractProfileCompletionLink(email.body);
+
+    completeProfilePage = new CompleteProfilePage();
+    completeProfileTab = await completeProfilePage.open(fixture.page.context(), profileLink);
+
+    await fixture.subStepLogger?.success("Opened Complete Your Profile page");
+});
+
+Then('Action Required banner lists the missing profile fields', async function () {
+    fixture.logger.info("Verifying Action Required banner");
+    await fixture.subStepLogger?.info("Verifying Action Required banner");
+    await completeProfilePage.verifyActionRequiredBanner();
+    await fixture.subStepLogger?.success("Verified Action Required banner is visible");
+});
+
+When('User fills the required phone, license, and license expiration fields', async function () {
+    fixture.logger.info("Filling required phone/license/license expiration fields");
+    await fixture.subStepLogger?.info("Filling required phone/license/license expiration fields");
+    await completeProfilePage.fillRequiredContactAndLicenseFields('3075551234', 'TX-99999', DateHelper.parse('{today+365}'));
+    await fixture.subStepLogger?.success("Filled required profile fields");
+});
+
+When('User adds a Minor Hunter from the Complete Your Profile page', async function () {
+    fixture.logger.info("Adding a Minor Hunter from the Complete Your Profile page");
+    await fixture.subStepLogger?.info("Adding a Minor Hunter from the Complete Your Profile page");
+    const minorName = `QA-AUTO-Minor-${Date.now()}`;
+    await completeProfilePage.clickAddMinor();
+    await completeProfilePage.fillMinorDetails(minorName, DateHelper.parse('{child_dob}'));
+    await fixture.subStepLogger?.success(`Added Minor Hunter: ${minorName}`);
+});
+
+When('User clicks \'Save and Finalize\' button', async function () {
+    fixture.logger.info("Clicking Save and Finalize button");
+    await fixture.subStepLogger?.info("Clicking Save and Finalize button");
+    await completeProfilePage.clickSaveAndFinalize();
+    await fixture.subStepLogger?.success("Clicked Save and Finalize");
+});
+
+Then('The profile is completed successfully', async function () {
+    fixture.logger.info("Verifying profile completed successfully");
+    await fixture.subStepLogger?.info("Verifying profile completed successfully");
+    await completeProfilePage.verifyProfileCompletedSuccessfully();
+    await completeProfileTab.close();
+    await fixture.subStepLogger?.success("Verified profile completed successfully");
 });
 
 When('User reopens the same booking', async function () {

@@ -352,6 +352,21 @@ Feature: Bookings Module
     And User reopens the same booking
     Then The Waiver Status card shows the waiver as Signed
 
+  @regression @Key:BTC041G @High @Type:Functional
+  Scenario: Verify hunter can complete their profile and add a minor from the Complete Your Profile email
+    Given User is logged in as Super Admin
+    When User clicks on 'Bookings' under GUEST OPERATIONS in the left sidebar
+    And User clicks '+ New Booking' button
+    And User completes Steps 1 to 4 with Ranch 'test ranch', Dates '{today+auto+20}' to '{today+auto+24}', room 'The king room' for 3 guests, a brand-new Hunter, and Guide 'athul pp'
+    And User clicks green 'Create Booking' button on Step 5, creating a real booking
+    Then Booking is created, user is redirected to list page, and pending booking appears at the top
+    When User retrieves the Complete Your Profile email from MailHog and opens it
+    Then Action Required banner lists the missing profile fields
+    When User fills the required phone, license, and license expiration fields
+    And User adds a Minor Hunter from the Complete Your Profile page
+    And User clicks 'Save and Finalize' button
+    Then The profile is completed successfully
+
   @Key:BTC042 @High @Type:Validation
   Scenario: Verify 'Check in Guests' early check-in error handling
     Given User is logged in as Super Admin

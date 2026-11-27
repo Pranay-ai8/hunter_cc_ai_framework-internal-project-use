@@ -87,3 +87,22 @@ export function extractSigningLink(body: string): string {
     }
     return match[0];
 }
+
+/**
+ * Extracts the "Complete Your Profile" link from the hunter-added notification email. This email's
+ * HTML escapes "=" inside its href as both quoted-printable ("=3D") and an HTML entity ("&#x3D;"), and
+ * can soft-wrap the URL mid-token across a "=\r\n" line break - all three need undoing before the
+ * token survives intact, or matching straight against the raw body truncates or garbles it.
+ */
+export function extractProfileCompletionLink(body: string): string {
+    const decoded = body
+        .replace(/=\r?\n/g, "")
+        .replace(/=3D/g, "=")
+        .replace(/&#x3D;/gi, "=")
+        .replace(/&amp;/gi, "&");
+    const match = decoded.match(/https?:\/\/[^\s"<)]+\/user\/new\?token=[^\s"<)&]+/);
+    if (!match) {
+        throw new Error("No profile-completion link (/user/new?token=...) found in email body");
+    }
+    return match[0];
+}
